@@ -1,3 +1,5 @@
+import 'styles/central.scss';
+
 const App = ({ Component, pageProps }) => {
   return <Component {...pageProps} />
 }

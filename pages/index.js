@@ -1,8 +1,8 @@
 const Start = () => {
 	return (
-		<div>
+		<h3>
      Hello World!
-    </div>
+    </h3>
   )
 }
 
