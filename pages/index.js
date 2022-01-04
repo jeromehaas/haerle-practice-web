@@ -1,6 +1,6 @@
 const Start = () => {
-	return (
-		<h3>
+  return (
+    <h3>
      Hello World!
     </h3>
   )
