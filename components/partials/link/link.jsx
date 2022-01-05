@@ -23,7 +23,7 @@ const Link = ({ data, children }) => {
 	
   return (		
     <NextLink href={ data.href }>
-      <a className={`link ${data.className}`} href={ data.href || '#' } target={ data.target || '_self' }>
+      <a className={`link ${data.className ? data.className : '' }`} href={ data.href || '#' } target={ data.target || '_self' }>
         { renderIcon(data.icon) }
         { children }
       </a>

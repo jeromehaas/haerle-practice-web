@@ -1,7 +1,7 @@
 @import 'styles/configs/variables.scss';
 
 .link {
-	display:block;
+	display: inline-block;
 	text-decoration: none;
 	background: $blue-gradient;
 	background-position: bottom;
@@ -29,5 +29,5 @@
 		}
 
 	}
-	
+
 }
