@@ -1,5 +1,6 @@
 import { Heading } from 'components/partials/heading/heading';
 import { Paragraph } from 'components/partials/paragraph/paragraph';
+import { Link } from 'components/partials/link/link';
 
 const Start = () => {
   return (
@@ -22,6 +23,9 @@ const Start = () => {
       <Paragraph data={{ color: 'lightblue' }}>
         Pressen und Knirschen können zu einer Überlastung der Zähne und Kaumuskulatur führen. Oft äussert sich dies mit einem Verspanntheitsgefühl in der Muskulatur. Bei einigen Patienten kann das Pressen und Knirschen der auslösende Faktor für Schulter- und Nackenverspannungen sowie für Migräne sein. 
       </Paragraph>
+      <Link data={{ href: '#', icon: 'arrow' }}>
+        To the source
+      </Link>
     </>
   )
 }
