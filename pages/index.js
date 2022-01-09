@@ -1,6 +1,8 @@
 import { Heading } from 'components/partials/heading/heading';
 import { Paragraph } from 'components/partials/paragraph/paragraph';
 import { Link } from 'components/partials/link/link';
+import { Image } from 'components/partials/image/image';
+import { imageConfigDefault } from 'next/dist/server/image-config';
 
 const Start = () => {
   return (
@@ -26,6 +28,13 @@ const Start = () => {
       <Link data={{ href: '#', icon: 'arrow' }}>
         To the source
       </Link>
+      <Image data={{
+        src: '/images/01-daniela-haerle-besprechung-hauptbild.jpg',
+        width: 1600,
+        height: 900,
+        className: "image",
+        alt: 'Image',
+      }} />
     </>
   )
 }
