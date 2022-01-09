@@ -1,0 +1,35 @@
+.button {
+	border: 1px solid $lightblue-80;
+	color: $lightblue-80;
+	width: 280px;
+	height: 80px;
+	border-radius: 8px;
+	background-color: $white;
+	display: block;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	
+	&:hover {
+		background: $blue-gradient;
+		color: $white;
+	}
+
+	&:active {
+		background: $darkblue-100;
+	}
+
+	&:focus {
+		box-shadow: 0 0 8px 1px $lightblue-100;
+		outline: none;
+	}
+
+	&:disabled {
+		border: 1px solid $lightgrey;
+		color: $lightgrey;
+		pointer-events: none;
+	}
+
+}
