@@ -37,3 +37,25 @@ p, .paragraph {
 	font-size: 18px;
 	font-weight: 500;
 }
+
+label, .label {
+	font-size: 16px;
+}
+
+input, .input {
+	font-size: 20px;
+}
+
+.text-input__error-text {
+	font-size: 16px;
+}
+
+::placeholder {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+::-ms-input-placeholder {
+	font-size: 20px;
+	font-weight: 300;
+}

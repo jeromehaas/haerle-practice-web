@@ -3,6 +3,7 @@ import { Paragraph } from 'components/partials/paragraph/paragraph';
 import { Link } from 'components/partials/link/link';
 import { Image } from 'components/partials/image/image';
 import { Button } from 'components/partials/button/button';
+import { TextInput } from 'components/partials/text-input/text-input';
 
 const Start = () => {
   return (
@@ -28,16 +29,24 @@ const Start = () => {
       <Link data={{ href: '#', icon: 'arrow' }}>
         To the source
       </Link>
-      {/* <Image data={{
+      <Button data={{
+        className: 'button',
+      }}>Button</Button>
+      <TextInput data={{
+        label: 'Vorname',
+        isRequired: true,
+        placeholder: 'Ihr Nachname',
+        hasError: false,
+        errorText: 'Bitte geben Sie ihren Vornamen ein.',
+        onChange: () => { console.log('text input changed!')}
+      }} />
+      <Image data={{
         src: '/images/01-daniela-haerle-besprechung-hauptbild.jpg',
         width: 1600,
         height: 900,
         className: "image",
         alt: 'Image',
-      }} /> */}
-      <Button data={{
-        className: 'button',
-      }}>Button</Button>
+      }} />
     </>
   )
 }
