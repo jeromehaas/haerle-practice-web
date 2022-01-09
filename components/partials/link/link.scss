@@ -8,10 +8,21 @@
 	background-size: 100%;
 	background-repeat: no-repeat;
   background-clip: text;
+	padding: 4px;
   -webkit-text-fill-color: transparent;
 
-	&:hover .icon__circle { stroke-dashoffset: 0; }
+	&:hover .icon__circle, 
+	&:focus .icon__circle, 
+	&:active .icon__circle { 
+		stroke-dashoffset: 0; 
+	}
 
+	&:focus {
+		border-radius: 20px;
+		box-shadow: 0 0 8px 1px $lightblue-100;
+		outline: none;
+	}
+	
 	.icon {
 		margin-right: 8px;
 		position: relative;
@@ -29,5 +40,6 @@
 		}
 
 	}
+
 
 }
