@@ -4,6 +4,7 @@ import { Link } from 'components/partials/link/link';
 import { Image } from 'components/partials/image/image';
 import { Button } from 'components/partials/button/button';
 import { TextInput } from 'components/partials/text-input/text-input';
+import { Video } from 'components/partials/video/video';
 
 const Start = () => {
   return (
@@ -32,6 +33,7 @@ const Start = () => {
       <Button data={{
         className: 'button',
       }}>Button</Button>
+      <Video></Video>
       <TextInput data={{
         label: 'Vorname',
         isRequired: true,

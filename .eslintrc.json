@@ -11,6 +11,7 @@
 					"error",
 					2
 			],
-			"jsx-a11y/alt-text": [0]
+			"jsx-a11y/alt-text": [0],
+			"@next/next/no-img-element": [0]
 	}
 }
