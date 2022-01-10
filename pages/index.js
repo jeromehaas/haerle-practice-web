@@ -5,6 +5,7 @@ import { Image } from 'components/partials/image/image';
 import { Button } from 'components/partials/button/button';
 import { TextInput } from 'components/partials/text-input/text-input';
 import { Video } from 'components/partials/video/video';
+import { PageNavigation } from 'components/partials/page-navigation/page-navigation';
 
 const Start = () => {
   return (
@@ -34,6 +35,27 @@ const Start = () => {
         className: 'button',
       }}>Button</Button>
       <Video></Video>
+      <PageNavigation data={{
+        title: 'Themen dieser Seite',
+        links: [
+          {
+            text: 'Symptome',
+            href: '#'
+          },
+          {
+            text: 'Diagnose',
+            href: '#'
+          },
+          {
+            text: 'Therapie',
+            href: '#'
+          },
+          {
+            text: 'Häufig gestellte Fragen',
+            href: '#'
+          },
+        ]
+      }} />
       <TextInput data={{
         label: 'Vorname',
         isRequired: true,

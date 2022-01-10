@@ -1,0 +1,42 @@
+.page-navigation {
+	
+	&__title {
+		color: $lightblue-100;
+		margin-bottom: 23px;
+	}
+
+	&__link-wrapper {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	
+	&__link {
+		font-size: 20px;
+		font-weight: 600;
+		margin-right: 23px;
+		margin-bottom: 23px;
+		text-decoration: none;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	@media (max-width: 850px) {
+		
+		&__link-wrapper {
+			flex-direction: row;
+		}
+	
+	}
+
+	@media (max-width: 600px) {
+		
+		&__link-wrapper {
+			flex-direction: column;
+		}
+	
+	}
+
+}
