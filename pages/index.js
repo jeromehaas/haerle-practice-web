@@ -6,6 +6,7 @@ import { Button } from 'components/partials/button/button';
 import { TextInput } from 'components/partials/text-input/text-input';
 import { Video } from 'components/partials/video/video';
 import { PageNavigation } from 'components/partials/page-navigation/page-navigation';
+import { Footer } from 'components/blocks/footer/footer';
 
 const Start = () => {
   return (
@@ -31,6 +32,7 @@ const Start = () => {
       <Link data={{ href: '#', icon: 'arrow' }}>
         To the source
       </Link>
+      <Footer />
       <Button data={{
         className: 'button',
       }}>Button</Button>
