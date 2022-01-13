@@ -6,9 +6,8 @@ import { Button } from 'components/partials/button/button';
 import { TextInput } from 'components/partials/text-input/text-input';
 import { Video } from 'components/partials/video/video';
 import { PageNavigation } from 'components/partials/page-navigation/page-navigation';
-import { Footer } from 'components/blocks/footer/footer';
-import { Navigation } from 'components/blocks/navigation/navigation';
 import { Page } from 'components/layouts/page/page'
+import { Head } from 'components/partials/head/head';
 
 const Start = () => {
   return (
