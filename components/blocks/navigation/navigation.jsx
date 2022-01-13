@@ -46,8 +46,7 @@ const Navigation = () => {
             <p className="navigation__times-item">09:00 – 12.00, 13:30 – 18:00 Uhr</p>
           </div>
         </div>
-
-      </nav>
+      </nav>   
       <nav className="navigation navigation--desktop">
         <div className="navigation__inner">
           <img className="navigation__logo" src="/logos/logo-daniele-haerle.svg" onClick={() => router.push('/')} />
@@ -56,6 +55,7 @@ const Navigation = () => {
           <Link href="/ueber-mich"><a className="navigation__link">Über mich</a></Link>
           <Link href="/kontakt"><a className="navigation__link">Kontakt</a></Link>
         </div>
+        <div className="navigation__blocker"></div>
       </nav>
     </Fragment>	
   )

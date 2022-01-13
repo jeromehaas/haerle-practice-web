@@ -8,10 +8,11 @@ import { Video } from 'components/partials/video/video';
 import { PageNavigation } from 'components/partials/page-navigation/page-navigation';
 import { Footer } from 'components/blocks/footer/footer';
 import { Navigation } from 'components/blocks/navigation/navigation';
+import { Page } from 'components/layouts/page/page'
 
 const Start = () => {
   return (
-    <>
+    <Page>
       <Heading data={{ level: 'h1', color: 'lightblue' }}>
         Diagnostik und Therapie von Kiefer-, Gesichts- und Kopfschmerzen, Myoarthropathien des Kausystems, Schlafapnoe
       </Heading>
@@ -27,14 +28,12 @@ const Start = () => {
       <Heading data={{ level: 'h5', color: 'darkblue' }}>
         Vor der Konsultation
       </Heading>
-      <Navigation />
       <Paragraph data={{ color: 'lightblue' }}>
         Pressen und Knirschen können zu einer Überlastung der Zähne und Kaumuskulatur führen. Oft äussert sich dies mit einem Verspanntheitsgefühl in der Muskulatur. Bei einigen Patienten kann das Pressen und Knirschen der auslösende Faktor für Schulter- und Nackenverspannungen sowie für Migräne sein. 
       </Paragraph>
       <Link data={{ href: '#', icon: 'arrow' }}>
         To the source
       </Link>
-      <Footer />
       <Button data={{
         className: 'button',
       }}>Button</Button>
@@ -75,7 +74,7 @@ const Start = () => {
         className: "image",
         alt: 'Image',
       }} />
-    </>
+    </Page>
   )
 }
 

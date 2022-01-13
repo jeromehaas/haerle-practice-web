@@ -1,10 +1,5 @@
 .navigation--desktop {
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-	background-color: $white;
-	z-index: 10;
+
 
 
 	.navigation {
@@ -16,8 +11,18 @@
 			align-items: center;
 			max-width: $max-width;
 			margin: 0 auto;
-			bottom: 0;
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			background-color: $white;
+			z-index: 10;
 			padding: 26px;
+			height: 115px;
+		};
+
+		&__blocker {
+			height: 115px;
 		}
 
 		&__logo {
