@@ -1,7 +1,7 @@
 .section {
 	position: relative;
-	// border: 2px solid red;
-	width: 100%;
+	border: 2px solid red;
+	overflow: hidden;
 	margin-bottom: 32px;
 
 	&__inner {
@@ -9,6 +9,12 @@
 		width: 100%;
 		margin: 0 auto;
 		max-width: $max-width;
+	}
+
+	@media (max-width: 850px) {
+		&__inner {
+			padding: 0 24px;
+		}	
 	}
 
 }  

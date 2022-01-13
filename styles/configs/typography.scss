@@ -9,7 +9,7 @@ h1, .heading--h1 {
 
 h2, .heading--h2 {
 	font-size: 40px;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 h3, .heading--h3 {
@@ -24,7 +24,7 @@ h4, .heading--h4 {
 
 h5, .heading--h5 {
 	font-size: 22px;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 p, .paragraph {
@@ -95,10 +95,21 @@ input, .input {
 	h1, .heading--h1 {
 		font-size: 35px;
 	}
+
+
+	h2, .heading--h2 {
+		font-size: 26px;
+	}
+	
+
 	
 }
 
 @media (max-width: 700px) {
+
+	h1, .heading--h1 {
+		font-size: 26px;
+	}
 
 	h1, .heading--h1 {
 		font-size: 26px;

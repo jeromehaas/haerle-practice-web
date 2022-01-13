@@ -1,0 +1,137 @@
+.teaser {
+	
+	&__container {
+		border-radius: 16px;
+		background-color: $lightblue-10;
+		box-sizing: border-box;
+		padding: 48px;
+		display: grid;
+		grid-template: auto auto auto / 350px auto;
+		grid-template-areas: 
+			".     item-0"
+			"title item-1"
+			".     item-2";
+			grid-column-gap: 96px;
+			grid-row-gap: 48px;
+	}
+
+	&__title { 
+		grid-area: title;
+		align-self: center;
+	 }
+
+	 &__item {
+		display: grid;
+		grid-template: auto 100% / auto;
+		grid-template-areas:
+			"icon title"
+			"icon text";
+		justify-content: flex-start;
+		max-width: 600px;
+
+		 &--0 { 
+			 grid-area: item-0;
+			 margin-left: -104px;
+			}
+		 
+			&--1 { 
+				grid-area: item-1 
+			}
+		 
+			&--2 { 
+				grid-area: item-2;
+				margin-left: -104px;
+			}
+		 
+		}
+
+		&__item-icon {
+			grid-area: icon;
+			margin-right: 48px;
+		}	
+
+		&__item-title {
+			grid-area: title;	
+			margin-bottom: 8px;
+		}
+
+		&__item-text {
+
+		}
+
+	&__item-icon {
+		display: block;
+		color: red;
+		
+		&::after {
+			content:"";
+			font-size: 400px;
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			border: 1px solid red;
+		}
+
+	}
+
+	@media (max-width: 1200px) {
+		
+		&__container {
+			grid-template: auto auto auto / 168px auto;
+			grid-template-areas: 
+				".     item-0"
+				"title item-1"
+				".     item-2";
+		}
+
+	}
+
+	@media (max-width: 850px) {
+		
+		&__container {
+			grid-template: auto auto auto auto / auto;
+			grid-template-areas: 
+				"title"
+				"item-0"
+				"item-1"
+				"item-2";
+			}
+	
+			&__title { 
+				text-align: center;
+			 }
+
+		&__item {
+			grid-template: auto auto auto / auto;
+			grid-template-areas:
+				"icon" 
+				"title"
+				"text";
+			justify-content: center;
+			align-items: center;
+			max-width: 600px;
+			margin-bottom: 48px;
+	
+			&--0 { margin-left: 0; }
+			&--1 { margin-left: 0; }
+			&--2 {  margin-left: 0px; }
+			 
+		}
+
+		&__item-icon {
+			margin: 0 auto 24px auto;
+		}	
+
+		&__item-title {
+			text-align: center;
+		}
+
+		&__item-text {
+			text-align: center;
+		}
+
+
+	}
+
+
+}

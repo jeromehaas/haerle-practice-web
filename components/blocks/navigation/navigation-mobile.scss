@@ -97,6 +97,19 @@
 			right: 0;
 		}
 
+		
+		@media (max-width: 850px) {
+			
+			&__inner {
+				padding: 24px;
+			}
+
+			&__bar {
+				padding: 48px 24px;
+			}
+			
+		}
+
 	}
 
 }
@@ -129,4 +142,6 @@
 	
 	}
 	
+
+
 }
