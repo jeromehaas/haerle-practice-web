@@ -66,6 +66,20 @@ input, .input {
 	font-size: 18px;
 }
 
+.navigation--desktop .navigation__link {
+	font-size: 20px;
+}
+
+.navigation--mobile .navigation__link {
+	font-size: 26px;
+}
+
+.navigation--mobile .navigation__address-item,
+.navigation--mobile .navigation__contact-item,
+.navigation--mobile .navigation__times-item {
+	font-size: 18px;
+}
+
 ::placeholder {
 	font-size: 20px;
 	font-weight: 300;

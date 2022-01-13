@@ -4,6 +4,7 @@
 @import 'styles/configs/variables.scss';
 @import 'styles/configs/mixins.scss';
 @import 'styles/configs/typography.scss';
+@import 'styles/configs/hamburger.scss';
 @import 'styles/configs/global.scss';
 
 /* PARTIALS */
@@ -18,3 +19,6 @@
 
 /* BLOCKS */
 @import 'components/blocks/footer/footer';
+@import 'components/blocks/navigation/navigation';
+@import 'components/blocks/navigation/navigation-desktop';
+@import 'components/blocks/navigation/navigation-mobile';

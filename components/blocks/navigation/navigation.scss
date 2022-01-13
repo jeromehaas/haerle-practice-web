@@ -1,0 +1,17 @@
+.navigation {
+
+	&--mobile { display: none; }
+	&--desktop { display: block; }
+
+
+
+
+
+	@media (max-width: 1000px) {
+	
+		&--mobile { display: block; }
+		&--desktop { display: none; }
+		
+	}
+
+}

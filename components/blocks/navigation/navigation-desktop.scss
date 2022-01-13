@@ -1,0 +1,44 @@
+.navigation--desktop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-color: $white;
+	z-index: 10;
+
+
+	.navigation {
+			
+		&__inner {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			align-items: center;
+			max-width: $max-width;
+			margin: 0 auto;
+			bottom: 0;
+			padding: 26px;
+		}
+
+		&__logo {
+			margin-right: auto;
+		}
+
+		&__link {
+			color: $darkblue-50;
+			text-decoration: none;
+			margin-right: 60px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&:hover {
+				color: $darkblue-100;
+			}
+
+		}
+
+	}
+
+}
