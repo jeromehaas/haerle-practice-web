@@ -21,6 +21,7 @@ const Navigation = () => {
             </span>
           </button>
         </div>
+        <div className="navigation__blocker"></div>
         <div className='navigation__inner'>
           <div className="navigation__link-wrapper">
             <Link href="/schmerztherapie"><a className="navigation__link">Schmerztherapie</a></Link>

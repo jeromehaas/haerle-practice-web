@@ -7,14 +7,16 @@ import { TextInput } from 'components/partials/text-input/text-input';
 import { Video } from 'components/partials/video/video';
 import { PageNavigation } from 'components/partials/page-navigation/page-navigation';
 import { Page } from 'components/layouts/page/page'
-import { Head } from 'components/partials/head/head';
-
+import { Section } from 'components/layouts/section/section';
 const Start = () => {
   return (
     <Page>
-      <Heading data={{ level: 'h1', color: 'lightblue' }}>
+
+      <Section data={{ className: 'heading'}}>
+        <Heading data={{ level: 'h1', color: 'lightblue' }}>
         Diagnostik und Therapie von Kiefer-, Gesichts- und Kopfschmerzen, Myoarthropathien des Kausystems, Schlafapnoe
-      </Heading>
+        </Heading>
+      </Section>
       <Heading data={{ level: 'h2', color: 'darkblue' }}>
         Ursachen für Verspannung und Migräne
       </Heading>
