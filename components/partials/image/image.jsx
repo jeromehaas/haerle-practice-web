@@ -2,7 +2,7 @@ import NextImage from 'next/image';
 
 const Image = ({ data }) => {
   return (
-    <div className="image">
+    <div className={`image ${data.className ? data.className : ''}`}>
       <NextImage 
         width={ data.width || 1600 }
         height={ data.height || 900 }

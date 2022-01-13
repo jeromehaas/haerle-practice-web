@@ -2,11 +2,13 @@
 	position: relative;
 	border: 2px solid red;
 	width: 100%;
-	
+	margin-bottom: 32px;
+
 	&__inner {
-		padding: 0 26px;
+		padding: 0 48px;
 		width: 100%;
 		margin: 0 auto;
 		max-width: $max-width;
 	}
+
 }  
