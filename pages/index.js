@@ -2,6 +2,7 @@ import { Page } from 'components/layouts/page/page'
 import { Hero } from 'components/sections/hero/hero';
 import { Quote } from 'components/sections/quote/quote';
 import { Teaser } from 'components/sections/teaser/teaser';
+import { CTA } from 'components/sections/cta/cta';
 
 const Start = () => {
   return (
@@ -22,6 +23,7 @@ const Start = () => {
 
       <Teaser data={{
         className: 'teaser',
+        title: 'Was Sie in der Sprechstunde erwartet',
         items: [{
           iconSrc: "/icons/icon-examination.svg",
           title: 'Vor dem Untersuch',
@@ -39,6 +41,12 @@ const Start = () => {
         }]
       }}>
       </Teaser>
+      <CTA data={{
+        title: 'hello title',
+        text: 'hello text',
+        buttonText: 'Button',
+        buttonHref: '#'
+      }} />
     </Page>
   )
 }

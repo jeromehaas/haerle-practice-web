@@ -4,9 +4,9 @@
 		border-radius: 16px;
 		background-color: $lightblue-10;
 		box-sizing: border-box;
-		padding: 48px;
+		padding: 48px 114px;
 		display: grid;
-		grid-template: auto auto auto / 350px auto;
+		grid-template: auto auto auto / 50% auto;
 		grid-template-areas: 
 			".     item-0"
 			"title item-1"
@@ -18,6 +18,7 @@
 	&__title { 
 		grid-area: title;
 		align-self: center;
+		max-width: 500px;
 	 }
 
 	 &__item {
@@ -27,20 +28,22 @@
 			"icon title"
 			"icon text";
 		justify-content: flex-start;
-		max-width: 600px;
+		max-width: 550px;
+		margin: 0 auto;
 
 		 &--0 { 
 			 grid-area: item-0;
-			 margin-left: -104px;
+			 margin-left: -208px;
 			}
 		 
 			&--1 { 
-				grid-area: item-1 
+				grid-area: item-1;
+				margin-left: 0;
 			}
 		 
 			&--2 { 
 				grid-area: item-2;
-				margin-left: -104px;
+				margin-left: -208px;
 			}
 		 
 		}
@@ -74,6 +77,43 @@
 
 	}
 
+	@media (max-width: 1400px) {
+		
+		&__container {
+			grid-template: auto auto auto / 400px auto;
+			grid-template-areas: 
+				".     item-0"
+				"title item-1"
+				".     item-2";
+		}
+
+		&__item {
+			display: grid;
+			grid-template: auto 100% / auto;
+			grid-template-areas:
+				"icon title"
+				"icon text";
+			justify-content: flex-start;
+			max-width: 550px;
+			margin: 0 auto;
+	
+			 &--0 { 
+				 margin-left: -104px;
+				}
+			 
+				&--1 { 
+					margin-left: 0;
+				}
+			 
+				&--2 { 
+					grid-area: item-2;
+					margin-left: -104px;
+				}
+			 
+			}
+
+	}
+
 	@media (max-width: 1200px) {
 		
 		&__container {
@@ -82,6 +122,7 @@
 				".     item-0"
 				"title item-1"
 				".     item-2";
+				padding: 48px;
 		}
 
 	}
@@ -95,10 +136,12 @@
 				"item-0"
 				"item-1"
 				"item-2";
+				justify-content: center;
 			}
 	
 			&__title { 
 				text-align: center;
+			max-width: unset;
 			 }
 
 		&__item {
@@ -110,7 +153,7 @@
 			justify-content: center;
 			align-items: center;
 			max-width: 600px;
-			margin-bottom: 48px;
+			margin-bottom: 0;
 	
 			&--0 { margin-left: 0; }
 			&--1 { margin-left: 0; }

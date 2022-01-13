@@ -11,9 +11,9 @@ const Teaser = ({ data }) => {
         <Heading data={{
           className: 'teaser__title',
           level: 'h2'
-        }}>Was Sie in der Sprechstunde erwartet</Heading>
+        }}>{ data.title }</Heading>
         {data.items.map((item, index) => (
-          <Item key={index} data={{ 
+          <Item key={ index } data={{ 
             iconSrc: item.iconSrc,
             title: item.title,
             text: item.text,

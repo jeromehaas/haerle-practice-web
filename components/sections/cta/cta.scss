@@ -1,0 +1,49 @@
+.cta {
+
+	&__wrapper {
+		display: grid;
+		grid-template: auto auto / auto auto;
+		grid-template-areas:
+		"title button"
+		"text  button";
+		grid-column-gap: 48px;
+	}
+	
+	&__title {
+		grid-area: title;
+		margin-bottom: 16px;
+	}
+
+	&__text {
+		grid-area: text;
+		max-width: 425px;
+	}
+
+	&__button {
+		grid-area: button;
+		align-self: center;
+		justify-self: end;
+	}
+
+	@media (max-width: 850px) {
+		
+		&__wrapper {
+			grid-template: auto auto auto;
+			grid-template-areas:
+			"title" 
+			"text"
+			"button";
+			grid-column-gap: unset;
+		}
+
+		&__text {
+			margin-bottom: 32px;
+		}
+
+		&__button {
+			justify-self: start;
+		}
+
+	}
+
+}
