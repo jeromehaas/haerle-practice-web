@@ -40,9 +40,14 @@ p, .paragraph {
 
 label, .label {
 	font-size: 16px;
+	line-height: 20px;
 }
 
-input, .input,
+input, .input {
+	font-size: 20px;
+	line-height: 20px;
+}
+
 textarea, .textarea {
 	font-size: 20px;
 }
@@ -50,6 +55,11 @@ textarea, .textarea {
 .text-input__error-text,
 .textarea__error-text {
 	font-size: 16px;
+}
+
+.file-input__label {
+	font-size: 20px;
+	font-weight: 300 !important;
 }
 
 .page-navigation__title {

@@ -1,0 +1,96 @@
+.file-input {
+	display: grid;
+	grid-template: auto auto auto / 200px auto;
+	grid-template-areas: 
+		"optional optional"
+		"label input"
+		"error error";
+		
+	&__optional {
+		text-align: right;
+		font-size: 16px;
+		grid-area: optional
+	}
+
+	&__label {
+	grid-area: label;
+	 font-weight: 700;
+	 color: white;
+	 display: inline-block;
+	 cursor: pointer;
+	 margin-top: 8px;
+	 margin-bottom: 4px;
+	 width: 200px;
+	 padding: 32px 23px;
+	 border-radius: 4px 0 0 4px;
+	 outline: none;
+	 border: 1px solid $darkblue-80;
+	 background-color: $darkblue-80;
+	 caret-color: $lightblue-50;
+	 text-align: center;
+ }
+	
+  &__input {
+		width: 0.1px;
+		height: 0.1px;
+		opacity: 0;
+		overflow: hidden;
+		position: absolute;
+		z-index: -1;
+	}
+
+	&__fake-input {
+		margin-top: 8px;
+		margin-bottom: 4px;
+		grid-area: input;
+		width: 100%;
+		padding: 32px 23px;
+		border-radius: 0 4px 4px 0 ;
+		outline: none;
+		border: 1px solid $lightblue-50;
+		color: $darkblue-100;
+		caret-color: $lightblue-50;
+		z-index: 4;
+		pointer-events: none;
+
+		&:focus {
+			border: 1px solid $lightblue-100;
+		}
+
+		&::placeholder{
+			color: $lightblue-50;
+		}
+		
+		::-ms-input-placeholder {
+			color: $red;
+		}
+
+	}
+
+
+
+	&__input + &__label * {
+		pointer-events: none;
+	}
+
+	&__error-text {
+		grid-area: error;
+		color: $red;
+		display: none;
+		
+	}
+
+	&--error {
+		
+		.file-input__fake-input {
+			border-color: $red !important;
+			color: $red;
+		}
+		
+		.file-input__error-text {
+			display: block !important;
+		}
+
+	}
+
+}

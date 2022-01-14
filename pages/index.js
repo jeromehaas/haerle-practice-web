@@ -6,10 +6,17 @@ import { CTA } from 'components/sections/cta/cta';
 import { Statement } from 'components/sections/statement/statement';
 import { Textarea } from 'components/partials/textarea/textarea';
 import { TextInput } from 'components/partials/text-input/text-input';
+import { FileInput } from 'components/partials/file-input/file-input';
 
 const Start = () => {
   return (
     <Page>
+      <FileInput data={{
+        placeholder: 'hello you',
+        name: 'file',
+        label: 'helllo',
+        errorText: 'Bitte fügen sie eine Datei an.'
+      }} />
       <Textarea data={{
         isRequired: true,
         placeholder: 'Schreiben Sie mir...'
