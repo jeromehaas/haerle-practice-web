@@ -8,7 +8,7 @@ const Statement = ({ data }) => {
       className: 'statement'	
     }}>
       <Heading data= {{
-        level: 'h1',
+        level: 'h2',
         color: 'lightblue',
         className: 'statement__title'
       }}>

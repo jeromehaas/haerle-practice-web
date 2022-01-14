@@ -4,10 +4,17 @@ import { Quote } from 'components/sections/quote/quote';
 import { Teaser } from 'components/sections/teaser/teaser';
 import { CTA } from 'components/sections/cta/cta';
 import { Statement } from 'components/sections/statement/statement';
+import { Textarea } from 'components/partials/textarea/textarea';
+import { TextInput } from 'components/partials/text-input/text-input';
 
 const Start = () => {
   return (
     <Page>
+      <Textarea data={{
+        isRequired: true,
+        placeholder: 'Schreiben Sie mir...'
+      }} />
+      <TextInput data={{}}/>
       <Hero data={{ 
         titleText: 'Diagnostik und Therapie von Kiefer-, Gesichts- und Kopfschmerzen, Myoarthropathien des Kausystems, Schlafapnoe',
         titleColor: 'lightblue',
