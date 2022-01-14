@@ -3,6 +3,7 @@ import { Hero } from 'components/sections/hero/hero';
 import { Quote } from 'components/sections/quote/quote';
 import { Teaser } from 'components/sections/teaser/teaser';
 import { CTA } from 'components/sections/cta/cta';
+import { Statement } from 'components/sections/statement/statement';
 
 const Start = () => {
   return (
@@ -47,6 +48,11 @@ const Start = () => {
         buttonText: 'Button',
         buttonHref: '#'
       }} />
+      <Statement data={{
+        text: 'Sie als Person stehen im Zentrum – denn – «an den Zähnen hängt ein Patient!»',
+        color: 'ligthblue'
+      }}>
+      </Statement>
     </Page>
   )
 }
