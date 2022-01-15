@@ -4,15 +4,30 @@ import { Quote } from 'components/sections/quote/quote';
 import { Teaser } from 'components/sections/teaser/teaser';
 import { CTA } from 'components/sections/cta/cta';
 import { Statement } from 'components/sections/statement/statement';
-import { Textarea } from 'components/partials/textarea/textarea';
-import { TextInput } from 'components/partials/text-input/text-input';
-import { FileInput } from 'components/partials/file-input/file-input';
 import { ContactForm } from 'components/sections/contact-form/contact-form';
+import { Article } from 'components/sections/article/article';
 
 const Start = () => {
   return (
     <Page>
-      
+      <Article data={{
+        title: 'Gelenkschmerzen, Ohrgeräusche, unklare Zahnschmerzen, Zähneknirschen',
+        text: 'Jede sechste Person beklagt solche Symptome. Bleiben die Schmerzen über einen längeren Zeitraum bestehen, können sie sich verselbständigen und chronifizieren, das heisst zu einer eigenständigen Krankheit werden. Die damit verbundene psychische Belastung ist beeinträchtigend und kostet Kraft. Eine frühzeitige Abklärung bei einem spezialisierten Zahnarzt ist daher empfehlenswert.',
+        imageSrc: '/images/02-daniela-haerle-instrumente.jpg',
+        imageAlt: '#',
+        linkText: 'link',
+        linkHref: 'https://google.com',
+        reverse: false
+      }} /> 
+      <Article data={{
+        title: 'Gelenkschmerzen, Ohrgeräusche, unklare Zahnschmerzen, Zähneknirschen',
+        text: 'Jede sechste Person beklagt solche Symptome. Bleiben die Schmerzen über einen längeren Zeitraum bestehen, können sie sich verselbständigen und chronifizieren, das heisst zu einer eigenständigen Krankheit werden. Die damit verbundene psychische Belastung ist beeinträchtigend und kostet Kraft. Eine frühzeitige Abklärung bei einem spezialisierten Zahnarzt ist daher empfehlenswert.',
+        imageSrc: '/images/02-daniela-haerle-instrumente.jpg',
+        imageAlt: '#',
+        linkText: 'link',
+        linkHref: 'https://google.com',
+        reverse: true
+      }} /> 
       <Hero data={{ 
         titleText: 'Diagnostik und Therapie von Kiefer-, Gesichts- und Kopfschmerzen, Myoarthropathien des Kausystems, Schlafapnoe',
         titleColor: 'lightblue',

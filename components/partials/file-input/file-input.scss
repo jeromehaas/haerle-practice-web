@@ -21,7 +21,7 @@
 	 	padding: 32px 23px;
 	 	border-radius: 4px 0 0 4px;
 	 	outline: none;
-	 	border: 1px solid $darkblue-80;
+		 border: 1px solid $lightblue-50;
 	 	background: $lightblue-20;
 	 	caret-color: $lightblue-50;
 	 	text-align: center;
@@ -50,6 +50,7 @@
 		border-radius: 0 4px 4px 0 ;
 		outline: none;
 		border: 1px solid $lightblue-50;
+		border-left: 0;
 		color: $darkblue-100;
 		caret-color: $lightblue-50;
 		pointer-events: none;

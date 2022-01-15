@@ -7,8 +7,6 @@ import { SubmitButton } from 'components/partials/submit-button/submit-button';
 
 const ContactForm = () => {
 
-
-
   const [formState, setFormState] = useState({
     firstname: { value: '', hasError: false },
     lastname: { value: '', hasError: false },
