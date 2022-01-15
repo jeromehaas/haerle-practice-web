@@ -7,21 +7,12 @@ import { Statement } from 'components/sections/statement/statement';
 import { Textarea } from 'components/partials/textarea/textarea';
 import { TextInput } from 'components/partials/text-input/text-input';
 import { FileInput } from 'components/partials/file-input/file-input';
+import { ContactForm } from 'components/sections/contact-form/contact-form';
 
 const Start = () => {
   return (
     <Page>
-      <FileInput data={{
-        placeholder: 'hello you',
-        name: 'file',
-        label: 'helllo',
-        errorText: 'Bitte fügen sie eine Datei an.'
-      }} />
-      <Textarea data={{
-        isRequired: true,
-        placeholder: 'Schreiben Sie mir...'
-      }} />
-      <TextInput data={{}}/>
+      
       <Hero data={{ 
         titleText: 'Diagnostik und Therapie von Kiefer-, Gesichts- und Kopfschmerzen, Myoarthropathien des Kausystems, Schlafapnoe',
         titleColor: 'lightblue',
@@ -67,6 +58,7 @@ const Start = () => {
         color: 'ligthblue'
       }}>
       </Statement>
+      <ContactForm />
     </Page>
   )
 }

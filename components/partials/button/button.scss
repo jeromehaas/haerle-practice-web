@@ -6,12 +6,13 @@
 	height: 80px;
 	border-radius: 8px;
 	background-color: $white;
-	display: block;
 	cursor: pointer;
-	display: flex;
-	justify-content: center;
 	align-items: center;
 	text-decoration: none;
+	margin-bottom: 40px;
+	display: block;
+	z-index: 5;
+	
 	
 	&:hover {
 		background: $blue-gradient;

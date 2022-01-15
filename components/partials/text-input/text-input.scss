@@ -2,7 +2,8 @@
 	display: grid;
 	grid-template: 
 		"label optinal"
-		"input input";
+		"input input"
+		"error error";
 		
 	&__label {
 		grid-area: label;
@@ -17,10 +18,9 @@
 	
 	&__input {
 		margin-top: 8px;
-		margin-bottom: 4px;
 		grid-area: input;
 		width: 100%;
-		padding: 32px 23px;
+		padding: 24px;
 		border-radius: 4px;
 		outline: none;
 		border: 1px solid $lightblue-50;
@@ -43,7 +43,8 @@
 
 	&__error-text {
 		color: $red;
-		
+		display: none;
+		grid-area: error;	
 	}
 
 	&--error {
@@ -54,6 +55,10 @@
 
 		.text-input__input {
 			border-color: $red !important;
+		}
+
+		.text-input__error-text {
+			display: block;
 		}
 
 	}
