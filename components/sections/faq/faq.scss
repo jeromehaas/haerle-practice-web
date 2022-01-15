@@ -1,0 +1,98 @@
+.faq {
+
+	&__wrapper {
+		display: flex; 
+		flex-direction: row;
+	}
+
+	&__heading {
+		width: 300px;
+		margin-right: 48px;
+		margin-bottom: 48px;
+	}
+
+	&__item {
+		display: grid;
+		grid-template: auto auto / 48px auto 48px;
+		grid-template-areas:
+			"index question icon"
+			"answer answer ."
+			"video video ."
+			"links links .";
+		// grid-row-gap: 48px;
+		margin-bottom: 32px; 
+		border-bottom: 1px solid $lightblue-100;
+		padding-bottom: 32px;
+	}
+
+	&__item-index {
+		grid-area: index;
+		cursor: pointer;
+	}
+	
+	&__item-question {
+		grid-area: question;
+		cursor: pointer;
+	}
+
+	&__item-answer {
+		margin-top: 48px;
+		grid-area: answer;
+		cursor: pointer;
+
+		&--hidden {
+			display: none;
+		}
+
+	}
+
+	&__item-video {
+		grid-area: video;
+		margin-top: 32px;
+
+		&--hidden {
+			display: none;
+		} 
+
+	}
+
+	&__item-links {
+		grid-area: links;
+		margin-top: 32px;
+		display: flex;
+		flex-direction: column;
+
+		&--hidden {
+			display: none;
+		}
+
+	}
+	
+	&__item-link {
+		margin-top: 16px;
+
+
+	}
+
+
+	&__item-icon {
+		height: 24px;
+		width: 24px;
+		transform: rotate(90deg);
+		align-self: center;
+		cursor: pointer;
+
+		&--inverted {
+			transform: rotate(270deg);
+		}
+
+	}
+
+	@media (max-width: 850px) {
+		
+		&__wrapper {
+			flex-direction: column;
+		}	
+	}
+
+}

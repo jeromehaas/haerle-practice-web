@@ -6,10 +6,12 @@ import { CTA } from 'components/sections/cta/cta';
 import { Statement } from 'components/sections/statement/statement';
 import { ContactForm } from 'components/sections/contact-form/contact-form';
 import { Article } from 'components/sections/article/article';
+import { Faq } from 'components/sections/faq/faq';
 
 const Start = () => {
   return (
     <Page>
+      <Faq />
       <Article data={{
         title: 'Gelenkschmerzen, Ohrgeräusche, unklare Zahnschmerzen, Zähneknirschen',
         text: 'Jede sechste Person beklagt solche Symptome. Bleiben die Schmerzen über einen längeren Zeitraum bestehen, können sie sich verselbständigen und chronifizieren, das heisst zu einer eigenständigen Krankheit werden. Die damit verbundene psychische Belastung ist beeinträchtigend und kostet Kraft. Eine frühzeitige Abklärung bei einem spezialisierten Zahnarzt ist daher empfehlenswert.',
