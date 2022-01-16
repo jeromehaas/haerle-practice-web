@@ -7,10 +7,32 @@ import { Statement } from 'components/sections/statement/statement';
 import { ContactForm } from 'components/sections/contact-form/contact-form';
 import { Article } from 'components/sections/article/article';
 import { Faq } from 'components/sections/faq/faq';
+import { Cards } from 'components/sections/cards/cards';
 
 const Start = () => {
   return (
     <Page>
+      <Cards data={{
+        title: 'Die Schmerztherapie ',
+        cards: [
+          {
+            imageSrc: '/images/03-daniela-haerle-besprechung-ipad.png',
+            imageAlt: '#',
+            title: 'Die Behandlung',
+            text: 'Obwohl von einer Zahnärztin durchgeführt, hat die Behandlung eine medizinische Zielsetzung. In diesem Fall ist der Zahnarzt/die Zahnärztin einem Arzt/einer Ärztin gleichgestellt. Die Kosten für Untersuch, Therapie und Nachkontrollen werden von der Grundversicherung der Krankenkasse bezahlt. Entlastende Schienen, mit Ausnahme der Schlafapnoe-Schiene, werden nicht übernommen.',
+            linkText: 'mehr zur Diagnose',
+            linkHref: '#'
+          },
+          {
+            imageSrc: '/images/04-daniela-haerle-besprechung-patientin-closeup.jpg',
+            imageAlt: '#',
+            title: 'Kieferprobleme, Schnarchen, Atemaussetzer im Schlaf, Kopfschmerzen',
+            text: 'Obwohl von einer Zahnärztin durchgeführt, hat die Behandlung eine medizinische Zielsetzung. In diesem Fall ist der Zahnarzt/die Zahnärztin einem Arzt/einer Ärztin gleichgestellt. Die Kosten für Untersuch, Therapie und Nachkontrollen werden von der Grundversicherung der Krankenkasse bezahlt. Entlastende Schienen, mit Ausnahme der Schlafapnoe-Schiene, werden nicht übernommen.',
+            linkText: 'mehr zur Therapie',
+            linkHref: '#'
+          },
+        ]
+      }} />
       <Faq />
       <Article data={{
         title: 'Gelenkschmerzen, Ohrgeräusche, unklare Zahnschmerzen, Zähneknirschen',
@@ -48,17 +70,17 @@ const Start = () => {
         className: 'teaser',
         title: 'Was Sie in der Sprechstunde erwartet',
         items: [{
-          iconSrc: "/icons/icon-examination.svg",
+          iconSrc: '/icons/icon-examination.svg',
           title: 'Vor dem Untersuch',
           text: 'Vor der ersten Konsultation füllen Sie einen Fragebogen aus, den Sie vor dem ersten Untersuch retournieren.'
         },
         {
-          iconSrc: "/icons/icon-consultation.svg",
+          iconSrc: '/icons/icon-consultation.svg',
           title: 'Erste Konsultation',
           text: 'Es folgt der Untersuch der Kaumuskulatur, der Kiefergelenke und des Bisses.'
         },
         {
-          iconSrc: "/icons/icon-therapy.svg",
+          iconSrc: '/icons/icon-therapy.svg',
           title: 'Schmerztherapie',
           text: 'Analyse von weiteren Symptomen (wie gestörter Schlaf, Schnarchen, Reflux, Stressoren) und mögliche Therapieansätze werden besprochen.'
         }]

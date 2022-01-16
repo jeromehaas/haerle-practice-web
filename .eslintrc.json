@@ -7,6 +7,7 @@
 			"browser": true
 	},
 	"rules": {
+		"quotes": [1, "single", { "avoidEscape": true }],
 			"indent": [
 					"error",
 					2

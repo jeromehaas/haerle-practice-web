@@ -4,6 +4,7 @@ const Heading= ({ data, children }) => {
   case 'h2': return <h2 className={`heading heading--${ data.color } heading--${ data.level} ${ data.className ? data.className : '' }` } onClick={ data.onClick }>{ children }</h2>
   case 'h3': return <h3 className={`heading heading--${ data.color } heading--${ data.level} ${ data.className ? data.className : '' }` } onClick={ data.onClick }>{ children }</h3>
   case 'h4': return <h4 className={`heading heading--${ data.color } heading--${ data.level} ${ data.className ? data.className : '' }` } onClick={ data.onClick }>{ children }</h4>
+  case 'h5': return <h5 className={`heading heading--${ data.color } heading--${ data.level} ${ data.className ? data.className : '' }` } onClick={ data.onClick }>{ children }</h5>
   default: return <h1 className={`heading heading--${ data.color } heading--${ data.level} ${ data.className ? data.className : '' }` } onClick={ data.onClick }>{ children }</h1>
   }
 }
