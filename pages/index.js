@@ -8,10 +8,12 @@ import { ContactForm } from 'components/sections/contact-form/contact-form';
 import { Article } from 'components/sections/article/article';
 import { Faq } from 'components/sections/faq/faq';
 import { Cards } from 'components/sections/cards/cards';
+import { Intro } from 'components/sections/intro/intro';
 
 const Start = () => {
   return (
     <Page>
+      <Intro />
       <Cards data={{
         title: 'Die Schmerztherapie ',
         cards: [

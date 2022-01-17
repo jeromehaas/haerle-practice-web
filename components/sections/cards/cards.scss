@@ -98,7 +98,7 @@
 		&__item {
 			min-width: 65vw;
 			min-width: 400px;
-
+			
 			&:last-child {
 				margin-right: 24px;
 			}
@@ -113,7 +113,7 @@
 	@media (max-width: 500px) {
 		
 		&__item {
-			min-width: 100%;
+			min-width: calc(100% - 24px);
 		}
 
 	}

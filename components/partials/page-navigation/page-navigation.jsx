@@ -1,7 +1,7 @@
 const PageNavigation = ({ data }) => {
 	
   return (
-    <div className="page-navigation">
+    <div className={`page-navigation ${data.className} `}>
       <p className="page-navigation__title">{data.title}</p>
       <div className="page-navigation__link-wrapper">
         { data.links.map((link, index) => (
