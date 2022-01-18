@@ -1,5 +1,4 @@
 .intro {
-	background-color: $lightblue-10;
 	
 	&__inner {
 		padding: 0 !important;
@@ -13,17 +12,17 @@
 
 	&__title {
 		grid-area: title;
-		background-color: $lightblue-20;
+		background-color: $lightblue-10;
 		margin: 0 auto;
 		display: block;
 		width: 100%;
 		max-width: $max-width;
-		padding: 0 48px 24px 48px; 
+		padding: 96px 48px 24px 48px; 
 	}
 
 	&__text {
 		grid-area: text;
-		background-color: $lightblue-20;
+		background-color: $lightblue-10;
 		width: 100%;
 		max-width: $max-width;
 		padding: 0 48px 24px 48px;
@@ -55,7 +54,6 @@
 	}
 
 	@media (max-width: 850px) {
-		border: 10px solid blue;
 		
 		&__inner {
 			padding: 0 !important;
@@ -66,6 +64,10 @@
 				"text"
 				"image"
 				"navigation";
+		}
+
+		&__title {
+			padding: 96px 24px 24px 24px;
 		}
 
 		&__image {

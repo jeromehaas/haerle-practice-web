@@ -4,15 +4,28 @@ import Link from 'next/link'
 
 const Navigation = () => {
 
+  const router = useRouter()
   const [menuState, setMenuState] = useState('closed');
+
   const toggleMenu = () => {
     setMenuState(menuState === 'closed' ? 'open' : 'closed');
   };
-  const router = useRouter()
+
+
+  const renderColor = () => {
+    const colorSets = {
+      ['/']: 'white',	
+      ['/schmerztherapie']: 'blue',	
+    };
+    const currentPath = router.pathname;
+    const color =  colorSets[currentPath];
+    console.log(color);
+    return color;
+  }
 
   return (
     <Fragment>
-      <nav className={`navigation navigation--mobile ${menuState === 'open' ? 'navigation--open' : ''}`}>
+      <nav className={`navigation navigation--mobile navigation--${ renderColor() } ${menuState === 'open' ? 'navigation--open' : ''}`}>
         <div className='navigation__bar'>
           <img className="navigation__logo" src="/logos/logo-daniele-haerle.svg" />
           <button className={`navigation__hamburger hamburger hamburger--squeeze ${menuState === 'open' ? 'hamburger--active' : null} `} type="button" onClick={ toggleMenu }>
@@ -48,7 +61,7 @@ const Navigation = () => {
           </div>
         </div>
       </nav>   
-      <nav className="navigation navigation--desktop">
+      <nav className={`navigation navigation--desktop navigation--${ renderColor() }` }>
         <div className="navigation__inner">
           <img className="navigation__logo" src="/logos/logo-daniele-haerle.svg" onClick={() => router.push('/')} />
           <Link href="/schmerztherapie"><a className="navigation__link">Schmerztherapie</a></Link>

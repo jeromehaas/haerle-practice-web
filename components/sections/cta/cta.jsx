@@ -3,7 +3,7 @@ import { Heading } from 'components/partials/heading/heading';
 import { Paragraph } from 'components/partials/paragraph/paragraph';
 import { Button } from 'components/partials/button/button';
 
-const CTA = () => {
+const CTA = ({ data }) => {
 
   return (
     <Section data={{
@@ -15,13 +15,13 @@ const CTA = () => {
           className: 'cta__title',
           level: 'h4',
           color: 'lightblue'
-        }}>Termin vereinbaren</Heading>
+        }}>{ data.title }</Heading>
         <Paragraph data={{ 
           className: 'cta__text'
-        }}>Sie finden mich in der Zahnmedizin Luzern AG, bei Dr. Jürg Eppenberger, Zahnarztpraxis für Rekonstruktive Zahnmedizin.</Paragraph>
+        }}>{ data.text }</Paragraph>
         <Button data={{
-          className: "cta__button"
-        }}>Kontakt</Button>
+          className: 'cta__button'
+        }}>{ data.buttonText }</Button>
       </div>
     </Section>
   )

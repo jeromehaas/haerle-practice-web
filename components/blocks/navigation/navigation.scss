@@ -3,7 +3,10 @@
 	&--mobile { display: none; }
 	&--desktop { display: block; }
 
-
+	&--blue {
+		&.navigation--desktop .navigation__inner{ background-color: $lightblue-10; }
+		&.navigation--mobile .navigation__bar { background-color: $lightblue-10; }
+	}
 
 
 

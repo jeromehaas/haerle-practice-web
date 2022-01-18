@@ -15,7 +15,7 @@ const Article = ({ data }) => {
           width: 660,
           height: 494,
           alt: '',
-          src: '/images/02-daniela-haerle-instrumente.jpg',
+          src: data.imageSrc,
           className: 'article__image'
         }} />
         <div className="article__content">
@@ -29,12 +29,14 @@ const Article = ({ data }) => {
           }}>
             { data.text }
           </Paragraph>
-          <Link data={{ 
-            href: data.linkHref,
-            text: data.linkText,
-            icon: 'arrow',
-            className: 'article__link'
-          }}>mehr zur Theraphie</Link>
+          { data.linkText && data.linkHref ? (
+            <Link data={{ 
+              href: data.linkHref,
+              text: data.linkText,
+              icon: 'arrow',
+              className: 'article__link'
+            }}>{ data.linkText }</Link>
+          ) : '' }
         </div>
       </div>
     </Section>

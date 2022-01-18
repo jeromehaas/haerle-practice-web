@@ -3,13 +3,8 @@ import { Hero } from 'components/sections/hero/hero';
 import { Quote } from 'components/sections/quote/quote';
 import { Teaser } from 'components/sections/teaser/teaser';
 import { CTA } from 'components/sections/cta/cta';
-import { Statement } from 'components/sections/statement/statement';
-import { ContactForm } from 'components/sections/contact-form/contact-form';
 import { Article } from 'components/sections/article/article';
-import { Faq } from 'components/sections/faq/faq';
 import { Cards } from 'components/sections/cards/cards';
-import { Intro } from 'components/sections/intro/intro';
-import { LoginForm } from 'components/sections/login-form/login-form';
 import { Auth } from 'components/sections/auth/auth';
 
 const Start = () => {
