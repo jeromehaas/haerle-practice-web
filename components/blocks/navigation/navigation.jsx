@@ -20,7 +20,6 @@ const Navigation = () => {
     };
     const currentPath = router.pathname;
     const color =  colorSets[currentPath];
-    console.log(color);
     return color;
   }
 

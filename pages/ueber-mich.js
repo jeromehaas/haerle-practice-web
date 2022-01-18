@@ -4,6 +4,7 @@ import { Article } from 'components/sections/article/article';
 import { Faq } from 'components/sections/faq/faq';
 import { CTA } from 'components/sections/cta/cta';
 import { Auth } from 'components/sections/auth/auth';
+import { Resume } from 'components/sections/resume/resume';
 
 const Schmerztherapie = () => {
   return (
@@ -34,6 +35,7 @@ const Schmerztherapie = () => {
         imageAlt: '#',
         reverse: true
       }} /> 
+      <Resume />
     </Page>
   )
 }
