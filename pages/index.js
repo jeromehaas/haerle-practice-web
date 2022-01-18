@@ -16,7 +16,21 @@ const Start = () => {
   return (
     <Page>
       <Auth />
-      <Intro />
+      <Hero data={{ 
+        titleText: 'Diagnostik und Therapie von Kiefer-, Gesichts- und Kopfschmerzen, Myoarthropathien des Kausystems, Schlafapnoe',
+        titleColor: 'lightblue',
+        imageSrc: '/images/01-daniela-haerle-besprechung-hauptbild.jpg',
+        imageAlt: 'Besprechung mit Daniela Haerle'
+      }} />
+      <Article data={{
+        title: 'Gelenkschmerzen, Ohrgeräusche, unklare Zahnschmerzen, Zähneknirschen',
+        text: 'Jede sechste Person beklagt solche Symptome. Bleiben die Schmerzen über einen längeren Zeitraum bestehen, können sie sich verselbständigen und chronifizieren, das heisst zu einer eigenständigen Krankheit werden. Die damit verbundene psychische Belastung ist beeinträchtigend und kostet Kraft. Eine frühzeitige Abklärung bei einem spezialisierten Zahnarzt ist daher empfehlenswert.',
+        imageSrc: '/images/02-daniela-haerle-instrumente.jpg',
+        imageAlt: '#',
+        linkText: 'link',
+        linkHref: 'https://google.com',
+        reverse: false
+      }} /> 
       <Cards data={{
         title: 'Die Schmerztherapie ',
         cards: [
@@ -38,31 +52,7 @@ const Start = () => {
           },
         ]
       }} />
-      <Faq />
-      <Article data={{
-        title: 'Gelenkschmerzen, Ohrgeräusche, unklare Zahnschmerzen, Zähneknirschen',
-        text: 'Jede sechste Person beklagt solche Symptome. Bleiben die Schmerzen über einen längeren Zeitraum bestehen, können sie sich verselbständigen und chronifizieren, das heisst zu einer eigenständigen Krankheit werden. Die damit verbundene psychische Belastung ist beeinträchtigend und kostet Kraft. Eine frühzeitige Abklärung bei einem spezialisierten Zahnarzt ist daher empfehlenswert.',
-        imageSrc: '/images/02-daniela-haerle-instrumente.jpg',
-        imageAlt: '#',
-        linkText: 'link',
-        linkHref: 'https://google.com',
-        reverse: false
-      }} /> 
-      <Article data={{
-        title: 'Gelenkschmerzen, Ohrgeräusche, unklare Zahnschmerzen, Zähneknirschen',
-        text: 'Jede sechste Person beklagt solche Symptome. Bleiben die Schmerzen über einen längeren Zeitraum bestehen, können sie sich verselbständigen und chronifizieren, das heisst zu einer eigenständigen Krankheit werden. Die damit verbundene psychische Belastung ist beeinträchtigend und kostet Kraft. Eine frühzeitige Abklärung bei einem spezialisierten Zahnarzt ist daher empfehlenswert.',
-        imageSrc: '/images/02-daniela-haerle-instrumente.jpg',
-        imageAlt: '#',
-        linkText: 'link',
-        linkHref: 'https://google.com',
-        reverse: true
-      }} /> 
-      <Hero data={{ 
-        titleText: 'Diagnostik und Therapie von Kiefer-, Gesichts- und Kopfschmerzen, Myoarthropathien des Kausystems, Schlafapnoe',
-        titleColor: 'lightblue',
-        imageSrc: '/images/01-daniela-haerle-besprechung-hauptbild.jpg',
-        imageAlt: 'Besprechung mit Daniela Haerle'
-      }} />
+ 
       <Quote data={{
         quoteText: 'Ich werde Ihren Privat-Zahnarzt nicht ersetzen – ich bin Ihre Ansprechperson für ein ganz spezielles Anliegen.',
         quoteColor: 'lightblue',
@@ -97,12 +87,6 @@ const Start = () => {
         buttonText: 'Button',
         buttonHref: '#'
       }} />
-      <Statement data={{
-        text: 'Sie als Person stehen im Zentrum – denn – «an den Zähnen hängt ein Patient!»',
-        color: 'ligthblue'
-      }}>
-      </Statement>
-      <ContactForm />
     </Page>
   )
 }

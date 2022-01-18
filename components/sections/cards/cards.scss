@@ -1,6 +1,10 @@
 .cards {
 	position: relative;
 
+	&__inner {
+		max-width: 1200px;
+	}
+
 	&__title {
 		margin-bottom: 32px;
 	}
@@ -13,24 +17,9 @@
 		justify-content: center;
 	}
 
-	&__image {
-		position: relative;
-		height: 100%;
-		object-fit: cover;
-		object-position: right;
-		overflow: hidden;
-		transition: all 0.3s ease;
-
-		span {
-			position: unset !important;
-		}
-
-	}
-
 	&__item {
 		background-color: $lightblue-10;
 		margin-right: 24px;
-		max-width: 540px;
 		border-radius: 0 0 20px 0;
 		display: grid;
 		grid-template-rows: 300px auto;
@@ -43,6 +32,20 @@
 			flex-direction: column;
 			justify-content: flex-start;
 			flex-grow: 1;
+		}
+
+		.image {
+			position: relative;
+			height: 100%;
+			object-fit: cover;
+			object-position: right;
+			overflow: hidden;
+			transition: all 0.3s ease;
+	
+			span {
+				position: unset !important;
+			}
+	
 		}
 	
 		h5 {
