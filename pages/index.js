@@ -9,10 +9,13 @@ import { Article } from 'components/sections/article/article';
 import { Faq } from 'components/sections/faq/faq';
 import { Cards } from 'components/sections/cards/cards';
 import { Intro } from 'components/sections/intro/intro';
+import { LoginForm } from 'components/sections/login-form/login-form';
+import { Auth } from 'components/sections/auth/auth';
 
 const Start = () => {
   return (
     <Page>
+      <Auth />
       <Intro />
       <Cards data={{
         title: 'Die Schmerztherapie ',
