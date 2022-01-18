@@ -10,16 +10,16 @@ const Schmerztherapie = () => {
     <Page>
       <Auth />
       <Intro data={{
-        title: 'Schmerztherapie',
-        text: 'Wenn die Kiefergelenke, die Kaumuskeln und der Biss nicht harmonisch funktionieren, kann das zu Beschwerden im Kieferbereich und in angrenzenden Regionen führen. Erfahren Sie, welche Symptome bei einer Cranio Mandibulären Dysfunktion (CMD) auftreten können, wie die Diagnose erstellt wird und wie die Behandlung auf Sie zugeschnitten wird. ',
-        mavigationTitle: '',
+        title: 'Dr. med. dent. Daniela Haerle Schmerzspezialistin SPS',
+        text: '',
+        navigationTitle: 'navigationTitle',
         navigationLinks: [
-          { text: 'Symptome', href: '#symptome' },
-          { text: 'Diagnose', href: '#diagnose' },
-          { text: 'Therapie', href: '#therapie' },
-          { text: 'Häufig gestellte Fragen', href: '#faq' }
+          { text: 'Leidenschaft', href: '#leidenschaft' },
+          { text: 'Mitgliedschaften', href: '#mitgliedschaften' },
+          { text: 'Lebenslauf', href: '#lebenslauf' }
         ]
-      }}/>
+      }}
+      />
       <Article data={{
         title: 'Die Diagnose ist so individuell wie Sie.',
         text: 'Nach der zweiten Sitzung ist meist klar welche Richtung für die Therapie eingeschlagen wird. Vieles werden wir in ein, zwei weiteren Behandlungsterminen selber angehen und bewältigen können. Manchmal sind aber auch zusätzliche Abklärungen (z.B. in einer Schlafklinik, oder HNO-Arzt) oder Therapieansätze bei weiteren Fachpersonen (Neurologie, Rheumatologie, Psychologie, Physiotherapie, Akupunktur, integrative Medizin u.a.) sinnvoll. Da ich über ein gutes Netzwerk zu solchen Personen verfüge kann Ihnen ein interdisziplinäres Setting angeboten werden. ',
@@ -34,12 +34,6 @@ const Schmerztherapie = () => {
         imageAlt: '#',
         reverse: true
       }} /> 
-      <Faq />
-      <CTA data={{
-        title: 'Haben Sie Fragen?',
-        text: 'Sie finden mich in der Zahnmedizin Luzern AG, bei Dr. Jürg Eppenberger, Zahnarztpraxis für Rekonstruktive Zahnmedizin.',
-        buttonText: 'Kontakt'
-      }} />
     </Page>
   )
 }

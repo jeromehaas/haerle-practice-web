@@ -16,6 +16,7 @@ const Navigation = () => {
     const colorSets = {
       ['/']: 'white',	
       ['/schmerztherapie']: 'blue',	
+      ['/ueber-mich']: 'blue'
     };
     const currentPath = router.pathname;
     const color =  colorSets[currentPath];
