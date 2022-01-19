@@ -7,8 +7,8 @@ import { Link } from 'components/partials/link/link';
 const Quote = ({ data }) => {
 
   return (
-    <Section data={{ className: "quote"}}>
-      <div className="quote__image-wrapper">
+    <Section data={{ className: 'quote'}}>
+      <div className='quote__image-wrapper'>
         <Image data={{
           className: 'quote__image-image',
           src: data.imageSrc,
@@ -21,7 +21,7 @@ const Quote = ({ data }) => {
           className: 'quote__image-link'
         }}>erfahren Sie mehr über mich</Link>
       </div>
-      <div className="quote__quote-wrapper">
+      <div className='quote__quote-wrapper'>
         <Heading data={{ 
           className: 'quote__quote-text',
           color: data.quoteColor,

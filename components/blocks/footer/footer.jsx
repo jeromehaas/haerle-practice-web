@@ -1,17 +1,19 @@
+import { Link } from 'components/partials/link/link';
+
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__navigation">
-        <a className="footer__navigation-link" href="#">Schmerztherapie</a>
-        <a className="footer__navigation-link" href="#">Aktivitäten</a>
-        <a className="footer__navigation-link" href="#">Über mich</a>
-        <a className="footer__navigation-link" href="#">Kontakt</a>
-        <a className="footer__navigation-link" href="#">Anfrage senden</a>
+        <Link data={{ href: '#' }} className="footer__navigation-link" href="#">Schmerztherapie</Link>
+        <Link data={{ href: '#' }} className="footer__navigation-link" href="#">Aktivitäten</Link>
+        <Link data={{ href: '#' }} className="footer__navigation-link" href="#">Über mich</Link>
+        <Link data={{ href: '#' }} className="footer__navigation-link" href="#">Kontakt</Link>
+        <Link data={{ href: '#' }} className="footer__navigation-link" href="#">Anfrage senden</Link>
       </div>
       <div className="footer__privacy">
-        <a href="/datenschutz" className="footer__privacy-link">Datenschutz</a>
+        <Link data={{ href: '#' }} href="/datenschutz" className="footer__privacy-link">Datenschutz</Link>
         <figure className="footer__privacy-separator">|</figure>
-        <a href="/impressum" className="footer__privacy-link">Impressum</a>
+        <Link data={{ href: '#' }} href="/impressum" className="footer__privacy-link">Impressum</Link>
       </div>
       <img className="footer__logohead" src="/illustrations/illustration-logohead.svg" alt="Logo Head" />
     </footer>

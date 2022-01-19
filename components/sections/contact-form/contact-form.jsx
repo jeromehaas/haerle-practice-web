@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Section } from 'components/layouts/section/section';
 import { FileInput } from 'components/partials/file-input/file-input';
 import { TextInput } from 'components/partials/text-input/text-input';
@@ -92,12 +92,12 @@ const ContactForm = () => {
   }
 
   return (
-    <Section data={{ className: "contact-form" }}>
+    <Section data={{ className: 'contact-form' }}>
 
-      <form className="contact-form__form" onSubmit={ (event) => handleSubmit(event) }>
+      <form className='contact-form__form' onSubmit={ (event) => handleSubmit(event) }>
 
         <TextInput data={{
-          className: "contact-form__input",
+          className: 'contact-form__input',
           name: 'firstname',
           label: 'Vorname',
           value: formState.firstname.value,
@@ -109,7 +109,7 @@ const ContactForm = () => {
         }} />
    
         <TextInput data={{
-          className: "contact-form__input",
+          className: 'contact-form__input',
           name: 'lastname',
           label: 'Nachname',
           value: formState.lastname.value,
@@ -121,7 +121,7 @@ const ContactForm = () => {
         }} />
 
         <TextInput data={{
-          className: "contact-form__input",
+          className: 'contact-form__input',
           name: 'phone',
           label: 'Telefonnummer',
           value: formState.phone.value,
@@ -132,7 +132,7 @@ const ContactForm = () => {
         }} />
       
         <TextInput data={{
-          className: "contact-form__input",
+          className: 'contact-form__input',
           name: 'email',
           label: 'E-Mail',
           value: formState.email.value,
@@ -144,7 +144,7 @@ const ContactForm = () => {
         }} />
 
         <TextInput data={{
-          className: "contact-form__input",
+          className: 'contact-form__input',
           name: 'subject',
           label: 'Betreff',
           value: formState.subject.value,
@@ -156,7 +156,7 @@ const ContactForm = () => {
         }} />
 
         <FileInput data={{
-          className: "contact-form__input",
+          className: 'contact-form__input',
           name: 'file',
           label: 'Datei anhängen',
           onChange: (event) => updateInputs(event)

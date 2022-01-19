@@ -1,9 +1,7 @@
 import courses from 'components/sections/education/education.json';
 import { Section } from 'components/layouts/section/section';
 import { Heading } from 'components/partials/heading/heading';
-import { Paragraph } from 'components/partials/paragraph/paragraph';
 import { Image } from 'components/partials/image/image';
-import { LoginForm } from '../login-form/login-form';
 
 const Education = () => {
 

@@ -1,8 +1,6 @@
 import { Page } from 'components/layouts/page/page';
 import { Intro } from 'components/sections/intro/intro';
 import { Article } from 'components/sections/article/article';
-import { Faq } from 'components/sections/faq/faq';
-import { CTA } from 'components/sections/cta/cta';
 import { Auth } from 'components/sections/auth/auth';
 import { Resume } from 'components/sections/resume/resume';
 

@@ -20,7 +20,7 @@ const LoginForm = () => {
         }, 1000);
       }
     }
-  }, [userInput])
+  }, [userInput, router])
   
   const updateUserInput = ( number ) => {
     setUserInput( userInput + number );

@@ -1,10 +1,7 @@
 import experience from 'components/sections/resume/resume.json'; 
-import { useState } from 'react';
 import { Heading } from 'components/partials/heading/heading';
 import { Section } from 'components/layouts/section/section';
 import { Paragraph } from 'components/partials/paragraph/paragraph';
-import { Icon } from 'components/partials/icon/icon';
-import { Video } from 'components/partials/video/video';
 import { Link } from 'components/partials/link/link';
 
 const Resume = () => {

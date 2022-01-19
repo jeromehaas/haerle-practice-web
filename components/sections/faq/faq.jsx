@@ -1,7 +1,7 @@
 import questions from 'components/sections/faq/faq.json'; 
 import { useState } from 'react';
 import { Heading } from 'components/partials/heading/heading';
-import { Section } from "components/layouts/section/section";
+import { Section } from 'components/layouts/section/section';
 import { Paragraph } from 'components/partials/paragraph/paragraph';
 import { Icon } from 'components/partials/icon/icon';
 import { Video } from 'components/partials/video/video';
@@ -40,8 +40,8 @@ const FaqItem = ({ data }) => {
   }
 
   return (
-    <div className="faq__item">
-      <Paragraph data={{ className: "faq__item-index", color: 'lightblue', onClick: toggleItemStatus }}>
+    <div className='faq__item'>
+      <Paragraph data={{ className: 'faq__item-index', color: 'lightblue', onClick: toggleItemStatus }}>
         { data.index < 10  ? `0${ data.index }` : data.index }
       </Paragraph>
       <Heading data={{  className: 'faq__item-question', level: 'h3', color: 'lightblue', onClick: toggleItemStatus }}>

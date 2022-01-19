@@ -1,7 +1,6 @@
 import { Section } from 'components/layouts/section/section';
 import { Heading } from 'components/partials/heading/heading';
 import { Paragraph } from 'components/partials/paragraph/paragraph';
-import { Link } from 'components/partials/link/link';
 
 const Teaser = ({ data }) => {
 

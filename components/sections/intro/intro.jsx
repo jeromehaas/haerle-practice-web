@@ -3,7 +3,6 @@ import { Heading } from 'components/partials/heading/heading';
 import { Image } from 'components/partials/image/image';
 import { Paragraph } from 'components/partials/paragraph/paragraph';
 import { PageNavigation } from 'components/partials/page-navigation/page-navigation';
-import { Article } from 'components/sections/article/article';
 
 const Intro = ({ data }) => {
 
