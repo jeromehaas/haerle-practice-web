@@ -1,0 +1,25 @@
+[
+	{
+		"category": "Verantwortlich für den Inhalt",
+		"name": "Dr. med. dent. Daniela Haerle"
+	},
+	{
+		"category": "Webkonzeption und Gestaltung",
+		"name": "Natalie Soland"
+	},
+	{
+		"category": "Programmierung",
+		"name": "Jérôme Haas",
+		"website": "jeromehaas.dev"
+	},
+	{
+		"category": "Bildkonzept und Fotografie",
+		"name": "Samira Haas",
+		"website": "samirahaas.ch"
+	},
+	{
+		"category": "Logo und Corporate Design",
+		"name": "Isabel Heller",
+		"website": "hellergrafik.ch"
+	}
+]

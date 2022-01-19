@@ -5,7 +5,7 @@ import { Head } from 'components/partials/head/head';
 const Page = ({ data, children }) => {
 
   return ( 
-    <div className={`page ${data.className }`}>		
+    <div className={'page'}>		
       <Head />
       <Navigation />
       { children }
