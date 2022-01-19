@@ -12,6 +12,7 @@ const Schmerztherapie = () => {
       <Intro data={{
         title: 'Schmerztherapie',
         text: 'Wenn die Kiefergelenke, die Kaumuskeln und der Biss nicht harmonisch funktionieren, kann das zu Beschwerden im Kieferbereich und in angrenzenden Regionen führen. Erfahren Sie, welche Symptome bei einer Cranio Mandibulären Dysfunktion (CMD) auftreten können, wie die Diagnose erstellt wird und wie die Behandlung auf Sie zugeschnitten wird. ',
+        imageSrc: '/images/09-daniela-haerle-portrait-ohne-brille.jpg',
         mavigationTitle: '',
         navigationLinks: [
           { text: 'Symptome', href: '#symptome' },

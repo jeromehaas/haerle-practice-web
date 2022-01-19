@@ -77,9 +77,9 @@ const Start = () => {
       }}>
       </Teaser>
       <CTA data={{
-        title: 'hello title',
-        text: 'hello text',
-        buttonText: 'Button',
+        title: 'Termin vereinbaren',
+        text: 'Sie finden mich in der Zahnmedizin Luzern AG, bei Dr. Jürg Eppenberger, Zahnarztpraxis für Rekonstruktive Zahnmedizin.',
+        buttonText: 'Kontakt',
         buttonHref: '#'
       }} />
     </Page>
