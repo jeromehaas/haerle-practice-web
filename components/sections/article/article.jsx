@@ -33,7 +33,7 @@ const Article = ({ data }) => {
             <Link data={{ 
               href: data.linkHref,
               text: data.linkText,
-              icon: 'arrow',
+              icon: data.linkIcon,
               className: 'article__link'
             }}>{ data.linkText }</Link>
           ) : '' }

@@ -29,7 +29,6 @@ const EducationItem = ({ data }) => {
         {data.activities && data.activities.map((item, index) =>(
           <li className="item__list-item" key={ index }>{ item }</li>
         ))}
-        { console.log(data)}
         { data.imageSrc && (
           <Image data={{ 
             className: 'item__image', 

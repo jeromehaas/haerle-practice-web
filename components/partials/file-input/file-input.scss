@@ -1,10 +1,10 @@
 .file-input {
 	display: grid;
-	grid-template: auto auto auto / 200px auto;
+	grid-template: auto auto auto / 200px auto auto;
 	grid-template-areas: 
-		"label optional"
-		"button input"
-		"error error";
+		"label label optional"
+		"button input input"
+		"error error error";
 		
 	&__optional {
 		text-align: right;
@@ -54,6 +54,7 @@
 		color: $darkblue-100;
 		caret-color: $lightblue-50;
 		pointer-events: none;
+		background-color: transparent;
 
 		&:focus {
 			border: 1px solid $lightblue-100;
@@ -96,11 +97,11 @@
 	}
 
 	@media (max-width: 600px) {
-		grid-template: auto auto auto / 48px auto;
+		grid-template: auto auto auto / 48px auto auto;
 		grid-template-areas: 
-		"label optional"
-		"button input"
-		"error error";
+		"label label optional"
+		"button input input"
+		"error error error";
 
 		&__button {
 			background: url('/icons/icon-upload.svg'), $lightblue-20;
