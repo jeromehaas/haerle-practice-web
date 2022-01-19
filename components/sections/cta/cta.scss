@@ -28,7 +28,7 @@
 	@media (max-width: 850px) {
 		
 		&__wrapper {
-			grid-template: auto auto auto;
+			grid-template: auto auto auto / auto;
 			grid-template-areas:
 			"title" 
 			"text"
@@ -42,6 +42,7 @@
 
 		&__button {
 			justify-self: start;
+			margin-bottom: 0;
 		}
 
 	}

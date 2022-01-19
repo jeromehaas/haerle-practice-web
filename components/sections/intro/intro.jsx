@@ -7,18 +7,39 @@ import { PageNavigation } from 'components/partials/page-navigation/page-navigat
 const Intro = ({ data }) => {
 
   return (
-    <Section data={{ className: 'intro'}}>
-      <Heading data={{ level: 'h2', className: 'intro__title', color: 'lightblue' }}>{ data.title }</Heading>
-      <Paragraph data={{ className: 'intro__text'}}>{ data.text }</Paragraph>
-      <Image data={{ className: 'intro__image', src: data.imageSrc }}></Image>
-      <PageNavigation data={{ 
-        className: 'intro__navigation',
-        title: 'Themen dieser Seite',
-        links: data.navigationLinks 
-      }} />
-    </Section>
+    // <Section data={{ className: 'intro'}}>
+    //   <Heading data={{ level: 'h2', className: 'intro__title', color: 'lightblue' }}>{ data.title }</Heading>
+    //   <Paragraph data={{ className: 'intro__text'}}>{ data.text }</Paragraph>
+    //   <Image data={{ className: 'intro__image', src: data.imageSrc }}></Image>
+    //   <PageNavigation data={{ 
+    //     className: 'intro__navigation',
+    //     title: 'Themen dieser Seite',
+    //     links: data.navigationLinks 
+    //   }} />
+    // </Section>
+    <>
+      <Section data={{ className: 'intro intro--upper'}}>
+        <div className="intro__text-wrapper">
+          <Heading data={{ level: 'h2', className: 'intro__title', color: 'lightblue' }}>{ data.title }</Heading>
+          <Paragraph data={{ className: 'intro__text'}}>{ data.text }</Paragraph>
+        </div>
+        <div className="intro__image-wrapper">
+          <Image data={{ className: 'intro__image', src: data.imageSrc }}></Image>
+        </div>
+      </Section>
 
-	
+      <Section data={{ className: 'intro intro--lower'}}>
+        <PageNavigation data={{ 
+          className: 'intro__navigation',
+          title: 'Themen dieser Seite',
+          links: data.navigationLinks 
+        }} />
+        <div className="intro__blocker">
+        </div>
+      </Section>
+
+    </>
+
   )
 }
 

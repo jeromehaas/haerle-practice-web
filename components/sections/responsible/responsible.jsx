@@ -18,7 +18,7 @@ const Responsible = () => {
           }}>hello</ResponsibleItem>
         ))}
       </div>
-      <Paragraph data={{ className: 'responsible__copyright'}}>Copyright © 2021 Daniela Haerle. Alle Rechte vorbehalten. Für die Vervielfältigung oder Veränderung jeglicher Elemente ist die schriftliche Zustimmung der Urheberrechtsträger im Voraus einzuholen.</Paragraph>
+      <Paragraph data={{ className: 'responsible__copyright' }}>Copyright © 2021 Daniela Haerle. Alle Rechte vorbehalten. Für die Vervielfältigung oder Veränderung jeglicher Elemente ist die schriftliche Zustimmung der Urheberrechtsträger im Voraus einzuholen.</Paragraph>
     </Section>
   )
 }

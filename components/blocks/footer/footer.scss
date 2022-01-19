@@ -12,13 +12,13 @@
 	&__navigation {
 		margin-bottom: 177px;
 	}
-
+	
 	&__navigation-link {
-		color: $white;
-		text-decoration: none;
 		display: block;
 		margin-bottom: 42px;
 		line-height: 1;
+		color: $white !important;
+		-webkit-text-fill-color: unset;
 
 		&:last-child {
 			margin-bottom: 0;
@@ -29,8 +29,9 @@
 	&__privacy {}
 
 	&__privacy-link {
-		color: $lightblue-50;
-		text-decoration: none;
+		line-height: 1;
+		color: $white !important;
+		-webkit-text-fill-color: unset;
 	}
 
 	&__privacy-separator {

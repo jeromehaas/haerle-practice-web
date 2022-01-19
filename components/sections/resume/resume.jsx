@@ -33,11 +33,11 @@ const ResumeItem = ({ data }) => {
       <Heading data={{  className: 'resume__item-date', level: 'h3', color: 'lightblue' }}>
         { data.date }
       </Heading>
-      <Paragraph data={{ className: 'resume__item-activity' }}>
+      <div data={{ className: 'resume__item-activity' }}>
         { data.activities && data.activities.map((activity, index) => (
-          <p key={ index }>{activity}</p>
+          <Paragraph data={{}} key={ index }>{activity}</Paragraph>
         ))}
-      </Paragraph>
+      </div>
       { data.links && (
         <div className='resume__item-links'>
           { data.links && data.links.map((link, index) => (
