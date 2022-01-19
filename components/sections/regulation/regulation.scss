@@ -1,0 +1,16 @@
+.regulation {
+	
+	.item {
+		margin-bottom: 80px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&__title {
+			margin-bottom: 24px;
+		}
+
+	}
+
+}
