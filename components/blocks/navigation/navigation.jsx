@@ -66,11 +66,14 @@ const Navigation = () => {
       </nav>   
       <nav className={`navigation navigation--desktop navigation--${ renderColor() }` }>
         <div className="navigation__inner">
-          <img className="navigation__logo" src="/logos/logo-daniele-haerle.svg" onClick={() => router.push('/')} />
-          <Link href="/schmerztherapie"><a className="navigation__link">Schmerztherapie</a></Link>
-          <Link href="/aktivitaeten"><a className="navigation__link">Aktivitäten</a></Link>
-          <Link href="/ueber-mich"><a className="navigation__link">Über mich</a></Link>
-          <Link href="/kontakt"><a className="navigation__link">Kontakt</a></Link>
+          <span className="navigation__size-limiter">
+
+            <img className="navigation__logo" src="/logos/logo-daniele-haerle.svg" onClick={() => router.push('/')} />
+            <Link href="/schmerztherapie"><a className="navigation__link">Schmerztherapie</a></Link>
+            <Link href="/aktivitaeten"><a className="navigation__link">Aktivitäten</a></Link>
+            <Link href="/ueber-mich"><a className="navigation__link">Über mich</a></Link>
+            <Link href="/kontakt"><a className="navigation__link">Kontakt</a></Link>
+          </span>
         </div>
         <div className="navigation__blocker"></div>
       </nav>

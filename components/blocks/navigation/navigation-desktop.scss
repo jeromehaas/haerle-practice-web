@@ -3,21 +3,25 @@
 	.navigation {
 			
 		&__inner {
-			display: flex;
-			flex-direction: row;
-			justify-content: flex-end;
-			align-items: center;
-			max-width: $max-width;
 			margin: 0 auto;
 			position: fixed;
 			top: 0;
 			right: 0;
 			left: 0;
-			background-color: $lightblue-4;
 			z-index: 10;
-			padding: 48px;
-			height: 115px;
 		};
+		
+		&__size-limiter {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			align-items: center;
+			padding: 48px;
+			max-width: $max-width;
+			margin: 0 auto;
+			height: 115px;
+
+		}
 
 		&__blocker {
 			height: 115px;
