@@ -9,36 +9,48 @@
 	overflow:hidden;
 	margin-right: 140px;
 
-	&__navigation {
+	.navigation {
 		margin-bottom: 177px;
-	}
-	
-	&__navigation-link {
-		display: block;
-		margin-bottom: 42px;
-		line-height: 1;
-		color: $white !important;
-		-webkit-text-fill-color: unset;
 
-		&:last-child {
-			margin-bottom: 0;
+		&__link {
+			display: block;
+			color: red;
+			margin-bottom: 42px;
+			font-size: 28px;
+			line-height: 1;
+			
+			color: $white !important;
+			-webkit-text-fill-color: unset;
+			
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&:hover, 
+			&:active {
+				box-shadow: none;
+			}
+
 		}
-
+		
 	}
 
-	&__privacy {}
-
-	&__privacy-link {
-		line-height: 1;
-		color: $white !important;
-		-webkit-text-fill-color: unset;
+	.privacy {
+		
+		&__link {
+			line-height: 1;
+			color: $white !important;
+			-webkit-text-fill-color: unset;
+		}
+		
+		&__separator {
+			display: inline-block;
+			color: $lightblue-20;
+			margin: 0 12px;
+		}
+	
 	}
 
-	&__privacy-separator {
-		display: inline-block;
-		color: $lightblue-20;
-		margin: 0 12px;
-	}
 
 	&__logohead {
 		position: absolute;

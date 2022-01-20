@@ -11,7 +11,6 @@ const Navigation = () => {
     setMenuState(menuState === 'closed' ? 'open' : 'closed');
   };
 
-
   const renderColor = () => {
     const colorSets = {
       ['/']: 'white',	
@@ -19,7 +18,8 @@ const Navigation = () => {
       ['/aktivitaeten']: 'blue',
       ['/ueber-mich']: 'blue',
       ['/kontakt']: 'blue',
-      ['/datenschutz']: 'blue'
+      ['/datenschutz']: 'blue',
+      ['/impressum']: 'white'
     };
     const currentPath = router.pathname;
     const color =  colorSets[currentPath];
