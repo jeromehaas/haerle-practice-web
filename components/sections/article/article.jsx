@@ -8,7 +8,8 @@ const Article = ({ data }) => {
 
   return (
     <Section data={{
-      className: `article ${ data.reverse ? 'article--reverse' : '' }`
+      className: `article ${ data.reverse ? 'article--reverse' : '' }`,
+      anchorId: data.anchorId
     }}>
       <div className="article__wrapper">
         <Image data={{

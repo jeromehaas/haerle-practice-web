@@ -13,11 +13,11 @@ const Aktivitaeten = () => {
         imageSrc: '/images/11-daniela-haerle-portrait-brille.jpg',
         mavigationTitle: 'Themen dieser Seite',
         navigationLinks: [
-          { text: 'Weiterbildung / Tagungen', href: '#weiterbildungen-tagungen' },
-          { text: 'Partner', href: '#partner' },
+          { text: 'Weiterbildung / Tagungen', href: 'weiterbildungen-tagungen' },
+          { text: 'Partner', href: 'partner' },
         ]
       }}/>
-      <Education />
+      <Education data={{ anchorId: 'weiterbildungen-tagungen'}} />
       <CTA data={{
         title: 'Termin vereinbaren',
         text: 'Sie finden mich in der Zahnmedizin Luzern AG, bei Dr. Jürg Eppenberger, Zahnarztpraxis für Rekonstruktive Zahnmedizin.',

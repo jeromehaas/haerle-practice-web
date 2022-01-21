@@ -3,10 +3,10 @@ import { Section } from 'components/layouts/section/section';
 import { Heading } from 'components/partials/heading/heading';
 import { Image } from 'components/partials/image/image';
 
-const Education = () => {
+const Education = ({ data }) => {
 
   return (
-    <Section data={{ className: 'education'}}>
+    <Section data={{ className: 'education', anchorId: data.anchorId }}>
       <Heading data={{ className: 'education__title', level: 'h3' }}>Weiterbildungen / Tagungen</Heading>
       { courses.map((item, index) => (
         <EducationItem key={ index } data={{ 

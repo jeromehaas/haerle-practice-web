@@ -4,9 +4,9 @@ import { Section } from 'components/layouts/section/section';
 import { Paragraph } from 'components/partials/paragraph/paragraph';
 import { Link } from 'components/partials/link/link';
 
-const Resume = () => {
+const Resume = ({ data }) => {
   return (
-    <Section data={{ className: 'faq' }}>
+    <Section data={{ className: 'faq', anchorId: data.anchorId }}>
       <div className="resume__wrapper">
 
         <Heading data={{ className: 'resume__heading', level: 'h2' }}>Lebenslauf</Heading>

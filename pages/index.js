@@ -22,8 +22,9 @@ const Start = () => {
         text: 'Jede sechste Person beklagt solche Symptome. Bleiben die Schmerzen über einen längeren Zeitraum bestehen, können sie sich verselbständigen und chronifizieren, das heisst zu einer eigenständigen Krankheit werden. Die damit verbundene psychische Belastung ist beeinträchtigend und kostet Kraft. Eine frühzeitige Abklärung bei einem spezialisierten Zahnarzt ist daher empfehlenswert.',
         imageSrc: '/images/02-daniela-haerle-instrumente.jpg',
         imageAlt: '#',
-        linkText: 'link',
-        linkHref: 'https://google.com',
+        linkText: 'Weitere Symptome',
+        linkHref: '/schmerztherapie',
+        linkIcon: 'arrow',
         reverse: false
       }} /> 
       <Cards data={{
@@ -35,7 +36,7 @@ const Start = () => {
             title: 'Die Behandlung',
             text: 'Obwohl von einer Zahnärztin durchgeführt, hat die Behandlung eine medizinische Zielsetzung. In diesem Fall ist der Zahnarzt/die Zahnärztin einem Arzt/einer Ärztin gleichgestellt. Die Kosten für Untersuch, Therapie und Nachkontrollen werden von der Grundversicherung der Krankenkasse bezahlt. Entlastende Schienen, mit Ausnahme der Schlafapnoe-Schiene, werden nicht übernommen.',
             linkText: 'mehr zur Diagnose',
-            linkHref: '#'
+            linkHref: '/schmerztherapie#diagnose'
           },
           {
             imageSrc: '/images/04-daniela-haerle-besprechung-patientin-closeup.jpg',
@@ -43,7 +44,7 @@ const Start = () => {
             title: 'Kieferprobleme, Schnarchen, Atemaussetzer im Schlaf, Kopfschmerzen',
             text: 'Obwohl von einer Zahnärztin durchgeführt, hat die Behandlung eine medizinische Zielsetzung. In diesem Fall ist der Zahnarzt/die Zahnärztin einem Arzt/einer Ärztin gleichgestellt. Die Kosten für Untersuch, Therapie und Nachkontrollen werden von der Grundversicherung der Krankenkasse bezahlt. Entlastende Schienen, mit Ausnahme der Schlafapnoe-Schiene, werden nicht übernommen.',
             linkText: 'mehr zur Therapie',
-            linkHref: '#'
+            linkHref: '/schmerztherapie#therapie'
           },
         ]
       }} />
@@ -53,7 +54,9 @@ const Start = () => {
         quoteColor: 'lightblue',
         authorText: 'Dr. med. dent. Daniela Haerle',
         imageSrc: '/images/05-daniela-haerle-portrait-brille.jpg',
-        imageAlt: 'Besprechung mit Daniela Haerle'
+        imageAlt: 'Besprechung mit Daniela Haerle',
+        linkText: 'erfahren Sie mehr über mich',
+        linkHref: '/ueber-mich'
       }} />
 
       <Teaser data={{
@@ -80,7 +83,7 @@ const Start = () => {
         title: 'Termin vereinbaren',
         text: 'Sie finden mich in der Zahnmedizin Luzern AG, bei Dr. Jürg Eppenberger, Zahnarztpraxis für Rekonstruktive Zahnmedizin.',
         buttonText: 'Kontakt',
-        buttonHref: '#'
+        buttonHref: '/kontakt'
       }} />
     </Page>
   )

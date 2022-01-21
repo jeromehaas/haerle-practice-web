@@ -1,10 +1,13 @@
+import Link from 'next/link';
+
 const Button = ({ data, children }) => {
 
   return (
-    <button 
-      className={`button ${data.className}`} 
-      onClick={data.onClick}
-    >{children}</button>
+    <Link href={ data.href || '#' }>
+      <a className={`button ${data.className}`} onClick={data.onClick}>
+        {children}
+      </a>
+    </Link>
   )
 };
 

@@ -7,11 +7,12 @@
 	border-radius: 8px;
 	background-color: transparent;
 	cursor: pointer;
-	align-items: center;
 	text-decoration: none;
 	margin-bottom: 40px;
 	display: block;
 	z-index: 5;
+	line-height: 80px;
+	text-align: center;
 	
 	
 	&:hover {

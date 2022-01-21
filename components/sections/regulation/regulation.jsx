@@ -10,7 +10,8 @@ const Regulation = () => {
       { paragraphs.map((item, index) => (
         <RegulationItem key={ index } data={{
           title: item.title, 
-          text: item.text
+          text: item.text,
+          anchorId: item.anchorId
         }} />
       ))}
     </Section>
@@ -22,6 +23,7 @@ const RegulationItem = ({ data }) => {
     <div className="regulation__item item">
       { data.title && (<Heading data={{ className: 'item__title', level: 'h5'}}>{ data.title }</Heading>) }
       { data.text && (<Paragraph data={{}}>{ data.text }</Paragraph>) }	
+      { data.anchorId && (<div className="item__anchor" id={ data.anchorId }></div>) }
     </div>
   )
 }

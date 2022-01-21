@@ -3,12 +3,18 @@
 	// border: 5px solid red;
 	overflow: hidden;
 	margin-bottom: 96px;
+	scroll-behavior: smooth !important;
 
 	&__inner {
 		padding: 0 48px;
 		width: 100%;
 		margin: 0 auto;
 		max-width: $max-width;
+	}
+
+	&__anchor {
+		position: absolute;
+		top: -150px;
 	}
 
 	@media (max-width: 850px) {

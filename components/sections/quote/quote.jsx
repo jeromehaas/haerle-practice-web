@@ -16,10 +16,10 @@ const Quote = ({ data }) => {
           height: 950
         }} />
         <Link data={{ 
-          href: '/',
+          href: data.linkHref,
           icon: 'arrow',
           className: 'quote__image-link'
-        }}>erfahren Sie mehr über mich</Link>
+        }}>{ data.linkText }</Link>
       </div>
       <div className='quote__quote-wrapper'>
         <Heading data={{ 
@@ -28,12 +28,12 @@ const Quote = ({ data }) => {
         }}>{data.quoteText}</Heading>
         <Paragraph data={{ 
           className: 'quote__quote-author'
-        }}>Dr. med. dent. Daniela Haerle</Paragraph>
+        }}>{ data.authorText }</Paragraph>
         <Link data={{ 
-          href: '/',
+          href: data.linkHref,
           icon: 'arrow',
           className: 'quote__link-link'
-        }}>erfahren Sie mehr über mich</Link>
+        }}>{ data.linkText }</Link>
       </div>
     </Section>
   )

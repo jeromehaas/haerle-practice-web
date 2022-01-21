@@ -7,9 +7,9 @@ import { Icon } from 'components/partials/icon/icon';
 import { Video } from 'components/partials/video/video';
 import { Link } from 'components/partials/link/link';
 
-const Faq = () => {
+const Faq = ({ data }) => {
   return (
-    <Section data={{ className: 'faq' }}>
+    <Section data={{ className: 'faq', anchorId: data.anchorId }}>
       <div className="faq__wrapper">
 
         <Heading data={{ className: 'faq__heading', level: 'h2' }}>Häufig gestellte Fragen</Heading>

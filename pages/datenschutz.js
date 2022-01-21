@@ -12,10 +12,10 @@ const Datenschutz = () => {
         imageSrc: '',
         navigationTitle: 'Themen dieser Seite',
         navigationLinks: [
-          { text: 'Datenverarbeitung', href: '#datenverarbeitung' },
-          { text: 'Cookies', href: '#cookies' },
-          { text: 'Haftung für Links', href: '#haftung-fuer-links' },
-          { text: 'Aktualität und Änderung ', href: '#aktualität-und-aenderung' }
+          { text: 'Datenverarbeitung', href: 'datenverarbeitung' },
+          { text: 'Cookies', href: 'cookies' },
+          { text: 'Haftung für Links', href: 'haftung-fuer-links' },
+          { text: 'Aktualität und Änderung ', href: 'aktualitaet-und-aenderung' }
         ]
       }} 
       />

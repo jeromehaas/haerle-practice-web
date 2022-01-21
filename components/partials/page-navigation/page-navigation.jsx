@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 const PageNavigation = ({ data }) => {
 	
   return (
@@ -5,7 +6,9 @@ const PageNavigation = ({ data }) => {
       <p className="page-navigation__title">{data.title}</p>
       <div className="page-navigation__link-wrapper">
         { data.links.map((link, index) => (
-          <a className="page-navigation__link" href={ link.href } key={index}>{link.text}</a>
+          <Link to={ link.href } className="page-navigation__link" duration={500} smooth key={ index }>
+            {link.text}
+          </Link>
         ))}
       </div>
     </div>

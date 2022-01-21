@@ -18,7 +18,6 @@
 			margin-bottom: 42px;
 			font-size: 28px;
 			line-height: 1;
-			
 			color: $white !important;
 			-webkit-text-fill-color: unset;
 			
@@ -26,7 +25,8 @@
 				margin-bottom: 0;
 			}
 
-			&:hover, 
+			&:hover,
+			&:focus, 
 			&:active {
 				box-shadow: none;
 			}
