@@ -63,17 +63,17 @@ const Start = () => {
         className: 'teaser',
         title: 'Was Sie in der Sprechstunde erwartet',
         items: [{
-          iconSrc: '/icons/icon-examination.svg',
+          iconSrc: '/icon/icon-examination.svg',
           title: 'Vor dem Untersuch',
           text: 'Vor der ersten Konsultation füllen Sie einen Fragebogen aus, den Sie vor dem ersten Untersuch retournieren.'
         },
         {
-          iconSrc: '/icons/icon-consultation.svg',
+          iconSrc: '/icon/icon-consultation.svg',
           title: 'Erste Konsultation',
           text: 'Es folgt der Untersuch der Kaumuskulatur, der Kiefergelenke und des Bisses.'
         },
         {
-          iconSrc: '/icons/icon-therapy.svg',
+          iconSrc: '/icon/icon-therapy.svg',
           title: 'Schmerztherapie',
           text: 'Analyse von weiteren Symptomen (wie gestörter Schlaf, Schnarchen, Reflux, Stressoren) und mögliche Therapieansätze werden besprochen.'
         }]

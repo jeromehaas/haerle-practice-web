@@ -18,18 +18,18 @@ const ContactTeaser = () => {
 			
       <div className="contact-teaser__contact-wrapper">
         <address className="contact-teaser__address">
-          <img src="/icons/icon-location.svg" />
+          <img src="/icon/icon-location.svg" />
           <p>zahnmedizin luzern</p>
           <p>Dr. med. dent. Jürg Eppenberger</p>
           <p>Haldenstrasse 11</p>
           <p>6006 Luzern</p>
         </address>
         <div className="contact-teaser__contact">
-          <img src="/icons/icon-phone.svg" />
+          <img src="/icon/icon-phone.svg" />
           <a href="tel:0414171707">041 417 17 07</a>
         </div>
         <div className="contact-teaser__times">
-          <img src="/icons/icon-time.svg" />
+          <img src="/icon/icon-time.svg" />
           <p>Öffnungszeiten</p>
           <p>Montag –  Freitag</p>
           <p>09:00 – 12.00, 13:30 – 18:00 Uhr</p>

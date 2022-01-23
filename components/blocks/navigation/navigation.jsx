@@ -46,18 +46,18 @@ const Navigation = () => {
             <Link href="/kontakt"><a className="navigation__link">Kontakt</a></Link>
           </div>
           <address className="navigation__address">
-            <img className="navigation__address-icon" src="/icons/icon-location.svg" />
+            <img className="navigation__address-icon" src="/icon/icon-location.svg" />
             <p className="navigation__address-item">zahnmedizin luzern</p>
             <p className="navigation__address-item">Dr. med. dent. Jürg Eppenberger</p>
             <p className="navigation__address-item">Haldenstrasse 11</p>
             <p className="navigation__address-item">6006 Luzern</p>
           </address>
           <div className="navigation__contact">
-            <img className="navigation__contact-icon" src="/icons/icon-phone.svg" />
+            <img className="navigation__contact-icon" src="/icon/icon-phone.svg" />
             <a className="navigation__contact-item" href="tel:0414171707">041 417 17 07</a>
           </div>
           <div className="navigation__times">
-            <img className="navigation__times-icon" src="/icons/icon-time.svg" />
+            <img className="navigation__times-icon" src="/icon/icon-time.svg" />
             <p className="navigation__times-item">Öffnungszeiten</p>
             <p className="navigation__times-item">Montag –  Freitag</p>
             <p className="navigation__times-item">09:00 – 12.00, 13:30 – 18:00 Uhr</p>

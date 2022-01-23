@@ -20,7 +20,7 @@ const Video = ({ data }) => {
       <video className="video__video" ref={videoRef} onPause={ handlePauseVideo } onPlay={ handlePlayVideo } preload="none" poster={ data.poster } controls>
         <source type="video/mp4" src={ data.src } />
       </video>
-      <img className={`video__play-button ${videoStatus === 'playing' ? 'video__play-button--hidden' : '' }`} src="/icons/icon-playbutton.svg" onClick={ handlePlayVideo } />
+      <img className={`video__play-button ${videoStatus === 'playing' ? 'video__play-button--hidden' : '' }`} src="/icon/icon-playbutton.svg" onClick={ handlePlayVideo } />
     </div>
   )
 };
