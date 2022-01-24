@@ -9,5 +9,5 @@ module.exports = {
 
     return config;
   },
-  trailingSlash: false,
+  trailingSlash: true,
 };
