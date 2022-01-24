@@ -51,7 +51,9 @@ const FaqItem = ({ data }) => {
       <Paragraph data={{ className: `faq__item-answer ${itemStatus === 'closed' ? 'faq__item-answer--hidden' : '' }`, onClick: toggleItemStatus }}>
         { data.answer }
       </Paragraph>
-      { data.videoSrc && <Video data={{ className: `faq__item-video ${itemStatus === 'closed' ? 'faq__item-video--hidden' : ''}`, src: '/videos/schmerzen-verstehen.mp4', poster: '/videos/schmerzen-verstehen-poster.png'}} /> }
+      { data.videoSrc && (
+        <Video data={{ className: `faq__item-video ${itemStatus === 'closed' ? 'faq__item-video--hidden' : ''}`, src: '/videos/schmerzen-verstehen.mp4', poster: '/videos/schmerzen-verstehen-poster.png'}} /> 
+      )}
       { data.links && (
         <div className={`faq__item-links ${itemStatus === 'closed' ? 'faq__item-links--hidden' : '' }`}>
           { data.links && data.links.map((link, index) => (

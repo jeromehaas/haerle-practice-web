@@ -4,6 +4,7 @@ import { Article } from 'components/sections/article/article';
 import { Faq } from 'components/sections/faq/faq';
 import { CTA } from 'components/sections/cta/cta';
 import { Auth } from 'components/sections/auth/auth';
+import { Symptoms } from 'components/sections/symptoms/symptoms';
 
 const Schmerztherapie = () => {
   return (
@@ -21,6 +22,11 @@ const Schmerztherapie = () => {
           { text: 'Häufig gestellte Fragen', href: 'haeufig-gestellte-fragen' }
         ]
       }}/>
+      <Symptoms data={{
+        anchorId: 'symptome',
+        title: 'Vielseitige Beschwerden, ganzheitliche Betrachtung.',
+        text: 'Eine Cranio Mandibulären Dysfunktion (CMD) führt zu Schmerzen und/oder Funktionseinschränkungen. Sofern Beschwerden auftreten, kann sich das durch verschiedene ein- oder beidseitige Symptome äussern, etwa durch Schmerzen im Kiefer-, Gesichts- und Nackenbereich, Schlafprobleme oder unklare Zahnschmerzen. Zur Abklärung der verschiedenen Symptome, wann diese erstmals auftraten, ob es Begleiterscheinungen gibt und welche Therapien Sie diesbezüglich schon unternommen haben, senden wir Ihnen vor der ersten Konsultation einen Fragebogen zu. Beim Besuch in der Praxis folgt eine Messung der Unterkieferbeweglichkeit, ein Untersuch der Muskulatur, der Gelenke und des Bisses. Es werden erste Therapieansätze besprochen.'
+      }} />
       <Article data={{
         anchorId: 'diagnose',
         title: 'Die Diagnose ist so individuell wie Sie.',

@@ -6,12 +6,29 @@
 	box-sizing: border-box;
 	scrollbar-width: none;
 	outline: none;
-	// scroll-behavior: smooth !important;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 *::-webkit-scrollbar {
 	display: none;
 	-webkit-appearance: none;
+}
+
+
+p, h1, h2, h3, h4, h5 {
+  font-size: 18px;
+  text-decoration: underline transparent;
+	text-underline-position: under;
+	stroke-width: 5px;
+	text-decoration-thickness: 3px;
+}
+
+	*::selection {
+		background: rgba(228, 64, 93, 0.25);
+		opacity: 0.1;
+		text-decoration: underline overline $red;
 }
 
 body {
