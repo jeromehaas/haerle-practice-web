@@ -6,9 +6,7 @@ import { Link } from 'components/partials/link/link';
 import { Icon } from 'components/partials/icon/icon';
 import Head from '/public/illustrations/illustration-head.svg'
 
-import lottie from 'lottie-web';
-import Lottie from '/public/lotties/lottie-symptom-head.json';
-import React, { useEffect, useState, createRef, useRef } from 'react';
+import React, { useState } from 'react';
 
 const Symptoms = ({ data }) => {
 
