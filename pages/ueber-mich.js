@@ -4,6 +4,7 @@ import { Article } from 'components/sections/article/article';
 import { Auth } from 'components/sections/auth/auth';
 import { Resume } from 'components/sections/resume/resume';
 import { Statement } from 'components/sections/statement/statement';
+import { Memberships } from 'components/sections/memberships/memberships';
 
 const Schmerztherapie = () => {
   return (
@@ -30,6 +31,7 @@ const Schmerztherapie = () => {
         reverse: false
       }} /> 
       <Statement data={{ text: 'Sie als Person stehen im Zentrum – denn – «an den Zähnen hängt ein Patient!»'}} />
+      <Memberships data={{ anchorId: 'mitgliedschaften'}} />
       <Resume data={{ anchorId: 'lebenslauf' }} />
     </Page>
   )
