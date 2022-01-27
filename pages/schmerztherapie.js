@@ -8,7 +8,7 @@ import { Symptoms } from 'components/sections/symptoms/symptoms';
 
 const Schmerztherapie = () => {
   return (
-    <Page>
+    <Page data={{ title: 'Schmerztherapie'}}>
       <Auth />
       <Intro data={{
         title: 'Schmerztherapie',

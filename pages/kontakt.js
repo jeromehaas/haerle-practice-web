@@ -6,7 +6,7 @@ import { ContactTeaser } from 'components/sections/contact-teaser/contact-teaser
 const Kontakt = () => {
 
   return (
-    <Page data={{ className: 'contact'}}>
+    <Page data={{ title: 'Kontakt' }}>
       <ContactTeaser />
       <ContactForm />
       <Article data={{

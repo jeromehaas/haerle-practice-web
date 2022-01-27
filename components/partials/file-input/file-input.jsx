@@ -4,11 +4,10 @@ const FileInput = ({ data }) => {
 
   const [ fileName, setFileName ] = useState('');
 
-  const handleChange = (event, callBack) => {
+  const handleChange = (event) => {
     if (event.target.files[0]) {
       let fileName = event.target.files[0].name;
       setFileName(fileName);
-      callBack(event)
     }
   }
 
@@ -23,7 +22,7 @@ const FileInput = ({ data }) => {
         id={ data.name } 
         readOnly
         value={ data.value }
-        onChange={ (event) => handleChange(event, data.onChange) } />
+        onChange={ (event) => handleChange(event) } />
       <input 
         className="file-input__fake-input"
         type="text" 

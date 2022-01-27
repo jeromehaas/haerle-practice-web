@@ -9,7 +9,7 @@ import { Auth } from 'components/sections/auth/auth';
 
 const Start = () => {
   return (
-    <Page>
+    <Page data={{ title: '' }}>
       <Auth />
       <Hero data={{ 
         titleText: 'Diagnostik und Therapie von Kiefer-, Gesichts- und Kopfschmerzen, Myoarthropathien des Kausystems, Schlafapnoe',

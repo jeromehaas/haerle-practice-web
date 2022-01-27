@@ -7,7 +7,7 @@ import { Partners } from 'components/sections/partners/partners';
 const Aktivitaeten = () => {
 
   return (
-    <Page>
+    <Page data={{ title: 'Aktivitäten' }}>
       <Intro data={{
         title: 'Aktivitäten',
         text: 'Ich bleibe auf dem Laufenden und besuche regelmässig Fortbildungen und Anlässe rund um das Thema Kopf- und Kieferschmerzen.',

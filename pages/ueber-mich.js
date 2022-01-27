@@ -8,7 +8,7 @@ import { Memberships } from 'components/sections/memberships/memberships';
 
 const Schmerztherapie = () => {
   return (
-    <Page>
+    <Page data={{ title: 'Über mich'}}>
       <Auth />
       <Intro data={{
         title: 'Dr. med. dent. Daniela Haerle Schmerzspezialistin SPS',

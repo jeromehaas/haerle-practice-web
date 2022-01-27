@@ -4,7 +4,7 @@ import { Responsible } from 'components/sections/responsible/responsible';
 const Impressum = () => {
 
   return (
-    <Page data={{}}>
+    <Page data={{ title: 'Impressum'}}>
       <Responsible />	
     </Page>
   )
