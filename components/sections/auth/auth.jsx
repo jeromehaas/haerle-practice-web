@@ -16,7 +16,6 @@ const Auth = () => {
     if (process.env.NEXT_PUBLIC_MODE === 'development' ) router.push('/login');
   })
 
-
   return null;
 }
 

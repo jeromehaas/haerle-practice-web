@@ -1,5 +1,6 @@
 .cards {
 	position: relative;
+	scroll-behavior: smooth;
 
 	&__inner {
 		max-width: 1200px;
@@ -17,7 +18,7 @@
 		justify-content: center;
 	}
 
-	&__item {
+	.item {
 		background-color: $lightblue-10;
 		margin-right: 24px;
 		border-radius: 0 0 20px 0;
@@ -26,15 +27,8 @@
 		transition: all 0.3s ease;
 		overflow: hidden;
 
-		&__wrapper {
-			padding: 32px 24px;
-			display: flex;
-			flex-direction: column;
-			justify-content: flex-start;
-			flex-grow: 1;
-		}
-
-		.image {
+		
+		&__image {
 			position: relative;
 			height: 100%;
 			object-fit: cover;
@@ -44,22 +38,30 @@
 			img {
 				transition: all 0.3s ease;
 			}
-	
+			
 			span {
 				position: unset !important;
 			}
-	
+			
 		}
 	
-		h5 {
+		&__wrapper {
+			padding: 32px 24px;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			flex-grow: 1;
+		}
+	
+		&__title {
 			margin-bottom: 24px;
 		}
 		
-		p {
+		&__text {
 			margin-bottom: 24px;
 		}
 
-		a {
+		&__link {
 			margin-top: auto;
 		}	
 
@@ -69,10 +71,10 @@
 
 		&:hover {
 			background-color: $lightblue-20;
-			 
-			.cards__image img {
+			
+			.item__image img {
+				border: 10px solid red;
 				transform: scale(1.05);
-
 			}
 
 		}
@@ -101,13 +103,14 @@
 			padding-right: 0px;
 		}
 
-		&__item {
+		 .item {
 			min-width: 65vw;
 			min-width: 400px;
 			
 			&:last-child {
 				margin-right: 24px;
 			}
+			
 		}
 
 		&__icon {
