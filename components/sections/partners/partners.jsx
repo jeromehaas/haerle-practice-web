@@ -34,8 +34,8 @@ const Partners = ({ data }) => {
         <br />
         <Paragraph data={{  }}></Paragraph>
         <Paragraph data={{  }}>041 417 17 07</Paragraph>
-        <Paragraph data={{  }}>info@zahnmedizinluzern.ch</Paragraph>
         <br />
+        <Paragraph data={{  }}>info@zahnmedizinluzern.ch</Paragraph>
         <Link data={{ icon: 'external-link'}}>kopf-hals-chierurgie.ch</Link>
       </div>
     </Section>
