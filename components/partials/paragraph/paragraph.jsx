@@ -1,5 +1,5 @@
 const Paragraph = ({ data, children }) => (
-  <p className={`paragraph paragraph--${data.color || ''} ${data.className ? data.className : '' }`} onClick={ data.onClick }>
+  <p className={`${data.color ? `paragraph--${data.color}` : ''} ${data.className ? data.className : '' } paragraph`} onClick={ data.onClick }>
     { children }
   </p>
 )
