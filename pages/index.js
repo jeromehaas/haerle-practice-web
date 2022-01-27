@@ -25,7 +25,8 @@ const Start = () => {
         linkText: 'Weitere Symptome',
         linkHref: '/schmerztherapie',
         linkIcon: 'arrow',
-        reverse: false
+        reverse: false,
+        hideImageOnMobile: true
       }} /> 
       <Cards data={{
         title: 'Die Schmerztherapie ',

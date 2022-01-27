@@ -11,7 +11,6 @@
 
 	&__image {
 		height: 100%;
-		max-height: 500px;
 		position: relative;
 		grid-area: image;
 	}
@@ -63,10 +62,31 @@
 
 		&__image {
 			margin-bottom: 48px;
+			max-height: 480px;
+
+			&--hide-on-mobile {
+				display: none;
+			}
+
 		}
 
 		&__text {
+			margin-bottom: 32px;
+		}
+
+		&--reverse-on-mobile {
+
+		.article__wrapper {
+			grid-template: auto auto / auto !important;
+			grid-template-areas: 
+				"content" 
+				"image" !important;
+		}
+
+		.article__image {
 			margin-bottom: 0;
+		}
+
 		}
 
 	}

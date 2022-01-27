@@ -46,6 +46,15 @@
 
 		}
 
+		
+		@media (max-width: 1200px) {
+			
+			&__size-limiter {
+				padding: 24px;
+			}
+			
+		}
+		
 	}
 
 }

@@ -8,7 +8,7 @@ const Article = ({ data }) => {
 
   return (
     <Section data={{
-      className: `article ${ data.reverse ? 'article--reverse' : '' }`,
+      className: `article ${ data.reverse ? 'article--reverse' : '' } ${ data.reverseOnMobile ? 'article--reverse-on-mobile' : '' }`,
       anchorId: data.anchorId
     }}>
       <div className="article__wrapper">
@@ -17,7 +17,7 @@ const Article = ({ data }) => {
           height: 494,
           alt: '',
           src: data.imageSrc,
-          className: 'article__image'
+          className: `article__image ${data.hideImageOnMobile ? 'article__image--hide-on-mobile' : ''}`
         }} />
         <div className="article__content">
           <Heading data={{ 
