@@ -1,6 +1,5 @@
 .section {
 	position: relative;
-	// border: 5px solid red;
 	overflow: hidden;
 	margin-bottom: 96px;
 	scroll-behavior: smooth !important;
@@ -17,10 +16,16 @@
 		top: -150px;
 	}
 
-	@media (max-width: 850px) {
+	@media (max-width: 1200px) {
+		
+		&__anchor {
+			top: -104px;
+		}
+
 		&__inner {
 			padding: 0 24px;
 		}	
+
 	}
 
 }  

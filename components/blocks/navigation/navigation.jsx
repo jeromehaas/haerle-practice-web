@@ -30,7 +30,7 @@ const Navigation = () => {
     <Fragment>
       <nav className={`navigation navigation--mobile navigation--${ renderColor() } ${menuState === 'open' ? 'navigation--open' : ''}`}>
         <div className='navigation__bar'>
-          <img className="navigation__logo" src="/logos/logo-daniele-haerle.svg" />
+          <img className="navigation__logo" src="/logos/logo-daniele-haerle.svg" onClick={() => router.push('/')} />
           <button className={`navigation__hamburger hamburger hamburger--squeeze ${menuState === 'open' ? 'hamburger--active' : null} `} type="button" onClick={ toggleMenu }>
             <span className="hamburger-box">
               <span className="hamburger-inner" />
@@ -40,10 +40,10 @@ const Navigation = () => {
         <div className="navigation__blocker"></div>
         <div className='navigation__inner'>
           <div className="navigation__link-wrapper">
-            <Link href="/schmerztherapie"><a className="navigation__link">Schmerztherapie</a></Link>
-            <Link href="/aktivitaeten"><a className="navigation__link">Aktivitäten</a></Link>
-            <Link href="/ueber-mich"><a className="navigation__link">Über mich</a></Link>
-            <Link href="/kontakt"><a className="navigation__link">Kontakt</a></Link>
+            <Link href="/schmerztherapie" ><a className="navigation__link" onClick={ router.pathname === '/schmerztherapie' && toggleMenu }>Schmerztherapie</a></Link>
+            <Link href="/aktivitaeten" ><a className="navigation__link" onClick={ router.pathname === '/aktivitaeten' && toggleMenu }>Aktivitäten</a></Link>
+            <Link href="/ueber-mich" ><a className="navigation__link" onClick={ router.pathname === '/ueber-mich' && toggleMenu }>Über mich</a></Link>
+            <Link href="/kontakt" ><a className="navigation__link" onClick={ router.pathname === '/kontakt' && toggleMenu }>Kontakt</a></Link>
           </div>
           <address className="navigation__address">
             <img className="navigation__address-icon" src="/icon/icon-location.svg" />
@@ -67,7 +67,6 @@ const Navigation = () => {
       <nav className={`navigation navigation--desktop navigation--${ renderColor() }` }>
         <div className="navigation__inner">
           <span className="navigation__size-limiter">
-
             <img className="navigation__logo" src="/logos/logo-daniele-haerle.svg" onClick={() => router.push('/')} />
             <Link href="/schmerztherapie"><a className="navigation__link">Schmerztherapie</a></Link>
             <Link href="/aktivitaeten"><a className="navigation__link">Aktivitäten</a></Link>

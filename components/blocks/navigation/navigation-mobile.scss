@@ -4,22 +4,21 @@
 
 		&__bar {
 			z-index: 15;
-			height: 115px;
+			height: 80px;
 			position: fixed;
 			top: 0;
 			right: 0;
 			left: 0;
-			padding: 48px;
+			padding: 24px 48px;
 			background-color: $lightblue-4;
-			transition: 0.3s ease;
 		}
 		
 		&__inner {
 			z-index: 10;
-			padding: 24px 48px;
+			padding: 80px 48px 48px 48px;
 			background-color: $lightblue-10;
 			width: 100%;
-			margin-top: 115px;
+			margin-top: 80px;
 			position: fixed;
 			top: 0;
 			right: 0;
@@ -27,17 +26,21 @@
 			left: 0;
 			overflow-y: scroll;
 			opacity: 0;
-			transition: 0.3s ease;
 			pointer-events: none;
 		}
 
 		&__blocker {
-			height: 115px;
+			height: 80px;
 		}
 
 		&__logo {
-			width: 150px;
+			height: 100%;
 			cursor: pointer;
+		}
+
+		&__hamburger {
+			padding: 24px 48px;
+			height: 80px;
 		}
 
 		&__link-wrapper {
@@ -49,6 +52,11 @@
 			text-decoration: none;
 			display: inline-block;
 			margin-bottom: 32px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+			
 		}
 
 		&__address,
@@ -59,13 +67,7 @@
 			margin-bottom: 32px;
 		}
 
-		&__link,
-		&__address,
-		&__contact, 
-		&__times {
-			opacity: 0;
-			transition: 0.6s ease;
-		}
+
 
 
 
@@ -78,7 +80,6 @@
 		&__times-icon {
 			position: absolute;
 			display: block;
-			top: -3px;
 			width: 24px;
 			height: 24px;
 		}
@@ -101,11 +102,15 @@
 		@media (max-width: 850px) {
 			
 			&__inner {
+				padding: 56px 24px 24px 24px;
+			}
+
+			&__hamburger {
 				padding: 24px;
 			}
 
 			&__bar {
-				padding: 48px 24px;
+				padding: 24px;
 			}
 			
 		}
@@ -118,27 +123,11 @@
 
 	.navigation {
 
-		&__bar { background-color: $lightblue-10; }
+		&__bar { background-color: $lightblue-10 !important; }
 		&__inner { 
 			opacity: 1;
 			pointer-events: unset;	
-			transition-delay: 0s
 		}
-
-		&__link,
-		&__address,
-		&__contact, 
-		&__times {
-			opacity: 1;
-		}
-
-		&__link:nth-child(1) { transition-delay: 0.1s !important; }
-		&__link:nth-child(2) { transition-delay: 0.2s !important; }
-		&__link:nth-child(3) { transition-delay: 0.3s !important; }
-		&__link:nth-child(4) { transition-delay: 0.4s !important; }
-		&__address { transition-delay: 0.5s !important; }
-		&__contact { transition-delay: 0.6s !important; }
-		&__times { transition-delay: 0.7s !important; }
 	
 	}
 	
