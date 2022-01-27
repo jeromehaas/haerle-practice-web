@@ -58,6 +58,8 @@
 
 		&:focus {
 			border: 1px solid $lightblue-100;
+			box-shadow: 0 0 8px 0px $lightblue-50, inset 0 0 8px 0px $lightblue-50;
+
 		}
 
 		&::placeholder{

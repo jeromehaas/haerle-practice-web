@@ -10,7 +10,8 @@ const Image = ({ data }) => {
           layout="responsive"
           className={ data.className }
           alt={ data.alt }
-          src={ data.src } />
+          src={ data.src } 
+        />
       )}
     </div>
 			

@@ -1,8 +1,9 @@
 .page-navigation {
-	scroll-behavior: smooth;
+
 	&__title {
 		color: $lightblue-100;
-		margin-bottom: 23px;
+		margin-bottom: 24px;
+		line-height: 1;
 	}
 
 	&__link-wrapper {
@@ -15,17 +16,17 @@
 	&__link {
 		font-size: 20px;
 		font-weight: 600;
-		margin-right: 23px;
-		margin-bottom: 23px;
+		margin-right: 24px;
+		margin-bottom: 24px;
 		text-decoration: none;
+		font-weight: 700;
 		cursor: pointer;
-
-	
 
 		&:last-child {
 			margin-right: 0;
 			margin-bottom: 0;
 		}
+
 	}
 
 	@media (max-width: 850px) {
