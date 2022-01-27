@@ -1,6 +1,5 @@
 .footer {
-	background-image: 
-		$blue-gradient;
+	background-image: $blue-gradient;
 	background-repeat: no-repeat;
 	padding: 96px 160px;
 	position: relative;
@@ -25,12 +24,6 @@
 				margin-bottom: 0;
 			}
 
-			&:hover,
-			&:focus, 
-			&:active {
-				box-shadow: none;
-			}
-
 		}
 		
 	}
@@ -38,9 +31,7 @@
 	.privacy {
 		
 		&__link {
-			line-height: 1;
-			color: $lightblue-50 !important;
-			-webkit-text-fill-color: unset;
+			color: $lightblue-50;
 		}
 		
 		&__separator {
