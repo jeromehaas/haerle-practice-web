@@ -8,18 +8,18 @@
 	}
 	
 	&__play-button {
-		width: 150px;
-		height: 150px;
+		width: 175px;
+		height: 175px;
 		display: inline-block;
 		position: absolute;
-		top: 47.5%;
+		top: 45%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		cursor: pointer;
 		width: 80px;
 		height: 80px;
 		border-radius: 50%;
 		transition: all 0.1s ease;
+		cursor: pointer;
 
 		&:hover {
 			width: 90px;
