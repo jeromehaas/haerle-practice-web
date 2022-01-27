@@ -7,7 +7,6 @@ const Icon = ({ data }) => {
     ['slide']: <><circle cx="20.3337" cy="12.6667" r="1.66667" fill="#0B85A6"/><rect x="2" y="11" width="12.5" height="3.33333" rx="1.66667" fill="url(#paint0_linear_63_3059)"/><defs><linearGradient id="paint0_linear_63_3059" x1="2" y1="12.6669" x2="14.4973" y2="12.6669" gradientUnits="userSpaceOnUse"><stop stopColor="#003067"/><stop offset="0.0983319" stopColor="#023C70"/><stop offset="0.4492" stopColor="#07648D"/><stop offset="0.7286" stopColor="#0A7C9F"/><stop offset="0.9" stopColor="#0B85A6"/></linearGradient></defs></>,
     ['close']: <><path fillRule="evenodd" clipRule="evenodd" d="M21 4.81286L19.1871 3L12 10.1871L4.81286 3L3 4.81286L10.1871 12L3 19.1871L4.81286 21L12 13.8129L19.1871 21L21 19.1871L13.8129 12L21 4.81286Z" fill="white"/></>,
     ['back']: <><path fillRule="evenodd" clipRule="evenodd" d="M16 4.35L13.5263 2L3 12L13.5263 22L16 19.65L7.96491 12L16 4.35Z" fill="white"/></>
-
   };
  
   const renderIcon = ( icon, className ) => {    
