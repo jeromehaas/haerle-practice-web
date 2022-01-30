@@ -97,14 +97,14 @@
 
 	}
 	
-	@media (max-width: 700px) {
+	@media (max-width: 850px) {
 		
 		.section__inner {
 			padding-right: 0px;
 		}
 
 		 .item {
-			min-width: calc(100% - 24px);
+			min-width: calc(100% - 25%);
 			
 			&:last-child {
 				margin-right: 24px;
@@ -120,7 +120,7 @@
 	
 	@media (max-width: 500px) {
 		
-		&__item {
+		.item {
 			min-width: calc(100% - 24px);
 		}
 
