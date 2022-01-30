@@ -8,13 +8,16 @@ const Education = ({ data }) => {
   return (
     <Section data={{ className: 'education', anchorId: data.anchorId }}>
       <Heading data={{ className: 'education__title', level: 'h3' }}>Weiterbildungen / Tagungen</Heading>
-      { courses.map((item, index) => (
-        <EducationItem key={ index } data={{ 
-          date: item.date, 
-          activities: item.activities,
-          imageSrc: item.imageSrc
-        }}/>
-      ))}
+      <div className="education__item-wrapper">
+
+        { courses.map((item, index) => (
+          <EducationItem key={ index } data={{ 
+            date: item.date, 
+            activities: item.activities,
+            imageSrc: item.imageSrc
+          }}/>
+        ))}
+      </div>
     </Section>
   )
 };

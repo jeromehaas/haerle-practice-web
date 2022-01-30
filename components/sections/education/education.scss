@@ -1,24 +1,23 @@
 .education {
 
+	&__title {
+		margin-bottom: 48px;
+	}
+
 	.item {
 
 		display: grid;
 		grid-template: auto / 1fr 1fr;
-		padding: 24px 0;
+		padding: 48px 0;
 		border-bottom: 1px solid $lightblue-100;
+
+		&:first-child {
+			padding-top: 0px
+		}
 		
 		&:last-child {
 			border-bottom: none;
-		}
-			
-		&__title {
-		}
-
-		&__list {
-
-		}
-
-		&__list-item {
+			padding-bottom: 0px
 		}
 
 		&__image {
