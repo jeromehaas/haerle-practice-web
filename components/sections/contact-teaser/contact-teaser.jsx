@@ -17,22 +17,22 @@ const ContactTeaser = () => {
       </div>
 			
       <div className="contact-teaser__contact-wrapper">
-        <address className="contact-teaser__address">
+        <address className="contact-teaser__item">
           <img src="/icon/icon-location.svg" />
           <p>zahnmedizin luzern</p>
           <p>Dr. med. dent. Jürg Eppenberger</p>
           <p>Haldenstrasse 11</p>
           <p>6006 Luzern</p>
         </address>
-        <div className="contact-teaser__contact">
+        <div className="contact-teaser__item">
           <img src="/icon/icon-phone.svg" />
           <a href="tel:0414171707">041 417 17 07</a>
         </div>
-        <div className="contact-teaser__times">
+        <div className="contact-teaser__item">
           <img src="/icon/icon-time.svg" />
           <p>Öffnungszeiten</p>
           <p>Montag –  Freitag</p>
-          <p>09:00 – 12.00, 13:30 – 18:00 Uhr</p>
+          <p><span>09:00 – 12.00,</span><span>13:30 – 18:00 Uhr</span></p>
         </div>
       </div>
     </Section>
