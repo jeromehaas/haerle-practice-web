@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import { Section } from 'components/layouts/section/section';
 import { FileInput } from 'components/partials/file-input/file-input';
 import { TextInput } from 'components/partials/text-input/text-input';

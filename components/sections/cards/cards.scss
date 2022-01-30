@@ -104,8 +104,7 @@
 		}
 
 		 .item {
-			min-width: 65vw;
-			min-width: 400px;
+			min-width: calc(100% - 24px);
 			
 			&:last-child {
 				margin-right: 24px;

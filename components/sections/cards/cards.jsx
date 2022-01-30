@@ -5,6 +5,8 @@ import { Paragraph } from 'components/partials/paragraph/paragraph';
 import { Link } from 'components/partials/link/link';
 import { Icon } from 'components/partials/icon/icon';
 import { useRef, useEffect, useState } from 'react';
+import { Lottie } from '@crello/react-lottie';
+import CardSlide from 'public/lotties/lottie-card-slide.json';
 
 const Cards = ({ data }) => {
 
@@ -45,7 +47,14 @@ const Cards = ({ data }) => {
           }}  /> 
         ))}
       </div>
-      <Icon data={{ icon: 'slide', className: 'cards__icon' }}/>
+      <Lottie
+        config={{ animationData: CardSlide, autoplay: false, loop: false }}
+        playingState="playing"
+        speed={2}
+        height="40px"
+        direction={cardPosition === 'right' ? 1 : -1 }
+        className='cards__icon'
+      />
     </Section>
   )
 }
