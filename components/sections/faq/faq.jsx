@@ -11,7 +11,6 @@ const Faq = ({ data }) => {
   return (
     <Section data={{ className: 'faq', anchorId: data.anchorId }}>
       <div className="faq__wrapper">
-
         <Heading data={{ className: 'faq__heading', level: 'h2' }}>Häufig gestellte Fragen</Heading>
         <div className="faq__item-wrapper">
           { questions.map((item, index) =>(
@@ -40,24 +39,24 @@ const FaqItem = ({ data }) => {
   }
 
   return (
-    <div className='faq__item'>
-      <Paragraph data={{ className: 'faq__item-index', color: 'lightblue', onClick: toggleItemStatus }}>
+    <div className='faq__item item'>
+      <Paragraph data={{ className: 'item__index', color: 'darkblue', onClick: toggleItemStatus }}>
         { data.index < 10  ? `0${ data.index }` : data.index }
       </Paragraph>
-      <Heading data={{  className: 'faq__item-question', level: 'h3', color: 'lightblue', onClick: toggleItemStatus }}>
+      <Heading data={{  className: 'item__question', level: 'h3', color: 'darkblue', onClick: toggleItemStatus }}>
         { data.question }
       </Heading>
-      <Icon data={{  icon: 'arrow', className: `faq__item-icon ${itemStatus === 'closed' ? 'faq__item-icon--inverted' : '' }`, onClick: toggleItemStatus }} />
-      <Paragraph data={{ className: `faq__item-answer ${itemStatus === 'closed' ? 'faq__item-answer--hidden' : '' }`, onClick: toggleItemStatus }}>
+      <Icon data={{  icon: 'arrow', className: `item__icon ${itemStatus === 'closed' ? 'item__icon--inverted' : '' }`, onClick: toggleItemStatus }} />
+      <Paragraph data={{ className: `item__answer ${itemStatus === 'closed' ? 'item__answer--hidden' : '' }`, onClick: toggleItemStatus }}>
         { data.answer }
       </Paragraph>
       { data.videoSrc && (
-        <Video data={{ className: `faq__item-video ${itemStatus === 'closed' ? 'faq__item-video--hidden' : ''}`, src: '/videos/schmerzen-verstehen.mp4', poster: '/videos/schmerzen-verstehen-poster.png'}} /> 
+        <Video data={{ className: `item__video ${itemStatus === 'closed' ? 'item__video--hidden' : ''}`, src: '/videos/schmerzen-verstehen.mp4', poster: '/videos/schmerzen-verstehen-poster.png'}} /> 
       )}
       { data.links && (
-        <div className={`faq__item-links ${itemStatus === 'closed' ? 'faq__item-links--hidden' : '' }`}>
+        <div className={`item__links ${itemStatus === 'closed' ? 'item__links--hidden' : '' }`}>
           { data.links && data.links.map((link, index) => (
-            <Link key={ index } data={{ className: 'faq__item-link', href: '#', icon: 'external-link' }}>{ link.text }</Link> 
+            <Link key={ index } data={{ className: 'item__link', href: '#', icon: 'external-link' }}>{ link.text }</Link> 
           ))}
         </div>
       ) }

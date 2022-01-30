@@ -15,7 +15,7 @@
 		width: 100%;
 	}
 
-	&__item {
+	.item {
 		display: grid;
 		grid-template: auto auto / 48px auto 48px;
 		grid-template-areas:
@@ -23,23 +23,26 @@
 			"answer answer ."
 			"video video ."
 			"links links .";
-		margin-bottom: 32px; 
 		border-bottom: 1px solid $lightblue-100;
-		padding-bottom: 32px;
-	}
+		padding: 32px;
 
-	&__item-index {
+		&:first-child {
+			padding-top: 0;
+		}
+
+	&__index {
 		grid-area: index;
 		cursor: pointer;
+		font-weight: 500;
 	}
 	
-	&__item-question {
+	&__question {
 		grid-area: question;
 		cursor: pointer;
 		margin-right: 48px;
 	}
 
-	&__item-answer {
+	&__answer {
 		margin-top: 48px;
 		grid-area: answer;
 		cursor: pointer;
@@ -50,7 +53,7 @@
 
 	}
 
-	&__item-video {
+	&__video {
 		grid-area: video;
 		margin-top: 32px;
 
@@ -60,11 +63,9 @@
 
 	}
 
-	&__item-links {
+	&__links {
 		grid-area: links;
 		margin-top: 32px;
-		display: flex;
-		flex-direction: column;
 
 		&--hidden {
 			display: none;
@@ -72,17 +73,23 @@
 
 	}
 	
-	&__item-link {
+	&__link {
 		margin-top: 16px;
 	}
 
 
-	&__item-icon {
-		height: 24px;
-		width: 24px;
+	&__icon {
+		height: 32px;
+		width: 32px;
 		transform: rotate(90deg);
 		align-self: center;
 		cursor: pointer;
+
+		path {
+			fill: $darkblue-100;
+			stroke: $darkblue-100;
+			stroke-width: 0.5px;
+		}
 
 		&--inverted {
 			transform: rotate(270deg);
@@ -90,15 +97,47 @@
 
 	}
 
+	&:hover {
+
+		.item__index {
+			color: $lightblue-100;
+		}
+		
+		.item__question {
+			color: $lightblue-100
+		}
+
+		.item__icon {
+	
+			path {
+				fill: $lightblue-100;
+				stroke: $lightblue-100;
+			}
+		
+		}
+
+	}
+
+}
+
 	@media (max-width: 850px) {
 		
 		&__wrapper {
 			flex-direction: column;
 		}	
 
-		&__item {
-			margin-bottom: 0; 
+		.item {
+
+			&__question {
+				
+				cursor: pointer;
+				margin-right: 48px;
+			}
+
 		}
+
+
+
 	}
 
 }
