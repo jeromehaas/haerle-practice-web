@@ -2,7 +2,7 @@
 
 	&__inner {
 		display: grid;
-		grid-template: auto auto / auto auto;
+		grid-template: auto auto / auto 240px;
 		grid-template-areas:
 		"title button"
 		"text  button";

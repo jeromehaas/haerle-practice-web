@@ -10,7 +10,7 @@ const Intro = ({ data }) => {
     <>
       <Section data={{ className: 'intro intro--upper'}}>
         <div className="intro__text-wrapper">
-          <Heading data={{ level: 'h2', className: 'intro__title', color: 'lightblue' }}>{ data.title }</Heading>
+          <Heading data={{ level: 'h1', className: 'intro__title', color: 'lightblue' }}>{ data.title }</Heading>
           <Paragraph data={{ className: 'intro__text'}}>{ data.text }</Paragraph>
         </div>
         <div className="intro__image-wrapper">

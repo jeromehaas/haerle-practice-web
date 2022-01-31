@@ -9,7 +9,16 @@
 	}
 
 	&__submit {
-		margin: 0 auto 8px auto;
+		float: right;
+	}
+	
+	@media (max-width: 1000px) {
+
+		&__submit {
+			margin: 0 auto;
+			float: unset;
+		}
+
 	}
 	
 }

@@ -85,8 +85,6 @@ video {
 	font-style: inherit;
 }
 
-/* HTML5 display-role reset for older browsers */
-
 article,
 aside,
 details,
@@ -130,6 +128,10 @@ q {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+textarea {
+	resize: none;
 }
 
 ul {

@@ -8,9 +8,9 @@ const Quote = ({ data }) => {
 
   return (
     <Section data={{ className: 'quote'}}>
-      <div className='quote__image-wrapper'>
+      <div className='quote__image-wrapper image'>
         <Image data={{
-          className: 'quote__image-image',
+          className: 'image__image',
           src: data.imageSrc,
           width: 800,
           height: 950
@@ -18,21 +18,21 @@ const Quote = ({ data }) => {
         <Link data={{ 
           href: data.linkHref,
           icon: 'arrow',
-          className: 'quote__image-link'
+          className: 'image__link'
         }}>{ data.linkText }</Link>
       </div>
-      <div className='quote__quote-wrapper'>
+      <div className='quote__quote-wrapper quote'>
         <Heading data={{ 
-          className: 'quote__quote-text',
+          className: 'quote__text',
           color: data.quoteColor,
         }}>{data.quoteText}</Heading>
         <Paragraph data={{ 
-          className: 'quote__quote-author'
+          className: 'quote__author'
         }}>{ data.authorText }</Paragraph>
         <Link data={{ 
           href: data.linkHref,
           icon: 'arrow',
-          className: 'quote__link-link'
+          className: 'quote__link'
         }}>{ data.linkText }</Link>
       </div>
     </Section>

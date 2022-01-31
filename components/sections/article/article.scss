@@ -31,8 +31,8 @@
 		margin-bottom: 24px;
 	}
 
-	&__text {
-		margin-bottom: 48px;
+	&__link {
+		margin-top: 32px;
 	}
 
 	&--reverse {
@@ -74,9 +74,9 @@
 
 		}
 
-		&__text {
-			margin-bottom: 32px;
-		}
+		// &__text {
+		// 	margin-bottom: 0px;
+		// }
 
 		&--reverse-on-mobile {
 
