@@ -54,10 +54,10 @@ const Symptoms = ({ data }) => {
             <button className={`graphic__button graphic__button--three ${ activeCategory === 'three' ? 'graphic__button--active' : ''}`} onClick={ () => setActiveCategory('three')}></button>
           </div>
           <div className="visual__card">
-            <Heading data={{ level: 'h2'}}>{ signs[activeCategory].title }</Heading>
+            <Heading data={{ level: 'h5'}}>{ signs[activeCategory].title }</Heading>
             { signs[activeCategory].items.map((item, index) => (
               <div key={ index } className={`visual__item item ${activeItem === item.id ? 'item--active' : ''}`}>
-                <Heading data={{ className: 'item__title', level: 'h5', onClick: () => toggleActiveItem(item.id) }}>{ item.title }</Heading>
+                <Paragraph data={{ className: 'item__title', level: 'h5', onClick: () => toggleActiveItem(item.id) }}>{ item.title }</Paragraph>
                 <Paragraph data={{ className: 'item__text', onClick: () =>  toggleActiveItem(data.id) }}>{ item.text }</Paragraph>
                 <Icon data={{  icon: 'arrow', className: `item__icon ${activeItem !== item.id ? 'item__icon--inverted' : '' }`, onClick: () => toggleActiveItem(data.id) }} />
               </div>
