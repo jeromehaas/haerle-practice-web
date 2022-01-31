@@ -12,13 +12,14 @@
 		padding: 112px;
 		border-radius: 20px;
 		margin: 0 auto;
-		grid-row-gap: 48px;
-		grid-column-gap: 120px;
+		grid-row-gap: 80px;
+		grid-column-gap: 80px;
 	}
 
 	&__text-wrapper {
 		grid-area: text;
 		align-self: center;
+		max-width: 440px;
 	}
 
 	&__title {
@@ -37,11 +38,18 @@
 		
 		&__logo {
 			margin-bottom: 24px;
+			max-width: 350px;
+			width: 100%;
+			display: block;
 	
 			img {
 				object-fit: contain;
 			}
 
+		}
+
+		&__link {
+			display: block;
 		}
 
 	}
@@ -60,16 +68,21 @@
 			width: calc(100% - (2 * 24px));
 		}
 
+		&__text-wrapper {
+			max-width: unset;
+		}
+
 		.item {
 			
 			&__logo {
-				max-width: 400px;
+				max-width: 250px;
 		
 				img {
 					object-fit: contain;
 				}
 
 			}
+
 			
 		}
 

@@ -32,8 +32,8 @@ const Schmerztherapie = () => {
         reverseOnMobile: true
       }} /> 
       <Statement data={{ text: 'Sie als Person stehen im Zentrum – denn – «an den Zähnen hängt ein Patient!»'}} />
-      <Resume data={{ anchorId: 'lebenslauf' }} />
       <Memberships data={{ anchorId: 'mitgliedschaften'}} />
+      <Resume data={{ anchorId: 'lebenslauf' }} />
     </Page>
   )
 }
