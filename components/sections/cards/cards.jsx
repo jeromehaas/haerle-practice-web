@@ -3,8 +3,7 @@ import { Heading } from 'components/partials/heading/heading';
 import { Image } from 'components/partials/image/image';
 import { Paragraph } from 'components/partials/paragraph/paragraph';
 import { Link } from 'components/partials/link/link';
-import { Icon } from 'components/partials/icon/icon';
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useState } from 'react';
 import { Lottie } from '@crello/react-lottie';
 import CardSlide from 'public/lotties/lottie-card-slide.json';
 
