@@ -8,7 +8,7 @@ const Memberships = ({ data }) => {
   return (
     <Section data={{ className: 'memberships', anchorId: data.anchorId }}>
       <div className="memberships__text-wrapper">
-        <Heading data={{ className: 'memberships__title' }}>Mitgliedschaften</Heading>
+        <Heading data={{ className: 'memberships__title', level: 'h3' }}>Mitgliedschaften</Heading>
         <Paragraph data={{ className: 'memberships__text'}}>Frau Dr. med. dent. Daniela Haerle ist Mitglied von anerkannten Fachgesellschaften; des Weiteren besteht eine Zusammenarbeit mit dem Zentrum für Kopf-Hals-Chirurgie Hirslanden Klinik St. Anna, spezialisierte Zentren für Schlafmedizin, HNO-Ärzten, Neurologen und Psychologen.</Paragraph>
       </div>
       <div className="memberships__logo-wrapper">

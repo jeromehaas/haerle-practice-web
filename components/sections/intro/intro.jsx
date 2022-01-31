@@ -19,11 +19,13 @@ const Intro = ({ data }) => {
       </Section>
 
       <Section data={{ className: 'intro intro--lower'}}>
-        <PageNavigation data={{ 
-          className: 'intro__navigation',
-          title: 'Themen dieser Seite',
-          links: data.navigationLinks 
-        }} />
+        { data.navigationLinks.lenght && (
+          <PageNavigation data={{ 
+            className: 'intro__navigation',
+            title: 'Themen dieser Seite',
+            links: data.navigationLinks 
+          }} />
+        )}
         <div className="intro__blocker">
         </div>
       </Section>
