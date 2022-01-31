@@ -2,6 +2,7 @@
 
 	&__inner {
 		padding-top: 48px;
+		padding: 48px 120px 0 120px;
 	}
 
 	&__title {
@@ -17,6 +18,7 @@
 		grid-template-columns: 1fr 1fr;
 		grid-auto-rows: 1fr;
 		margin-bottom: 32px;
+		grid-column-gap: 48px;
 	}
 
 	.item {

@@ -19,7 +19,7 @@ const Intro = ({ data }) => {
       </Section>
 
       <Section data={{ className: 'intro intro--lower'}}>
-        { data.navigationLinks.lenght && (
+        { data.navigationLinks.length && (
           <PageNavigation data={{ 
             className: 'intro__navigation',
             title: 'Themen dieser Seite',
