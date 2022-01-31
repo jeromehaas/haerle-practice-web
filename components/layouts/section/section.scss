@@ -28,4 +28,12 @@
 
 	}
 
+	@media (max-width: 850px) {
+		
+		&__inner {
+			padding: 0 24px !important;
+		}	
+
+	}
+
 }  

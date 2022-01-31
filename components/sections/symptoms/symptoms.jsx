@@ -28,6 +28,7 @@ const Symptoms = ({ data }) => {
         <div className="symptoms__content">
           <Heading data={{ 
             className: 'symptoms__title',
+            color: 'darkblue',
             level: 'h2'
           }}>{ data.title }
           </Heading>
