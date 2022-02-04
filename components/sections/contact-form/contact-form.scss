@@ -10,7 +10,31 @@
 	}
 
 	&__submit {
-		float: right;
+		margin-bottom: 32px;
+	}
+
+	.status-bar {
+		border: 1px solid $lightblue-100;
+		border-radius: 4px;
+		padding: 24px;
+		text-align: center;
+		background-color: $white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		display: none;
+
+		&--visible {
+			display: flex;
+		}
+
+		&__icon {
+			width: 16px;
+			height: 16px;
+			margin-right: 16px;			
+		}
+		
+
 	}
 	
 	@media (max-width: 1000px) {

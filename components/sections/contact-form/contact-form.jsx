@@ -1,9 +1,11 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Section } from 'components/layouts/section/section';
 import { FileInput } from 'components/partials/file-input/file-input';
 import { TextInput } from 'components/partials/text-input/text-input';
 import { Textarea } from 'components/partials/textarea/textarea';
 import { SubmitButton } from 'components/partials/submit-button/submit-button';
+import { Icon } from 'components/partials/icon/icon';
+import axios from 'axios';
 
 const ContactForm = () => {
 
@@ -15,6 +17,12 @@ const ContactForm = () => {
     subject: { value: '', hasError: false },
     file: { value: '', hasError: false },
     message: { value: '', hasError: false },
+  });
+
+  const [statusBarState, setStatusBarState] = useState({
+    visible: false,
+    icon: 'error',
+    message: 'Hello'
   });
 
   const updateInputs = ( event ) => {
@@ -80,6 +88,36 @@ const ContactForm = () => {
     return errors;
   }
 
+  const submit = async () => {
+    try {
+      const request = await axios({
+        method: 'post',
+        url: '/api/contact-form',
+        data: {
+          firstname: formState.firstname.value,
+          lastname: formState.lastname.value,
+          phone: formState.phone.value,
+          email: formState.email.value,
+          subject: formState.subject.value,
+          message: formState.message.value,
+        }
+      });
+      setStatusBarState({
+        visible: true,
+        icon: 'success',
+        message: 'Das Formular wurde erfolgreich übermittelt!'
+      });
+      console.log(request);
+    } catch (error) {
+      console.log('Error: inputs are not valid');
+      setStatusBarState({
+        visible: true,
+        icon: 'failure',
+        message: 'Das Formular konnte nicht übermittelt werden!'
+      });
+    }
+  }
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const errors = getErrors();
@@ -87,6 +125,7 @@ const ContactForm = () => {
       console.log('Error: inputs are not valid')
     } else {
       console.log('Success: inputs are valid');
+      submit();
       clearInputs();
     }
   }
@@ -178,6 +217,11 @@ const ContactForm = () => {
           text: 'Senden',
           className: 'contact-form__submit',
         }} />
+
+        <div className={`contact-form__status-bar status-bar ${ statusBarState.visible ? 'status-bar--visible' : '' } `}>
+          <Icon data={{ icon: statusBarState.icon, className: 'status-bar__icon' }} />
+          <p className="status-bar__text">{ statusBarState.message }</p>
+        </div>
 
       </form>
 

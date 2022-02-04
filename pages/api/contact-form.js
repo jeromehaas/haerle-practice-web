@@ -54,8 +54,9 @@ const ContactForm = async (req, res) => {
 
     try {
       const body = req.body;
-      await sendEmails(body);
-      res.send('🟢 Success: Emails has been sent successfully');			
+      // await sendEmails(body);
+      console.log(body)
+      res.send('🟢 Success: Emails has been sent successfully!');			
     } catch (error) {
       console.log(`🔴 Error: ${error.message}`);
       res.status(404);
