@@ -34,14 +34,23 @@
 			margin-right: 16px;			
 		}
 		
-
 	}
 	
 	@media (max-width: 1000px) {
 
 		&__submit {
-			margin: 0 auto;
+			margin: 0 auto 32px auto;
 			float: unset;
+		}
+
+		.status-bar {
+			flex-direction: column;
+
+			&__icon {
+				margin-right: 0;			
+				margin-bottom: 16px;			
+			}
+			
 		}
 
 	}
