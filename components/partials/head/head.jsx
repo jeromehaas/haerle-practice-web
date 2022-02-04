@@ -16,6 +16,7 @@ const Head = ({ data }) => {
       <meta name="msapplication-TileColor" content="#ffffff" />
       <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
       <meta name="theme-color" content="#ffffff"></meta>
+      <script defer data-domain="danielahaerle.ch" src="https://plausible.io/js/plausible.js"></script>
     </NextHead>
   )
 };
