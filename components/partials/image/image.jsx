@@ -5,6 +5,7 @@ const Image = ({ data }) => {
     <div className={`image ${data.className ? data.className : ''}`}>
       { data.src && (
         <NextImage 
+          priority
           width={ data.width || 1600 }
           height={ data.height || 900 }
           layout="responsive"
