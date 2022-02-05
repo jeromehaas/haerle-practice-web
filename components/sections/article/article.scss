@@ -17,6 +17,7 @@
 		height: 100%;
 		position: relative;
 		grid-area: image;
+		overflow: hidden;
 	}
 
 	&__image span {
@@ -46,14 +47,6 @@
 	}
 
 	@media (max-width: 1200px) {
-		
-		&__image {
-			max-height: unset;
-		}
-		
-	}
-
-	@media (max-width: 1000px) {
 		
 		&__wrapper {
 			grid-template: auto auto / auto !important;

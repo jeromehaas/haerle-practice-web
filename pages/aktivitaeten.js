@@ -23,7 +23,8 @@ const Aktivitaeten = () => {
       <CTA data={{
         title: 'Termin vereinbaren',
         text: 'Sie finden mich in der Zahnmedizin Luzern AG, bei Dr. Jürg Eppenberger, Zahnarztpraxis für Rekonstruktive Zahnmedizin.',
-        buttonText: 'Kontak'
+        buttonText: 'Kontakt',
+        buttonHref: '/kontakt'
       }} />
     </Page>
   )

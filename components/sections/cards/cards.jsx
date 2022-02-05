@@ -34,7 +34,7 @@ const Cards = ({ data }) => {
   return (
     <Section data={{ className: 'cards'}}>
       <Heading data={{ className: 'cards__title', level: 'h2' }}>{ data.title }</Heading>
-      <div className="cards__wrapper" ref={cardsWrapperRef} onClick={ toggleCardPosition }>
+      <div className="cards__wrapper" ref={cardsWrapperRef} onClick={ toggleCardPosition } >
         {data.cards.map((card, index) => (
           <CardItem key={ index } data={{ 
             imageSrc: card.imageSrc, 

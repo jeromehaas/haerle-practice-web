@@ -18,6 +18,7 @@ const Start = () => {
         imageAlt: 'Besprechung mit Daniela Haerle'
       }} />
       <Article data={{
+        anchorId: 'intro-text',
         title: 'Gelenkschmerzen, Ohrgeräusche, unklare Zahnschmerzen, Zähneknirschen',
         text: 'Jede sechste Person beklagt solche Symptome. Bleiben die Schmerzen über einen längeren Zeitraum bestehen, können sie sich verselbständigen und chronifizieren, das heisst zu einer eigenständigen Krankheit werden. Die damit verbundene psychische Belastung ist beeinträchtigend und kostet Kraft. Eine frühzeitige Abklärung bei einem spezialisierten Zahnarzt ist daher empfehlenswert.',
         imageSrc: '/images/02-daniela-haerle-instrumente.jpg',

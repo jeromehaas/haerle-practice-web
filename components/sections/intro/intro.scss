@@ -21,7 +21,7 @@
 			grid-area: text;
 			align-self: center;
 		}
-
+		
 		.intro__title {
 			margin-bottom: 24px;
 		}
@@ -34,18 +34,19 @@
 			grid-area: image;
 			width: 100%;
 			justify-self: flex-end;
-		 }
-
+		}
+		
 		.intro__image {
 			width: 100%;
 			height: calc(100% + 200px);
 		}
-
+		
 	}
-
+	
 	&--lower {
 		overflow: visible;
 		padding-top: 48px;
+		margin-bottom: 160px;	
 		
 		.section__inner {
 			padding: 0 48px 0 120px;

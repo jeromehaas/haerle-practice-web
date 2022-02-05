@@ -25,9 +25,9 @@ p, h1, h2, h3, h4, h5 {
 }
 
 	*::selection {
-		background: rgba(228, 64, 93, 0.25);
+		background: rgba(11, 133, 166, 0.25);
 		opacity: 0.1;
-		text-decoration: underline overline $red;
+		text-decoration: underline overline $lightblue-100;
 	}
 
 	img::selection {

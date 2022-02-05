@@ -28,6 +28,7 @@
 	&__visual, .visual {
 		grid-area: visual;
 		display: grid;
+		justify-content: center;
 		
 		&__graphic, .graphic {
 			position: relative;
@@ -58,32 +59,34 @@
 					0 0 0 16px $lightblue-10;
 				cursor: pointer;
 				border: none;
-				transition: all 0.3s ease-in-out;
+				transition: all 0.1s ease-in-out;
 
 				
 				&--one { top: 19%; left: 47%; }
 				&--two { top: 33%; left: 68%; }
 				&--three { top: 50%; left: 76%; }
 
-				&:hover {
-					background-color: $darkblue-80;
-					box-shadow:
-						0 0 0 4px $lightblue-10,
-						0 0 0 5px $darkblue-80,
-						0 0 0 20px $lightblue-10;	
-				}
-					
+
+				
 				&--active {
-						animation: pulse-ring 1s ease-in-out infinite;					
+					background-color: $red;
+					box-shadow:
+					0 0 0 4px $lightblue-10,
+					0 0 0 5px $red,
+					0 0 0 16px $lightblue-10;
+
+					&:hover {
 						background-color: $red;
 						box-shadow:
 						0 0 0 4px $lightblue-10,
 						0 0 0 5px $red,
-						0 0 0 16px $lightblue-10;
-						
-						&:hover {
-							background-color: $red;
-						}
+						0 0 0 20px $lightblue-10;
+					}
+
+				}
+
+				&:not(&--active) {
+						animation: pulse-ring 4s ease-in-out infinite;		
 					}
 	
 				&:after {
@@ -102,11 +105,8 @@
 
 			}	
 
-
 		}
 		
-
-
 		&__card {
 			background-color: $white;
 			z-index: 5;
@@ -115,6 +115,7 @@
 			margin-top: -100px;
 			overflow: visible;
 			margin-bottom: 40px;
+			max-width: 500px;
 			box-shadow: 13px 13px 29px rgba(0, 0, 0, 0.11);
 		}
 		
@@ -192,19 +193,19 @@
 			0% {
 				box-shadow:
 				0 0 0 4px $lightblue-10,
-				0 0 0 5px $red,
+				0 0 0 5px $lightblue-50,
 				0 0 0 16px $lightblue-10;
 			}
-			25% {
+			5% {
 				box-shadow:
 				0 0 0 4px $lightblue-10,
-				0 0 0 5px $red,
+				0 0 0 5px $lightblue-50,
 				0 0 0 20px $lightblue-10;
 			}
-			50%, 100% {
+			10%, 100% {
 				box-shadow:
 				0 0 0 4px $lightblue-10,
-				0 0 0 5px $red,
+				0 0 0 5px $lightblue-50,
 				0 0 0 16px $lightblue-10;
 			}
 		}

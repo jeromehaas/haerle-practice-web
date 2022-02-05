@@ -16,6 +16,7 @@ const Footer = () => {
         <Link href="/impressum"><a className="privacy__link">Impressum</a></Link>
       </div>
       <img className="footer__logohead" src="/illustrations/illustration-logohead.svg" alt="Logo Head" />
+      <div className="footer__pulse"></div>
     </footer>
   )
 };
