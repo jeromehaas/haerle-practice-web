@@ -1,9 +1,12 @@
 .cards {
 	position: relative;
 	scroll-behavior: smooth;
+	overflow-x: hidden;
+	overflow-y: visible;
 
 	&__inner {
 		max-width: 1200px;
+		position: relative;
 	}
 
 	&__title {
@@ -16,6 +19,7 @@
 		overflow-x: hidden;
 		margin: 0 auto;
 		justify-content: center;
+		z-index: 5;
 	}
 
 	.item {
@@ -63,6 +67,7 @@
 
 		&__link {
 			margin-top: auto;
+			align-self: flex-start;
 		}	
 
 		&:last-child {

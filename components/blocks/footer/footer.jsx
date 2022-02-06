@@ -8,7 +8,7 @@ const Footer = () => {
         <Link href="/aktivitaeten"><a className="navigation__link">Aktivitäten</a></Link>
         <Link href="/ueber-mich"><a className="navigation__link">Über mich</a></Link>
         <Link href="/kontakt"><a className="navigation__link">Kontakt</a></Link>
-        <Link href="/kontakt"><a className="navigation__link">Anfrage senden</a></Link>
+        <Link href="/kontakt#kontakt-formular"><a className="navigation__link">Anfrage senden</a></Link>
       </div>
       <div className="footer__privacy privacy">
         <Link href="/datenschutz"><a className="privacy__link">Datebschutz</a></Link>

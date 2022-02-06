@@ -7,7 +7,7 @@ import { SubmitButton } from 'components/partials/submit-button/submit-button';
 import { Icon } from 'components/partials/icon/icon';
 import axios from 'axios';
 
-const ContactForm = () => {
+const ContactForm = ({ data }) => {
 
   const [formState, setFormState] = useState({
     firstname: { value: '', hasError: false },
@@ -131,7 +131,7 @@ const ContactForm = () => {
   }
 
   return (
-    <Section data={{ className: 'contact-form' }}>
+    <Section data={{ className: 'contact-form',  anchorId: data.anchorId }}>
 
       <form className='contact-form__form' onSubmit={ (event) => handleSubmit(event) }>
 

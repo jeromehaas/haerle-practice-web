@@ -9,8 +9,8 @@ const Section = ({ data, children }) => {
 `;
 
   return (
-    <Reveal keyframes={moveDown} triggerOnce>
-      <div className={`section ${data.className ? data.className : '' }`} >
+    <Reveal keyframes={ moveDown } triggerOnce fraction={ 0.075 } duration={ 2000 }>
+      <div className={`section ${ data.className ? data.className : '' } `} >
         <div className={`section__inner ${data.className ? `${data.className}__inner` : '' } `}>
           { children }
         </div>

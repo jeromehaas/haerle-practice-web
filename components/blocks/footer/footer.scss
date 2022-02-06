@@ -10,6 +10,8 @@
 
 	.navigation {
 		margin-bottom: 177px;
+		display: flex;
+		flex-direction: column;
 
 		&__link {
 			display: block;
@@ -19,6 +21,7 @@
 			color: $lightblue-20 !important;
 			-webkit-text-fill-color: unset;
 			font-weight: 600;
+			align-self: flex-start;
 			
 			&:last-child {
 				margin-bottom: 0;
@@ -54,12 +57,12 @@
 		width: 0px;
 		height: 0px;
 		position: absolute;
-		right: 125px;
-		bottom: 175px;
+		right: 150px;
+		bottom: 250px;
 		width: 0px;
 		height: 0px;
 		border-radius: 50%;
-		box-shadow: 0 0 20px 20px $red;
+		box-shadow: 0 0 24px 24px $red;
 		opacity: 0;
 		animation: pulse-loop 3s ease-in-out infinite;		
 	}
@@ -81,6 +84,12 @@
 			right: -100px;
 			bottom: -175px;
 			width: 500px;
+		}
+
+		&__pulse {
+			right: 125px;
+			bottom: 200px;
+			box-shadow: 0 0 16px 16px $red;
 		}
 
 

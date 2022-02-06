@@ -6,6 +6,7 @@ import { Link } from 'components/partials/link/link';
 import { useRef, useState } from 'react';
 import { Lottie } from '@crello/react-lottie';
 import CardSlide from 'public/lotties/lottie-card-slide.json';
+import Logohead from 'public/illustrations/illustration-logohead.svg'
 
 const Cards = ({ data }) => {
 

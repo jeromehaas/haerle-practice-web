@@ -46,7 +46,7 @@
 	&--lower {
 		overflow: visible;
 		padding-top: 48px;
-		margin-bottom: 160px;	
+		margin-bottom: 160px;
 		
 		.section__inner {
 			padding: 0 48px 0 120px;
@@ -63,6 +63,16 @@
 			justify-self: flex-end;
 		 }
 
+	}
+
+	&--no-links {
+		margin-bottom: 0;
+		padding-top: 0;
+
+		.section__inner {
+			margin-bottom: 48px;
+		}
+		
 	}
 
 
