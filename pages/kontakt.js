@@ -11,11 +11,11 @@ const Kontakt = () => {
       <ContactForm data={{ anchorId: 'kontakt-formular'}} />
       <Article data={{
         title: 'Sie finden mich in der Praxis von Dr. Jürg Eppenberger, Spezialist SSO für Rekonstruktive Zahnmedizin',
-        text: 'Sie finden mich bei der zahnmedizin luzern. Die Praxis von Dr. med. dent. Jürg Eppenberger umfasst ein breites Angebot. Weitere Informationen finden Sie auf der Praxis Website.',
+        text: '',
         imageSrc: '/images/12-daniela-haerle-kontakt.jpg',
         imageAlt: '',
         linkText: 'Zur Website von zahnmedizin Luzern',
-        linkHref: 'https://zahnarzt-luzern-zahnklinik.ch/',
+        linkHref: 'https://www.zahnmedizinluzern.ch ',
         linkIcon: 'external-link'
       }} />
     </Page>
