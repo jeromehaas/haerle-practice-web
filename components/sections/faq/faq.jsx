@@ -40,9 +40,6 @@ const FaqItem = ({ data }) => {
 
   return (
     <div className='faq__item item'>
-      <Paragraph data={{ className: 'item__index', color: 'darkblue', onClick: toggleItemStatus }}>
-        { data.index < 10  ? `0${ data.index }` : data.index }
-      </Paragraph>
       <Heading data={{  className: 'item__question', level: 'h3', color: 'darkblue', onClick: toggleItemStatus }}>
         { data.question }
       </Heading>

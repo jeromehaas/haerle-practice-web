@@ -19,7 +19,7 @@
 		display: grid;
 		grid-template: auto auto / 48px auto 48px;
 		grid-template-areas:
-			"index question icon"
+			"question question icon"
 			"answer answer ."
 			"video video ."
 			"links links .";
@@ -29,12 +29,6 @@
 		&:first-child {
 			padding-top: 0;
 		}
-
-	&__index {
-		grid-area: index;
-		cursor: pointer;
-		font-weight: 500;
-	}
 	
 	&__question {
 		grid-area: question;
@@ -101,10 +95,6 @@
 
 	&:hover {
 
-		.item__index {
-			color: $lightblue-100;
-		}
-		
 		.item__question {
 			color: $lightblue-100
 		}
