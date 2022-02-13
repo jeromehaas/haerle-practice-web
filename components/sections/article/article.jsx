@@ -25,10 +25,9 @@ const Article = ({ data }) => {
             level: 'h2'
           }}>{ data.title }
           </Heading>
-          <Paragraph data={{
-            className: 'article__text'
-          }}>
-            { data.text }
+          <Paragraph data={{ 
+            className: 'article__text' 
+          }}> { data.text } 
           </Paragraph>
           { data.linkText && data.linkHref ? (
             <Link data={{ 
