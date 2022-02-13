@@ -11,7 +11,7 @@ const Footer = () => {
         <Link href="/kontakt#kontakt-formular"><a className="navigation__link">Anfrage senden</a></Link>
       </div>
       <div className="footer__privacy privacy">
-        <Link href="/datenschutz"><a className="privacy__link">Datebschutz</a></Link>
+        <Link href="/datenschutz"><a className="privacy__link">Datenschutz</a></Link>
         <figure className="privacy__separator">|</figure>
         <Link href="/impressum"><a className="privacy__link">Impressum</a></Link>
       </div>
