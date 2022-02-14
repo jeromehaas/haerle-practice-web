@@ -11,7 +11,7 @@ const Schmerztherapie = () => {
     <Page data={{ title: 'Über mich'}}>
       <Auth />
       <Intro data={{
-        title: 'Dr. med. dent. Daniela Haerle Schmerzspezialistin SPS',
+        title: <>Dr. med. dent. <br/> Daniela Haerle <br /> Schmerzspezialistin SPS</>,
         text: '',
         imageSrc: '/images/09-daniela-haerle-portrait-ohne-brille.jpg',
         navigationTitle: 'navigationTitle',
