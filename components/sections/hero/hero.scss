@@ -73,7 +73,7 @@
 		&__heading {
 			top: -80px;
 			left: 96px;
-			right: 120px;
+			right: 96px;
 			pointer-events: none;
 			max-width: 600px;
 		}
@@ -93,36 +93,41 @@
 
 	@media (max-width: 850px) {
 
+		&__heading {
+			top: -132px;
+			left: 96px;
+			right: 48px;
+		}
+
 		&__image {
 			clip-path: inset(0 24px round 20px);
+			max-height: calc(100vh - 264px);
 		}
 		
 	}
 
 
-	@media (max-width: 500px) {
+	@media (max-width: 600px) {
 		padding-top: 120px;	
 
 		&__heading {
 			top: -96px;
 			left: 24px;
 			right: 24px;
-			// pointer-events: none;
 		}
-
-
 
 		&__image {
 			width: 100%;
-			min-height: 400px;
-			object-fit: cover;
+			// min-height: 400px;
+			// object-fit: cover;
 			object-position: 75% 50%;
-			position: relative
+			position: relative;
+			max-height: calc(100vh - 220px);
 		}
 
-		&__image span {
-			position: unset !important;
-		}
+		// &__image span {
+		// 	position: unset !important;
+		// }
 
 	}
 
