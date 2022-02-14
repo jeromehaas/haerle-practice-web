@@ -1,10 +1,19 @@
 .hero {
-	padding-top: 184px;
-	
+	padding-top: 240px;
+
 	&__inner {
 		position: relative;
 		transition: all 0.3s ease;
 		padding: 0 !important;
+
+		&:hover {
+
+			.hero__image {
+				clip-path: inset(0px);
+			}
+
+		}
+
 	}
 	
 	&__heading {
@@ -22,17 +31,15 @@
 		height: 100%;
 		object-fit: cover;
 		object-position: 75% 50%;
-		height: calc(100vh - 360px);
+		height: calc(100vh - 400px);
 		min-height: 500px;	
 		clip-path: inset(0 48px round 20px);
-		
-		&:hover {
-			clip-path: inset(0px);
-		}
-
 	}
 
 	&__scroll-icon {
+		z-index: 5;
+		cursor: pointer;
+		pointer-events: visibleStroke;
 		position: absolute;
 		bottom: 32px;
 		left: 50%;
@@ -44,7 +51,7 @@
 		0 0 0 4px $lightblue-10,
 		0 0 0 5px $lightblue-50,
 		0 0 0 16px $lightblue-10;
-		animation: pulse-icon 2s ease-in-out infinite;		
+		animation: pulse-icon 2s ease-in-out infinite;
 	}
 
 	@keyframes pulse-icon {
