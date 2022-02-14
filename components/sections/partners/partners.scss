@@ -7,13 +7,18 @@
 			"text first"
 			". second";
 		background-color: $lightblue-10;
-		margin: 0 48px;
-		width: calc(100% - (2 * 48px));
 		padding: 112px;
-		border-radius: 20px;
 		margin: 0 auto;
 		grid-row-gap: 80px;
 		grid-column-gap: 80px;
+		clip-path: inset(0 48px round 20px);
+		transition: all 0.3s ease;
+		max-width: unset;
+		
+			&:hover {
+				clip-path: inset(0px);
+			}
+			
 	}
 
 	&__text-wrapper {
@@ -63,9 +68,6 @@
 				"text" 
 				"first"
 				"second";
-			padding: 80px;
-			margin: 0 24px;
-			width: calc(100% - (2 * 24px));
 		}
 
 		&__text-wrapper {
@@ -91,7 +93,13 @@
 	@media (max-width: 850px) {
 
 		&__inner {
-			padding: 24px;
+			padding: 48px !important;
+			clip-path: inset(0 48px round 20px);
+			transition: all 0.3s ease;
+			max-width: unset;
+			clip-path: inset(0 24px round 20px);	
+			
+			
 		}
 
 	}

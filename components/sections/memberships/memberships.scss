@@ -8,10 +8,15 @@
 			"text logos";
 		background-color: $lightblue-10;
 		margin: 0 48px;
-		width: calc(100% - (2 * 48px));
 		padding: 112px;
-		border-radius: 20px;
 		margin: 0 auto;
+		clip-path: inset(0 48px round 20px);
+		transition: all 0.3s ease;
+		
+		&:hover {
+			clip-path: inset(0px);
+		}
+
 	}
 
 
@@ -88,8 +93,7 @@
 			"logos";
 			grid-row-gap: 80px;
 			padding: 80px;
-			margin: 0 24px;
-			width: calc(100% - (2 * 24px));
+			margin: 0px;
 		}
 
 		&__logo-wrapper {
@@ -120,7 +124,8 @@
 			"text"
 			"logos";
 			grid-row-gap: 80px;	
-			padding: 24px;
+			padding: 48px !important;
+			clip-path: inset(0 24px round 20px);
 		}
 
 		&__logo-wrapper {

@@ -1,7 +1,10 @@
 .teaser {
+
+	&__inner {
+		padding: 0 !important;
+	}
 	
 	&__container {
-		border-radius: 16px;
 		background-color: $lightblue-10;
 		box-sizing: border-box;
 		padding: 48px 114px;
@@ -11,8 +14,15 @@
 			".     item-0"
 			"title item-1"
 			".     item-2";
-			grid-column-gap: 96px;
-			grid-row-gap: 48px;
+		grid-column-gap: 96px;
+		grid-row-gap: 48px;
+		clip-path: inset(0 48px round 20px);
+		transition: all 0.3s ease;
+		
+			&:hover {
+				clip-path: inset(0px);
+			}
+
 	}
 
 	&__title { 
@@ -122,7 +132,7 @@
 				".     item-0"
 				"title item-1"
 				".     item-2";
-				padding: 48px;
+				// padding: 48px;
 		}
 
 	}
@@ -130,6 +140,7 @@
 	@media (max-width: 850px) {
 		
 		&__container {
+			clip-path: inset(0 24px round 20px);
 			grid-template: auto auto auto auto / auto;
 			grid-template-areas: 
 				"title"
