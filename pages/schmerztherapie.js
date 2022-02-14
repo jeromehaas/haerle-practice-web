@@ -49,7 +49,8 @@ const Schmerztherapie = () => {
       <CTA data={{
         title: 'Haben Sie Fragen?',
         text: 'Sie finden mich in der Zahnmedizin Luzern AG, bei Dr. Jürg Eppenberger, Zahnarztpraxis für Rekonstruktive Zahnmedizin.',
-        buttonText: 'Kontakt'
+        buttonText: 'Kontakt',
+        buttonHref: './kontakt'
       }} />
     </Page>
   )

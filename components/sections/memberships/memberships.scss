@@ -27,8 +27,12 @@
 	&__logo-wrapper {
 		grid-area: logos;
 		display: grid;
-		grid-template: auto auto / auto auto;
-		grid-row-gap: 48px;
+		grid-template: auto auto auto / auto auto;
+		grid-row-gap: 24px;
+		grid-template-areas: 
+			"button-1 button-2"
+			"button-3 button-3"
+			"button-4 button-5";
 		grid-column-gap: 48px;
 	}
 
@@ -38,10 +42,11 @@
 			object-fit: contain;
 		}
 
-		&--1 { width: 50%; justify-self: end;  max-width: 200px;}
-		&--2 { width: 75%; justify-self: end;  max-width: 350px;}
-		&--3 { width: 75%; justify-self: end; max-width: 300px; }
-		&--4 { width: 50%; justify-self: end;  max-width: 250px;}
+		&--1 { grid-area: button-1; width: 75%; justify-self: end;  max-width: 200px; align-self: center; }
+		&--2 { grid-area: button-2; width: 75%; justify-self: end;  max-width: 350px;}
+		&--3 { grid-area: button-3; width: 75%; justify-self: center; max-width: 300px; grid-column: span 2; margin-right: -100px;  }
+		&--4 { grid-area: button-4; width: 75%; justify-self: end;  max-width: 350px; }
+		&--5 { grid-area: button-5; width: 75%; justify-self: end;  max-width: 250px;}
 
 	}
 
@@ -66,8 +71,9 @@
 	
 			&--1 { width: 75%; justify-self: end; }
 			&--2 { width: 100%; justify-self: end; }
-			&--3 { width: 100%; justify-self: end; }
+			&--3 { width: 100%; justify-self: center; }
 			&--4 { width: 75%; justify-self: end; }
+			&--5 { width: 75%; justify-self: end; }
 	
 		}
 
@@ -100,7 +106,7 @@
 			&--1 { width: 50%; justify-self: center; }
 			&--2 { width: 75%; justify-self: center; }
 			&--3 { width: 75%; justify-self: center; }
-			&--4 { width: 50%; justify-self: center; }
+			&--4 { width: 75%; justify-self: center; }
 	
 		}
 
@@ -130,9 +136,10 @@
 	
 			&--1 { width: 100%; justify-self: center; }
 			&--2 { width: 100% }
-			&--3 { width: 100% }
+			&--3 { width: 50% }
 			&--4 { width: 100%; justify-self: end; }
-	
+			&--5 { width: 100%; justify-self: end; }
+
 		}
 
 	}
@@ -146,6 +153,16 @@
 		&__logo-wrapper {
 			grid-row-gap: 24px;
 			grid-column-gap: 48px;
+		}
+		
+		&__logo {
+	
+			&--1 { width: 100%; justify-self: center; }
+			&--2 { width: 100% }
+			&--3 { width: 50%; margin-right: 0; }
+			&--4 { width: 100%; justify-self: end; }
+			&--5 { width: 100%; justify-self: end; }
+
 		}
 
 	}

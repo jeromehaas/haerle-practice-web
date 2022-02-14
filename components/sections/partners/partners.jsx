@@ -38,7 +38,7 @@ const Partners = ({ data }) => {
         <NextLink href="tel:0415440716"><a className="paragraph item__link">F 041 544 07 16</a></NextLink>
         <NextLink href="mailto:khc@hin.ch"><a className="paragraph item__link">khc@hin.ch</a></NextLink>
         <br />
-        <Link data={{ icon: 'external-link'}}>kopf-hals-chirurgie.ch</Link>
+        <Link data={{ icon: 'external-link', href: 'https://kopf-hals-chirurgie.ch', target: '_blank'}}>kopf-hals-chirurgie.ch</Link>
       </div>
     </Section>
   )
