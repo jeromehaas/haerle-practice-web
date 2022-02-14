@@ -20,12 +20,10 @@ const Partners = ({ data }) => {
         <Paragraph data={{}}>Haldenstrasse 11</Paragraph>
         <Paragraph data={{}}>6006 Luzern</Paragraph>
         <br />
-        {/* <Paragraph data={{}}>041 417 17 07</Paragraph>
-        <Paragraph data={{}}>info@zahnmedizinluzern.ch</Paragraph> */}
         <NextLink href="tel:0414171707"><a className="paragraph item__link">T 041 417 17 07</a></NextLink>
         <NextLink href="mailto:info@zahnmedizinluzern.ch"><a className="paragraph item__link">info@zahnmedizinluzern.ch</a></NextLink>
         <br />
-        <Link data={{ icon: 'external-link'}}>zahnmedizinluzern.ch</Link>
+        <Link data={{ icon: 'external-link', href: 'https://zahnmedizinluzern.ch', target: '_blank'}}>zahnmedizinluzern.ch</Link>
       </div>
 
       <div className="partners__item item item--second">

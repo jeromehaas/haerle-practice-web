@@ -2,7 +2,6 @@ import { Section } from 'components/layouts/section/section';
 import { Paragraph } from 'components/partials/paragraph/paragraph';
 import { Heading } from 'components/partials/heading/heading';
 import { Image } from 'components/partials/image/image';
-import Link from 'next/link';
 
 const Memberships = ({ data }) => {
 
