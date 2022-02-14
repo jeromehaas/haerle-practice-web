@@ -34,15 +34,11 @@ const Partners = ({ data }) => {
         <Paragraph data={{}}>Lützelmattstrasse 3</Paragraph>
         <Paragraph data={{}}>6006 Luzern</Paragraph>
         <br />
-        {/* <Paragraph data={{}}>T 041 544 07 08</Paragraph> */}
-        {/* <Paragraph data={{}}>F 041 544 07 16</Paragraph> */}
-        {/* <Paragraph data={{}}>info@zahnmedizinluzern.ch</Paragraph> */}
         <NextLink href="tel:0415440708"><a className="paragraph item__link">T 041 544 07 08</a></NextLink>
         <NextLink href="tel:0415440716"><a className="paragraph item__link">F 041 544 07 16</a></NextLink>
         <NextLink href="mailto:khc@hin.ch"><a className="paragraph item__link">khc@hin.ch</a></NextLink>
         <br />
-        {/* <Paragraph data={{}}>info@zahnmedizinluzern.ch</Paragraph> */}
-        <Link data={{ icon: 'external-link'}}>kopf-hals-chierurgie.ch</Link>
+        <Link data={{ icon: 'external-link'}}>kopf-hals-chirurgie.ch</Link>
       </div>
     </Section>
   )
