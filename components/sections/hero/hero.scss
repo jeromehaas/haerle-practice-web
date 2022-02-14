@@ -72,6 +72,7 @@
 			left: 96px;
 			right: 120px;
 			pointer-events: none;
+			max-width: 600px;
 		}
 
 		&__image {
@@ -81,7 +82,7 @@
 			height: calc(100vh);
 			object-fit: cover;
 			object-position: 75% 50%;
-			max-height: calc(100vh - 300px);
+			max-height: calc(100vh - 380px);
 			min-height: 300px;
 		}
 
