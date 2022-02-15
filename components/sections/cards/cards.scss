@@ -16,7 +16,7 @@
 	&__wrapper {
 		display: flex;
 		flex-direction: row;
-		overflow-x: hidden;
+		overflow-x: scroll;
 		margin: 0 auto;
 		justify-content: center;
 		z-index: 5;
@@ -29,7 +29,6 @@
 		display: grid;
 		grid-template-rows: 300px auto;
 		transition: all 0.3s ease;
-		overflow: hidden;
 		width: 50%;
 
 		
