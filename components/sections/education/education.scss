@@ -1,0 +1,46 @@
+.education {
+
+	&__inner {
+		padding: 0 48px 0 120px;
+	}
+
+	&__title {
+		margin-bottom: 48px;
+	}
+
+	.item {
+
+		display: grid;
+		grid-template: auto / 1fr 1fr;
+		padding: 48px 0;
+		border-bottom: 1px solid $lightblue-100;
+
+		&:first-child {
+			padding-top: 0px
+		}
+		
+		&:last-child {
+			border-bottom: none;
+			padding-bottom: 0px
+		}
+
+		&__image {
+			margin-top: 24px;
+		}
+
+	}
+
+	@media (max-width: 850px) {
+
+		.item {
+			grid-template: auto auto / auto;
+
+			&__title {
+				margin-bottom: 24px;
+			}
+			
+		}
+
+	}
+
+}

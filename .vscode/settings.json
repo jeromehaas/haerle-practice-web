@@ -1,0 +1,5 @@
+{
+	"typescript.validate.enable": false,
+	"explorer.compactFolders": false,
+	"editor.hover.delay": 2000
+}

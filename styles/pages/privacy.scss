@@ -1,0 +1,22 @@
+.privacy {
+	 
+	&__intro {
+		background-color: $lightblue-20 !important;
+		padding-bottom: 48px;
+		padding-top: 48px;
+		margin-bottom: 0;
+
+		.heading {
+			margin-bottom: 24px;
+		}
+
+	}
+
+	&__navigation {
+		background-color: $lightblue-20;
+		margin-bottom: 0;
+		padding-bottom: 48px;
+	}
+		 
+
+}

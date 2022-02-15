@@ -1,0 +1,159 @@
+.faq {
+
+	&__wrapper {
+		display: flex; 
+		flex-direction: row;
+	}
+
+	&__heading {
+		width: 480px;
+		margin-right: 48px;
+		margin-bottom: 48px;
+	}
+
+	&__item-wrapper {
+		width: 100%;
+	}
+
+	.item {
+		display: grid;
+		grid-template: auto auto / 48px auto 48px;
+		grid-template-areas:
+			"question question icon"
+			"answer answer ."
+			"video video ."
+			"links links .";
+		border-bottom: 1px solid $lightblue-100;
+		padding: 32px;
+
+		&:first-child {
+			padding-top: 0;
+		}
+	
+	&__question {
+		grid-area: question;
+		cursor: pointer;
+		margin-right: 48px;
+	}
+
+	&__answer {
+		margin-top: 48px;
+		grid-area: answer;
+		cursor: pointer;
+
+		&--hidden {
+			display: none;
+		}
+
+	}
+
+	&__video {
+		grid-area: video;
+		margin-top: 32px;
+
+		&--hidden {
+			display: none;
+		} 
+
+	}
+
+	&__links {
+		grid-area: links;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		&--hidden {
+			display: none;
+		}
+
+	}
+	
+	&__link {
+		margin-top: 16px;
+	}
+
+
+	&__icon {
+		height: 32px;
+		width: 32px;
+		transform: rotate(90deg);
+		align-self: center;
+		cursor: pointer;
+
+		path {
+			fill: $darkblue-100;
+			stroke: $darkblue-100;
+			stroke-width: 0.5px;
+		}
+
+		&--inverted {
+			transform: rotate(270deg);
+		}
+
+	}
+
+	&:hover {
+
+		.item__question {
+			color: $lightblue-100
+		}
+
+		.item__icon {
+	
+			path {
+				fill: $lightblue-100;
+				stroke: $lightblue-100;
+			}
+		
+		}
+
+	}
+
+}
+
+	@media (max-width: 850px) {
+		
+		&__wrapper {
+			flex-direction: column;
+		}	
+
+		.item {
+
+			&__question {
+				
+				cursor: pointer;
+				margin-right: 48px;
+			}
+
+		}
+
+	}
+
+	@media (max-width: 550px) {
+		
+		.item {
+			display: grid;
+			grid-template: auto auto / 48px auto 24px;
+			grid-template-areas:
+				"question question icon"
+				"answer answer answer"
+				"video video video"
+				"links links link";
+			border-bottom: 1px solid $lightblue-100;
+			padding: 32px 0;
+
+			&__index {
+				display: none;
+			}
+
+			&__icon {
+				height: 24px;
+				width: 24px;
+			}
+
+		}
+
+	}
+
+}

@@ -1,0 +1,40 @@
+@import 'styles/configs/variables.scss';
+
+* {
+	color: $darkblue-100;
+	font-family: 'Greycliff-CF', Helvetica, serif;
+	box-sizing: border-box;
+	scrollbar-width: none;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+*::-webkit-scrollbar {
+	display: none;
+	-webkit-appearance: none;
+}
+
+p, h1, h2, h3, h4, h5 {
+  text-decoration: underline transparent;
+	text-underline-position: from-font;
+	stroke-width: 5px;
+	text-decoration-thickness: 3px;
+}
+
+	*::selection {
+		background: rgba(11, 133, 166, 0.25);
+		opacity: 0.1;
+		text-decoration: underline overline $lightblue-100;
+	}
+
+	img::selection {
+		background: rgba(0, 0, 0, 0);
+		opacity: 0.1;
+	}
+
+body {
+	background-color: $lightblue-4;
+}

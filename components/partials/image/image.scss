@@ -1,0 +1,12 @@
+.image {
+	position: relative;
+
+	span {
+		position: unset !important;
+	}
+
+	img {
+		object-fit: cover;
+	}
+
+}

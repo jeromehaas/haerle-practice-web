@@ -1,0 +1,46 @@
+.button {
+	border: 1px solid $lightblue-80;
+	color: $lightblue-80;
+	max-width: 280px;
+	width: 100%;
+	height: 80px;
+	border-radius: 8px;
+	background-color: transparent;
+	cursor: pointer;
+	text-decoration: none;
+	margin-bottom: 4px;
+	display: block;
+	z-index: 5;
+	line-height: 80px;
+	text-align: center;
+	
+	
+	&:hover {
+		background: $blue-gradient;
+		color: $white;
+		color: $lightblue-10;
+	}
+
+	&:active {
+		background: $darkblue-100;
+		color: $lightblue-10;
+	}
+
+	&:focus {
+		background: $blue-gradient;
+		box-shadow: 0 0 8px 0px $lightblue-100;
+		outline: none;
+		color: $lightblue-10;
+	}
+
+	&:disabled {
+		border: 1px solid $lightgrey;
+		color: $lightgrey;
+		pointer-events: none;
+	}
+
+	@media (max-width: 450px) {
+		max-width: unset;
+	}
+
+}
