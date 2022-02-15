@@ -13,28 +13,16 @@ const Cards = ({ data }) => {
 	
   const [cardPosition, setCardPosition] = useState('left');
 
-  const toggleCardPosition = () => {
-    if (cardPosition === 'left') {
-      setCardPosition('right');
-      cardsWrapperRef.current.scroll({
-        top: 0,
-        left: 500,
-        behavior: 'smooth'
-      });
-    } else {
-      setCardPosition('left');
-      cardsWrapperRef.current.scroll({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-      });
-    }
+  const updateHandle = () => {
+    const cardsWrapperWidth = cardsWrapperRef.current.offsetWidth;
+    const verticalScrollOffset = cardsWrapperRef.current.scrollLeft;
+    verticalScrollOffset > cardsWrapperWidth / 2 ? setCardPosition('right') : setCardPosition('left');
   }
 
   return (
     <Section data={{ className: 'cards'}}>
       <Heading data={{ className: 'cards__title', level: 'h2' }}>{ data.title }</Heading>
-      <div className="cards__wrapper" ref={cardsWrapperRef} onClick={ toggleCardPosition } >
+      <div className="cards__wrapper" ref={cardsWrapperRef} onScroll={ updateHandle } >
         {data.cards.map((card, index) => (
           <CardItem key={ index } data={{ 
             imageSrc: card.imageSrc, 
