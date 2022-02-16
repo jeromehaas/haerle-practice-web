@@ -31,7 +31,7 @@
 		height: 100%;
 		object-fit: cover;
 		object-position: 75% 50%;
-		height: calc(100vh - 400px);
+		// height: calc(100vh - 400px);
 		min-height: 500px;	
 		clip-path: inset(0 48px round 20px);
 	}
@@ -41,10 +41,10 @@
 		cursor: pointer;
 		pointer-events: visibleStroke;
 		position: absolute;
-		bottom: 32px;
+		bottom: 80px;
 		left: 50%;
-		width: 64px;
-		width: 64px;
+		width: 48px;
+		width: 48px;
 		transform: translateX(-50%);
 		border-radius: 50%;
 		box-shadow:
@@ -118,16 +118,10 @@
 
 		&__image {
 			width: 100%;
-			// min-height: 400px;
-			// object-fit: cover;
 			object-position: 75% 50%;
 			position: relative;
 			max-height: calc(100vh - 220px);
 		}
-
-		// &__image span {
-		// 	position: unset !important;
-		// }
 
 	}
 

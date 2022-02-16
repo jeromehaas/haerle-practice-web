@@ -2,7 +2,7 @@ import NextImage from 'next/image';
 
 const Image = ({ data }) => {
   return (
-    <div className={`image ${data.className ? data.className : ''}`}>
+    <div className={`image ${data.className ? data.className : ''}`} ref={ data.ref } >
       { data.src && (
         <NextImage 
           priority

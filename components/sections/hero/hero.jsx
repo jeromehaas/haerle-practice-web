@@ -11,13 +11,13 @@ const Hero = ({ data }) => {
         className: 'hero__heading',
         color: data.titleColor,
       }}>{data.titleText}</Heading>
-      <Link to={ 'intro-text' } className="hero__scroll-link" duration={500} smooth>
-        <img className="hero__scroll-icon" src='/icon/scroll.svg'></img>
-      </Link>
       <Image data={{
         className: 'hero__image',
         src: data.imageSrc
       }} />
+      <Link to={ 'intro-text' } className="page-navigation__link" duration={500} smooth>
+        <img className="hero__scroll-icon" src='/icon/scroll.svg'></img>
+      </Link>
     </Section>
   )
 };
