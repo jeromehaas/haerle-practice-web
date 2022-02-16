@@ -31,7 +31,7 @@
 		height: 100%;
 		object-fit: cover;
 		object-position: 75% 50%;
-		// height: calc(100vh - 400px);
+		height: calc(100vh - 400px);
 		min-height: 500px;	
 		clip-path: inset(0 48px round 20px);
 	}
@@ -41,10 +41,10 @@
 		cursor: pointer;
 		pointer-events: visibleStroke;
 		position: absolute;
-		bottom: 80px;
+		bottom: 32px;
 		left: 50%;
-		width: 48px;
-		width: 48px;
+		width: 64px;
+		width: 64px;
 		transform: translateX(-50%);
 		border-radius: 50%;
 		box-shadow:
@@ -73,7 +73,7 @@
 		&__heading {
 			top: -80px;
 			left: 96px;
-			right: 96px;
+			right: 120px;
 			pointer-events: none;
 			max-width: 600px;
 		}
@@ -93,12 +93,6 @@
 
 	@media (max-width: 850px) {
 
-		&__heading {
-			top: -132px;
-			left: 96px;
-			right: 48px;
-		}
-
 		&__image {
 			clip-path: inset(0 24px round 20px);
 			max-height: calc(100vh - 264px);
@@ -107,20 +101,38 @@
 	}
 
 
-	@media (max-width: 600px) {
+	@media (max-width: 500px) {
 		padding-top: 120px;	
 
 		&__heading {
 			top: -96px;
 			left: 24px;
-			right: 48px;
+			right: 24px;
 		}
+
+
 
 		&__image {
 			width: 100%;
+			min-height: 400px;
+			object-fit: cover;
 			object-position: 75% 50%;
 			position: relative;
-			max-height: calc(100vh - 220px);
+			max-height: calc(100vh - 264px);
+		}
+
+		&__image span {
+			position: unset !important;
+		}
+
+		&__scroll-icon {
+			z-index: 5;
+			cursor: pointer;
+			pointer-events: visibleStroke;
+			position: absolute;
+			bottom: 80px;
+			width: 40px;
+			width: 40px;
 		}
 
 	}
