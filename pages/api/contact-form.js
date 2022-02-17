@@ -13,7 +13,7 @@ const sendEmails = (body) => {
     to: 'info@danielahaerle.ch',
     subject: body.subject,
     template: 'contact-form-message',
-    text: 'Find the latest development on the crypto portfolio',
+    text: 'Eine neue Nachricht von der Website',
     'v:firstname': body.firstname,
     'v:lastname': body.lastname,
     'v:phone': body.phone,
@@ -28,7 +28,7 @@ const sendEmails = (body) => {
     to: body.email,
     subject: body.subject,
     template: 'contact-form-confirmation',
-    text: 'Find the latest development on the crypto portfolio',
+    text: 'Besten Dank für Ihre Nachricht!',
     'v:firstname': body.firstname,
     'v:lastname': body.lastname,
   };
