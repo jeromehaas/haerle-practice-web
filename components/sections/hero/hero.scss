@@ -31,8 +31,8 @@
 		height: 100%;
 		object-fit: cover;
 		object-position: 75% 50%;
-		height: calc(100vh - 400px);
-		min-height: 500px;	
+		min-height: 450px;	
+		max-height: calc(100vh - 400px);
 		clip-path: inset(0 48px round 20px);
 	}
 
@@ -118,7 +118,7 @@
 			object-fit: cover;
 			object-position: 75% 50%;
 			position: relative;
-			max-height: calc(100vh - 264px);
+			max-height: calc(100vh - 220px);
 		}
 
 		&__image span {
