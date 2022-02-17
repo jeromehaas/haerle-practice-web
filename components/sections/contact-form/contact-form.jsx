@@ -92,7 +92,7 @@ const ContactForm = ({ data }) => {
     try {
       const request = await axios({
         method: 'post',
-        url: 'https://danielahaerle.ch/api/contact-form',
+        url: '/api/contact-form',
         data: {
           firstname: formState.firstname.value,
           lastname: formState.lastname.value,
