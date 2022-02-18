@@ -3,13 +3,13 @@ const fs = require('fs');
 const handlebars = require('handlebars');
 
 const transporter = Nodemailer.createTransport({
-  host: 'mail.cyon.ch',
-  port: 587,
+  host: process.env.NEXT_PUBLIC_SMTP_HOST,
+  port: process.env.NEXT_PUBLIC_SMTP_PORT,
   secure: false,
   requireTLS: true,
   auth: {
-    user: 'info@danielahaerle.ch',
-    pass: 'Nd90#P8iNGz8',
+    user: process.env.NEXT_PUBLIC_SMTP_USER,
+    pass: process.env.NEXT_PUBLIC_SMTP_PASSWORD,
   },
   logger: false
 });
@@ -63,13 +63,13 @@ const ContactForm = async (req, res) => {
       const body = req.body;
       const { message, confirmation } = await createTemplates(body);	
       dispatch({
-        from: '"Daniela Haerle" <info@mail.danielahaerle.ch>',
-        to: 'info@danielahaerle.ch',
+        from: process.env.NEXT_PUBLIC_SMTP_SENDER,
+        to: process.env.NEXT_PUBLIC_SMTP_USER,
         subject: 'Eine neue Nachricht von der Website',
         html: message,
       });
       dispatch({
-        from: '"Daniela Haerle" <info@mail.danielahaerle.ch>',
+        from: process.env.NEXT_PUBLIC_SMTP_SENDER,
         to: body.email,
         subject: 'Vielen Dank für Ihre Nachricht',
         html: confirmation,
