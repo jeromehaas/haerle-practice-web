@@ -31,7 +31,7 @@ const dispatch = async ( data ) => {
 const createTemplates = async ( body ) => {
   try {
     let message; 
-    message = await fs.readFileSync('public/email-templates/contact-form/message.html', 'UTF-8');
+    message = await fs.readFileSync('/email-templates/contact-form/message.html', 'UTF-8');
     message = handlebars.compile(message);
     message = message({ 
       firstname: body.firstname,
@@ -42,7 +42,7 @@ const createTemplates = async ( body ) => {
       message: body.message,
     });
     let confirmation; 
-    confirmation = await fs.readFileSync('public/email-templates/contact-form/confirmation.html', 'UTF-8');
+    confirmation = await fs.readFileSync('/email-templates/contact-form/confirmation.html', 'UTF-8');
     confirmation = handlebars.compile(confirmation);
     confirmation = confirmation({ 
       firstname: body.firstname,
