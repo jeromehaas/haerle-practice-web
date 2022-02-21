@@ -33,7 +33,7 @@ const createMessage = ( body ) => {
   	from: process.env.NEXT_PUBLIC_SMTP_SENDER,
     to: process.env.NEXT_PUBLIC_SMTP_USER,
     subject: 'Eine neue Nachricht von der Website',
-		html: messageTemplate, 
+		html: '<h1>hello message</h1>', 
 	};
 
 	return messageData;
@@ -58,7 +58,7 @@ const createConfirmation = ( body ) => {
   	from: process.env.NEXT_PUBLIC_SMTP_SENDER,
     to: body.email,
     subject: 'Vielen Dank für Ihre Nachricht',
-		html: confirmationTemplate, 
+		html: '<h1>hello message</h1>', 
 	};
 
 	return confirmationData;
