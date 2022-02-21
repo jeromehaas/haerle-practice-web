@@ -3,74 +3,53 @@ const fs = require('fs');
 const handlebars = require('handlebars');
 const path = require('path');
 
+const transporter = Nodemailer.createTransport({
+  host: process.env.NEXT_PUBLIC_SMTP_HOST,
+  port: process.env.NEXT_PUBLIC_SMTP_PORT,
+  secure: false,
+  requireTLS: true,
+  auth: {
+    user: process.env.NEXT_PUBLIC_SMTP_USER,
+    pass: process.env.NEXT_PUBLIC_SMTP_PASSWORD,
+  },
+  logger: false
+});
 
-const ContactForm = async( req, res ) => {
+const ContactForm = async ( req, res ) => {
 
-	await new Promise((resolve, reject) => {
-	
-		const transporter = Nodemailer.createTransport({
-			host: process.env.NEXT_PUBLIC_SMTP_HOST,
-			port: process.env.NEXT_PUBLIC_SMTP_PORT,
-			secure: true,
-			requireTLS: true,
-			auth: {
-				user: process.env.NEXT_PUBLIC_SMTP_USER,
-				pass: process.env.NEXT_PUBLIC_SMTP_PASSWORD,
-			},
-			logger: false
-		});
+  await new Promise((resolve, reject) => {
+    transporter.verify(function (error, success) {
+      if (error) {
+        console.log(error);
+        reject(error);
+      } else {
+        console.log('Server is ready to take our messages');
+        resolve(success);
+      }
+    });
+  });
 
-		transporter.verify((error) => {
-			if (error) {
-				console.log(`🔴 Error: ${error.message}`);
-				throw new Error(error);
-			} else {
-				console.log('🟢 Success: Server is ready to take our messages');
-			}
-		});
-		
-		const messageData = {
-			from: '"Daniela Haerle" <info@mail.danielahaerle.ch>',
-			to: 'info@danielahaerle.ch',
-			subject: 'Eine neue Nachricht von der Website',
-			text: 'text',
-			html: '<h1>hello message</h1>', 
-		};
+  const mailData = {
+    from: '"Daniela Haerle" <info@mail.danielahaerle.ch>',
+    to: 'hello@jeromehaas.ch', 
+    subject: 'test', 
+    text: 'test', 
+    html: 'test', 
+  };
 
-		const confirmationData = {
-			from: '"Daniela Haerle" <info@mail.danielahaerle.ch>',
-			to: 'hello@jeromehaas.ch',
-			subject: 'Vielen Dank für Ihre Nachricht',
-			text: 'text',
-			html: '<h1>hello message</h1>', 
-		};
-
-		transporter.sendMail(messageData, (error) => {
-			if (error) {
-				console.error(error);
-				reject(error);
-			} else {
-				console.log('🟢 Success: Message email has been sent successfully!');
-			}
-		});
-		
-		transporter.sendMail(confirmationData, (error) => {
-			if (error) {
-				console.error(error);
-				reject(error);
-			} else {
-				console.log('🟢 Success: Confirmation email has been sent successfully!');	
-			}
-		});
-
-		resolve();
-		res.send('🟢 Success: Confirmation email has been sent successfully!');
-		
-	}).catch((error) => {
-		console.log(`🔴 Error: ${error.message}`);
-		res.send(`🔴 Error: ${error.message}`);
-	});
-
+  await new Promise((resolve, reject) => {
+    transporter.sendMail(mailData, (err, info) => {
+      if (err) {
+        console.error(err);
+        reject(err);
+        res.send(err.message)
+      } else {
+        console.log(info);
+        resolve(info);
+        res.send('ok');
+      }
+    });
+  });
 
 }; 
 
