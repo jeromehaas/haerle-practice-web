@@ -90,9 +90,9 @@ const ContactForm = ({ data }) => {
 
   const submit = async () => {
     try {
-      const request = await axios({
+      await axios({
         method: 'post',
-        url: '/api/contact-form',
+        url: '/api/contact-form/message',
         data: {
           firstname: formState.firstname.value,
           lastname: formState.lastname.value,
@@ -102,12 +102,19 @@ const ContactForm = ({ data }) => {
           message: formState.message.value,
         }
       });
+      await axios({
+        method: 'post',
+        url: '/api/contact-form/confirmation',
+        data: {
+          firstname: formState.firstname.value,
+          lastname: formState.lastname.value,
+        }
+      });
       setStatusBarState({
         visible: true,
         icon: 'success',
         message: 'Das Formular wurde erfolgreich übermittelt!'
       });
-      console.log(request);
     } catch (error) {
       console.log('Error: inputs are not valid');
       setStatusBarState({

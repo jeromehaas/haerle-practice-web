@@ -6,11 +6,7 @@ const createConfirmation = ( data ) => {
 	confirmation = handlebars.compile(confirmationTemplate);
 	confirmation = confirmation({ 
 		firstname: data.firstname,
-		lastname: data.lastname,
-		subject: data.subject,
-		email: data.email,
-		phone: data.phone,
-		message: data.message,
+		lastname: data.lastname
 	});
 	return confirmation;
 };
