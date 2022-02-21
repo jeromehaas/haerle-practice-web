@@ -1,6 +1,7 @@
 const Nodemailer = require('nodemailer');
 const fs = require('fs');
 const handlebars = require('handlebars');
+const path = require('path');
 
 const transporter = Nodemailer.createTransport({
   host: process.env.NEXT_PUBLIC_SMTP_HOST,
@@ -29,9 +30,10 @@ const dispatch = async ( data ) => {
 }
 
 const createTemplates = async ( body ) => {
+  console.log(path.resolve(process.cwd(), './public/email-templates'))
   try {
     let message; 
-    message = await fs.readFileSync('public/email-templates/contact-form/message.html', 'UTF-8');
+    message = await fs.readFileSync(path.resolve(process.cwd(), './public/email-templates/contact-form/message.html'), 'UTF-8');
     message = handlebars.compile(message);
     message = message({ 
       firstname: body.firstname,
@@ -42,7 +44,7 @@ const createTemplates = async ( body ) => {
       message: body.message,
     });
     let confirmation; 
-    confirmation = await fs.readFileSync('public/email-templates/contact-form/confirmation.html', 'UTF-8');
+    confirmation = await fs.readFileSync(path.resolve(process.cwd(), './public/email-templates/contact-form/confirmation.html'), 'UTF-8');
     confirmation = handlebars.compile(confirmation);
     confirmation = confirmation({ 
       firstname: body.firstname,
