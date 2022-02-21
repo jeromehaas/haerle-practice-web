@@ -34,7 +34,7 @@ const ContactForm = async ( req, res ) => {
     to: 'hello@jeromehaas.ch', 
     subject: 'test', 
     text: 'test', 
-    html: 'test', 
+    html: '<h1>test</h1>', 
   };
 
   await new Promise((resolve, reject) => {
