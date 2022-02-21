@@ -15,19 +15,9 @@ const transporter = Nodemailer.createTransport({
   logger: false
 });
 
-const ContactForm = async ( req, res ) => {
 
-  await new Promise((resolve, reject) => {
-    transporter.verify(function (error, success) {
-      if (error) {
-        console.log(error);
-        reject(error);
-      } else {
-        console.log('Server is ready to take our messages');
-        resolve(success);
-      }
-    });
-  });
+
+const ContactForm = async ( req, res ) => {
 
   const mailData = {
     from: '"Daniela Haerle" <info@mail.danielahaerle.ch>',
