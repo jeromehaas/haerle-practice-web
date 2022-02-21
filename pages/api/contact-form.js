@@ -33,6 +33,7 @@ const ContactForm = async ( req, res ) => {
         reject(error);
       } else {
         console.log('Server is ready to take our messages');
+        resolve(success);
       }
     });
 
@@ -40,22 +41,14 @@ const ContactForm = async ( req, res ) => {
       if (err) {
         console.error(err);
         reject(err);
+        res.send(err.message)
       } else {
-				console.log('email 1 sended successfully');
-			}
-		});
+        console.log(info);
+        resolve(info);
+        res.send('ok');
+      }
+    });
 
-    transporter.sendMail(mailData, (err) => {
-      if (err) {
-        console.error(err);
-        reject(err);
-      } else {
-				console.log('email 2 sended successfully');
-			}
-		});
-		
-		resolve();
-		
   }).catch((error) => {
 		console.log(error);	
 	}).then(() => {
