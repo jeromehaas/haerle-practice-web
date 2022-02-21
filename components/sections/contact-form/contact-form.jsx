@@ -194,13 +194,6 @@ const ContactForm = ({ data }) => {
           onChange: (event) => updateInputs(event)
         }} />
 
-        {/* <FileInput data={{
-          className: 'contact-form__input',
-          name: 'file',
-          label: 'Datei anhängen',
-          onChange: (event) => updateInputs(event)
-        }} /> */}
-
         <Textarea data={{
           className: 'contact-form__input',
           name: 'message',
