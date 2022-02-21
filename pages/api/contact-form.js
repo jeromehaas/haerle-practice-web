@@ -15,7 +15,7 @@ const ContactForm = async( req, res ) => {
 		const transporter = Nodemailer.createTransport({
 			host: process.env.NEXT_PUBLIC_SMTP_HOST,
 			port: process.env.NEXT_PUBLIC_SMTP_PORT,
-			secure: false,
+			secure: true,
 			requireTLS: true,
 			auth: {
 				user: process.env.NEXT_PUBLIC_SMTP_USER,
