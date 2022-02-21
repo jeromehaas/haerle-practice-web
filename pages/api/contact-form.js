@@ -17,17 +17,8 @@ const transporter = Nodemailer.createTransport({
 
 const ContactForm = async ( req, res ) => {
 
-	const mailData = {
-		from: '"Daniela Haerle" <info@mail.danielahaerle.ch>',
-		to: 'hello@jeromehaas.ch', 
-		subject: 'test', 
-		text: 'test', 
-		html: '<h1>test</h1>', 
-	};
-
-	await new Promise((resolve, reject) => {
-   
-		transporter.verify(function (error, success) {
+  await new Promise((resolve, reject) => {
+    transporter.verify(function (error, success) {
       if (error) {
         console.log(error);
         reject(error);
@@ -36,8 +27,18 @@ const ContactForm = async ( req, res ) => {
         resolve(success);
       }
     });
+  });
 
-    transporter.sendMail(mailData, (err) => {
+  const mailData = {
+    from: '"Daniela Haerle" <info@mail.danielahaerle.ch>',
+    to: 'hello@jeromehaas.ch', 
+    subject: 'test', 
+    text: 'test', 
+    html: '<h1>test</h1>', 
+  };
+
+  await new Promise((resolve, reject) => {
+    transporter.sendMail(mailData, (err, info) => {
       if (err) {
         console.error(err);
         reject(err);
@@ -48,12 +49,7 @@ const ContactForm = async ( req, res ) => {
         res.send('ok');
       }
     });
-
-  }).catch((error) => {
-		console.log(error);	
-	}).then(() => {
-		res.send('ok')
-	});
+  });
 
 }; 
 
