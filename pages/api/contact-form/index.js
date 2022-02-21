@@ -1,5 +1,6 @@
 const Nodemailer = require('nodemailer');
-import { createTemplate } from './templates/confirmation';
+import { createConfirmation } from './templates/confirmation';
+import { createMessage } from './templates/message';
 
 const transporter = Nodemailer.createTransport({
   host: process.env.NEXT_PUBLIC_SMTP_HOST,
@@ -13,24 +14,23 @@ const transporter = Nodemailer.createTransport({
   logger: false
 });
 
-
-
 const ContactForm = async ( req, res ) => {
 
-	const template = createTemplate({
-		firstname: "Firstname",
-		lastname: "Lastname",
-		subject: "Subject",
-		email: "Email",
-		phone: "Phone",
-		message: "Message",
+	const { firstname, lastname, subject, email, phone, message } = req.body;
+
+	const template = createMessage({
+		firstname: firstname,
+		lastname: lastname,
+		subject: subject,
+		email: email,
+		phone: phone,
+		message: message,
 	});
 
   const mailData = {
-    from: '"Daniela Haerle" <info@mail.danielahaerle.ch>',
-    to: 'hello@jeromehaas.ch', 
-    subject: 'test', 
-    text: 'test', 
+		from: process.env.NEXT_PUBLIC_SMTP_SENDER,
+		to: process.env.NEXT_PUBLIC_SMTP_USER,
+		subject: 'Eine neue Nachricht von der Website',
     html: template, 
   };
 
@@ -41,9 +41,9 @@ const ContactForm = async ( req, res ) => {
         reject(err);
         res.send(err.message)
       } else {
-        console.log(info);
-        resolve(info);
-        res.send('ok');
+        resolve();
+				console.log('🟢 Success: Emails has been sent successfully!');	
+				res.send('🟢 Success: Emails has been sent successfully!');	
       }
     });
   });

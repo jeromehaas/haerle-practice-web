@@ -1,11 +1,10 @@
-const { template } = require('./confirmation-template.js');
+const { confirmationTemplate } = require('./confirmation-template.js');
 const handlebars = require('handlebars');
 
-const createTemplate = ( data ) => {
-
-	let message;
-	message = handlebars.compile(template);
-	message = message({ 
+const createConfirmation = ( data ) => {
+	let confirmation;
+	confirmation = handlebars.compile(confirmationTemplate);
+	confirmation = message({ 
 		firstname: data.firstname,
 		lastname: data.lastname,
 		subject: data.subject,
@@ -13,10 +12,9 @@ const createTemplate = ( data ) => {
 		phone: data.phone,
 		message: data.message,
 	});
-	return message;
-
+	return confirmation;
 };
 
 module.exports = {
-	createTemplate
+	createConfirmation
 };
