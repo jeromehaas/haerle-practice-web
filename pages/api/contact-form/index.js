@@ -34,42 +34,54 @@ const ContactForm = async ( req, res ) => {
     html: messageTemplate, 
   };
 
-	const confirmationTemplate = createConfirmation({
-		firstname: firstname,
-		lastname: lastname,
-		subject: subject,
-		email: email,
-		phone: phone,
-		message: message,
-	});
+	// const confirmationTemplate = createConfirmation({
+	// 	firstname: firstname,
+	// 	lastname: lastname,
+	// 	subject: subject,
+	// 	email: email,
+	// 	phone: phone,
+	// 	message: message,
+	// });
 
-  const confirmationData = {
-		from: process.env.NEXT_PUBLIC_SMTP_SENDER,
-		to: process.env.NEXT_PUBLIC_SMTP_USER,
-		subject: 'Ihre Nachricht wurde übermittelt',
-    html: confirmationTemplate, 
-  };
+  // const confirmationData = {
+	// 	from: process.env.NEXT_PUBLIC_SMTP_SENDER,
+	// 	to: process.env.NEXT_PUBLIC_SMTP_USER,
+	// 	subject: 'Ihre Nachricht wurde übermittelt',
+  //   html: confirmationTemplate, 
+  // };
 
-  await new Promise((resolve, reject) => {
+
+  const sendMessage = await new Promise((resolve, reject) => {
     transporter.sendMail(messageData, (error) => {
       if (error) {
         console.error(error);
         reject(error);
         res.send(error.message);
+      } else {
+        resolve();
       }
     });
-		transporter.sendMail(confirmationData, (error) => {
-      if (error) {
-        console.error(error);
-        reject(error);
-        res.send(error.message)
-      }
-    });
-		resolve();
   }).then(() => {
-		console.log('🟢 Success: Emails has been sent successfully!');	
+		console.log('🟢 Success: Emails has been sent successfully!');
 		res.send('🟢 Success: Emails has been sent successfully!');
 	});
+ 
+	// const sendConfirmation = await new Promise((resolve, reject) => {
+  //   transporter.sendMail(confirmationData, (error) => {
+  //     if (error) {
+  //       console.error(error);
+  //       reject(error);
+  //       res.send(error.message)
+  //     } else {
+  //       resolve();
+  //     }
+  //   });
+  // });
+
+	// Promise.all([sendMessage, sendConfirmation]).then(() => {
+	// 	console.log('🟢 Success: Emails has been sent successfully!');	
+	// 	res.send('🟢 Success: Emails has been sent successfully!');
+	// })
 
 }; 
 
