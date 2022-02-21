@@ -4,10 +4,6 @@ const handlebars = require('handlebars');
 const path = require('path');
 
 
-
-
-
-
 const ContactForm = async( req, res ) => {
 
 	await new Promise((resolve, reject) => {
@@ -68,12 +64,13 @@ const ContactForm = async( req, res ) => {
 		});
 
 		resolve();
-
+		res.send('🟢 Success: Confirmation email has been sent successfully!');
+		
 	}).catch((error) => {
 		console.log(`🔴 Error: ${error.message}`);
+		res.send(`🔴 Error: ${error.message}`);
 	});
 
-	res.send('🟢 Success: Confirmation email has been sent successfully!');
 
 }; 
 
