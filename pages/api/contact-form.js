@@ -37,6 +37,7 @@ const ContactForm = async( req, res ) => {
 			from: '"Daniela Haerle" <info@mail.danielahaerle.ch>',
 			to: 'info@danielahaerle.ch',
 			subject: 'Eine neue Nachricht von der Website',
+			text: 'text',
 			html: '<h1>hello message</h1>', 
 		};
 
@@ -44,6 +45,7 @@ const ContactForm = async( req, res ) => {
 			from: '"Daniela Haerle" <info@mail.danielahaerle.ch>',
 			to: 'hello@jeromehaas.ch',
 			subject: 'Vielen Dank für Ihre Nachricht',
+			text: 'text',
 			html: '<h1>hello message</h1>', 
 		};
 
