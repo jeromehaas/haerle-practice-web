@@ -17,21 +17,9 @@ const transporter = Nodemailer.createTransport({
 
 const createMessage = ( body ) => {
 
-	// let messageTemplate; 
-	// messageTemplate = fs.readFileSync(path.resolve(process.cwd(), './public/email-templates/contact-form/message.html'), 'UTF-8');
-	// messageTemplate = handlebars.compile(messageTemplate);
-	// messageTemplate = messageTemplate({ 
-	// 	firstname: body.firstname,
-	// 	lastname: body.lastname,
-	// 	subject: body.subject,
-	// 	email: body.email,
-	// 	phone: body.phone,
-	// 	message: body.email,
-	// });
-
 	const messageData = {
-  	from: process.env.NEXT_PUBLIC_SMTP_SENDER,
-    to: process.env.NEXT_PUBLIC_SMTP_USER,
+  	from: '"Daniela Haerle" <info@mail.danielahaerle.ch>',
+    to: 'info@danielahaerle.ch',
     subject: 'Eine neue Nachricht von der Website',
 		html: '<h1>hello message</h1>', 
 	};
@@ -42,21 +30,9 @@ const createMessage = ( body ) => {
 
 const createConfirmation = ( body ) => {
 	
-	// let confirmationTemplate; 
-	// confirmationTemplate = fs.readFileSync(path.resolve(process.cwd(), './public/email-templates/contact-form/confirmation.html'), 'UTF-8');
-	// confirmationTemplate = handlebars.compile(confirmationTemplate);
-	// confirmationTemplate = confirmationTemplate({ 
-	// 	firstname: body.firstname,
-	// 	lastname: body.lastname,
-	// 	subject: body.subject,
-	// 	email: body.email,
-	// 	phone: body.phone,
-	// 	message: body.email,
-	// });
-
 	const confirmationData = {
-  	from: process.env.NEXT_PUBLIC_SMTP_SENDER,
-    to: body.email,
+  	from: '"Daniela Haerle" <info@mail.danielahaerle.ch>',
+    to: 'hello@jeromehaas.ch',
     subject: 'Vielen Dank für Ihre Nachricht',
 		html: '<h1>hello message</h1>', 
 	};
