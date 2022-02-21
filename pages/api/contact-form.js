@@ -17,17 +17,17 @@ const transporter = Nodemailer.createTransport({
 
 const createMessage = ( body ) => {
 
-	let messageTemplate; 
-	messageTemplate = fs.readFileSync(path.resolve(process.cwd(), './public/email-templates/contact-form/message.html'), 'UTF-8');
-	messageTemplate = handlebars.compile(messageTemplate);
-	messageTemplate = messageTemplate({ 
-		firstname: body.firstname,
-		lastname: body.lastname,
-		subject: body.subject,
-		email: body.email,
-		phone: body.phone,
-		message: body.email,
-	});
+	// let messageTemplate; 
+	// messageTemplate = fs.readFileSync(path.resolve(process.cwd(), './public/email-templates/contact-form/message.html'), 'UTF-8');
+	// messageTemplate = handlebars.compile(messageTemplate);
+	// messageTemplate = messageTemplate({ 
+	// 	firstname: body.firstname,
+	// 	lastname: body.lastname,
+	// 	subject: body.subject,
+	// 	email: body.email,
+	// 	phone: body.phone,
+	// 	message: body.email,
+	// });
 
 	const messageData = {
   	from: process.env.NEXT_PUBLIC_SMTP_SENDER,
@@ -42,17 +42,17 @@ const createMessage = ( body ) => {
 
 const createConfirmation = ( body ) => {
 	
-	let confirmationTemplate; 
-	confirmationTemplate = fs.readFileSync(path.resolve(process.cwd(), './public/email-templates/contact-form/confirmation.html'), 'UTF-8');
-	confirmationTemplate = handlebars.compile(confirmationTemplate);
-	confirmationTemplate = confirmationTemplate({ 
-		firstname: body.firstname,
-		lastname: body.lastname,
-		subject: body.subject,
-		email: body.email,
-		phone: body.phone,
-		message: body.email,
-	});
+	// let confirmationTemplate; 
+	// confirmationTemplate = fs.readFileSync(path.resolve(process.cwd(), './public/email-templates/contact-form/confirmation.html'), 'UTF-8');
+	// confirmationTemplate = handlebars.compile(confirmationTemplate);
+	// confirmationTemplate = confirmationTemplate({ 
+	// 	firstname: body.firstname,
+	// 	lastname: body.lastname,
+	// 	subject: body.subject,
+	// 	email: body.email,
+	// 	phone: body.phone,
+	// 	message: body.email,
+	// });
 
 	const confirmationData = {
   	from: process.env.NEXT_PUBLIC_SMTP_SENDER,
