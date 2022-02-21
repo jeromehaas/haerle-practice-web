@@ -1,7 +1,5 @@
 const Nodemailer = require('nodemailer');
-const fs = require('fs');
-const handlebars = require('handlebars');
-const path = require('path');
+import { createTemplate } from './templates/confirmation';
 
 const transporter = Nodemailer.createTransport({
   host: process.env.NEXT_PUBLIC_SMTP_HOST,
@@ -19,12 +17,21 @@ const transporter = Nodemailer.createTransport({
 
 const ContactForm = async ( req, res ) => {
 
+	const template = createTemplate({
+		firstname: "Firstname",
+		lastname: "Lastname",
+		subject: "Subject",
+		email: "Email",
+		phone: "Phone",
+		message: "Message",
+	});
+
   const mailData = {
     from: '"Daniela Haerle" <info@mail.danielahaerle.ch>',
     to: 'hello@jeromehaas.ch', 
     subject: 'test', 
     text: 'test', 
-    html: '<h1>test</h1>', 
+    html: template, 
   };
 
   await new Promise((resolve, reject) => {
