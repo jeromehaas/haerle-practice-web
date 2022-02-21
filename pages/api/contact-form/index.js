@@ -18,7 +18,7 @@ const ContactForm = async ( req, res ) => {
 
 	const { firstname, lastname, subject, email, phone, message } = req.body;
 
-	const template = createMessage({
+	const messageTemplate = createMessage({
 		firstname: firstname,
 		lastname: lastname,
 		subject: subject,
@@ -27,26 +27,49 @@ const ContactForm = async ( req, res ) => {
 		message: message,
 	});
 
-  const mailData = {
+  const messageData = {
 		from: process.env.NEXT_PUBLIC_SMTP_SENDER,
 		to: process.env.NEXT_PUBLIC_SMTP_USER,
 		subject: 'Eine neue Nachricht von der Website',
-    html: template, 
+    html: messageTemplate, 
+  };
+
+	const confirmationTemplate = createConfirmation({
+		firstname: firstname,
+		lastname: lastname,
+		subject: subject,
+		email: email,
+		phone: phone,
+		message: message,
+	});
+
+  const confirmationData = {
+		from: process.env.NEXT_PUBLIC_SMTP_SENDER,
+		to: process.env.NEXT_PUBLIC_SMTP_USER,
+		subject: 'Ihre Nachricht wurde übermittelt',
+    html: confirmationTemplate, 
   };
 
   await new Promise((resolve, reject) => {
-    transporter.sendMail(mailData, (err, info) => {
-      if (err) {
-        console.error(err);
-        reject(err);
-        res.send(err.message)
-      } else {
-        resolve();
-				console.log('🟢 Success: Emails has been sent successfully!');	
-				res.send('🟢 Success: Emails has been sent successfully!');	
+    transporter.sendMail(messageData, (error) => {
+      if (error) {
+        console.error(error);
+        reject(error);
+        res.send(error.message);
       }
     });
-  });
+		transporter.sendMail(confirmationData, (error) => {
+      if (error) {
+        console.error(error);
+        reject(error);
+        res.send(error.message)
+      }
+    });
+		resolve();
+  }).then(() => {
+		console.log('🟢 Success: Emails has been sent successfully!');	
+		res.send('🟢 Success: Emails has been sent successfully!');
+	});
 
 }; 
 
