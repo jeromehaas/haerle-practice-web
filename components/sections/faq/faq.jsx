@@ -53,7 +53,7 @@ const FaqItem = ({ data }) => {
       { data.links && (
         <div className={`item__links ${itemStatus === 'closed' ? 'item__links--hidden' : '' }`}>
           { data.links && data.links.map((link, index) => (
-            <Link key={ index } data={{ className: 'item__link', href: '#', icon: 'external-link' }}>{ link.text }</Link> 
+            <Link key={ index } data={{ className: 'item__link', href: link.href, icon: 'external-link', target: '_blank' }}>{ link.text }</Link> 
           ))}
         </div>
       ) }
