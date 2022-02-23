@@ -95,13 +95,17 @@ textarea, .textarea {
 .navigation--mobile .navigation__contact-item,
 .navigation--mobile .navigation__times-item {
 	font-size: 18px;
-
 }
 
 .contact-teaser a, 
 .contact-teaser p {
 	font-size: 18px;
 	line-height: 155%;
+}
+
+.quote-text {
+	font-size: 45px;
+	font-weight: 300;
 }
 
 ::placeholder {
@@ -124,18 +128,23 @@ textarea, .textarea {
 		font-size: 35px;
 	}
 
-
-	h2, .heading--h2 {
+	h2, .heading--h2, 
+	h3, .heading--h3 { 
 		font-size: 26px;
 	}
 	
-	h3, .heading--h3 {
-		font-size: 24px;
+	h4, .heading--h4 { 
+		font-size: 32px;
 	}
-	
 
-	
+	.quote-text {
+		font-size: 35px;
+	}
 
+	.footer .navigation__link {
+		font-size: 26px !important;
+		color: red;
+	}
 	
 }
 
@@ -143,6 +152,33 @@ textarea, .textarea {
 
 	h1, .heading--h1 {
 		font-size: 26px;
+	}
+
+	h2, .heading--h2 {
+		font-size: 22px !important;
+	}
+	
+	h3, .heading--h3 {
+		font-size: 22px !important;
+	}
+
+	.paragraph,
+	.list-item,
+	.link {
+		font-size: 16px !important;
+	}
+
+	.contact-teaser p {
+		font-size: 16px;
+	}
+
+	.education li {
+		font-size: 16px;
+	}
+
+	::placeholder {
+		font-size: 16px;
+		font-weight: 300;
 	}
 
 }

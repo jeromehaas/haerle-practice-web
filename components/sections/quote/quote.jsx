@@ -25,6 +25,7 @@ const Quote = ({ data }) => {
         <Heading data={{ 
           className: 'quote__text',
           color: data.quoteColor,
+					level: 'h1'
         }}>{data.quoteText}</Heading>
         <Paragraph data={{ 
           className: 'quote__author'

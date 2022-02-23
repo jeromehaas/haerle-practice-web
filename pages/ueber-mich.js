@@ -24,7 +24,7 @@ const Schmerztherapie = () => {
       />
       <Article data={{
         anchorId: 'leidenschaft',
-        title: 'Meine Leidenschaft für die Suche nach der richtigen Diagnose.',
+        title: 'Meine Leidenschaft für die Suche nach der richtigen Diagnose',
         text: 'Mein Interesse für das wenig beachtete Gebiet der Zahnmedizin – die Kieferschmerzen – wurde während meiner Ausbildung in der Schmerzsprechstunde am Zahnärztlichen Institut der Universität Zürich geweckt. Plötzlich wurde aus dem scheinbar kleinen Randgebiet eine umfassende und hochkomplexe Materie, in welche ich eintauchte und die mich faszinierte. Die Kommunikation mit dem Patienten stand plötzlich mehr im Focus als seine Zähne. Es geht um die Suche nach der richtigen Ursache. ',
         imageSrc: '/images/10-daniela-haerle-besprechung-patientin.jpg',
         imageAlt: '#',
