@@ -30,7 +30,7 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		object-position: 75% 50%;
+		object-position: 75% 25%;
 		min-height: 450px;	
 		max-height: calc(100vh - 400px);
 		clip-path: inset(0 48px round 20px);
@@ -64,18 +64,24 @@
 			0 0 0 32px rgba(231, 243, 246, 0.1);
 		}
 	}
-
-	@media (max-width: 1100px) {
+	
+	@media (max-width: 1650px) {
+		
+		&__heading {
+			left: 160px;
+			max-width: 600px;
+		}
+		
+	}
+	
+	@media (max-width: 1200px) {
 		
 		margin-bottom: 56px;	
 		padding-top: 160px;
 
 		&__heading {
-			top: -80px;
+			top: -88px;
 			left: 96px;
-			right: 120px;
-			pointer-events: none;
-			max-width: 600px;
 		}
 
 		&__image {
@@ -93,6 +99,9 @@
 
 	@media (max-width: 850px) {
 
+		.heading {
+			max-width: 450px;
+		}
 		&__image {
 			clip-path: inset(0 24px round 20px);
 			max-height: calc(100vh - 264px);
@@ -101,12 +110,12 @@
 	}
 
 
-	@media (max-width: 500px) {
+	@media (max-width: 750px) {
 		padding-top: 120px;	
 
 		&__heading {
 			top: -96px;
-			left: 24px;
+			left: 48px;
 			right: 24px;
 		}
 
@@ -119,6 +128,35 @@
 			object-position: 75% 50%;
 			position: relative;
 			max-height: calc(100vh - 220px);
+		}
+
+		&__image span {
+			position: unset !important;
+		}
+
+		&__scroll-icon {
+			z-index: 5;
+			cursor: pointer;
+			pointer-events: visibleStroke;
+			position: absolute;
+			bottom: 100px;
+		}
+
+	}
+
+	@media (max-width: 450px) {
+
+		padding-top: 160px;
+
+		&__heading {
+			top: -132px;
+		}
+
+
+
+		&__image {
+			min-height: 200px;
+			max-height: calc(100vh - 260px);
 		}
 
 		&__image span {
