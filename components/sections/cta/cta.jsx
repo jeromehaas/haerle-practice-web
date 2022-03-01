@@ -13,7 +13,8 @@ const CTA = ({ data }) => {
         color: 'lightblue'
       }}>{ data.title }</Heading>
       <Paragraph data={{ 
-        className: 'cta__text'
+        className: 'cta__text',
+				color: 'lightblue'
       }}>{ data.text }</Paragraph>
       <Button data={{
         className: 'cta__button',
