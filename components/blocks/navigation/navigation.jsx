@@ -30,7 +30,7 @@ const Navigation = () => {
     <Fragment>
       <nav className={`navigation navigation--mobile navigation--${ renderColor() } ${menuState === 'open' ? 'navigation--open' : ''}`}>
         <div className='navigation__bar'>
-          <img className="navigation__logo" src="/logos/logo-daniele-haerle.svg" onClick={() => router.push('/')} />
+          <img className="navigation__logo" src="/logos/logo-daniela-haerle-small.svg" onClick={() => router.push('/')} />
           <button className={`navigation__hamburger hamburger hamburger--squeeze ${menuState === 'open' ? 'hamburger--active' : null} `} type="button" onClick={ toggleMenu }>
             <span className="hamburger-box">
               <span className="hamburger-inner" />
@@ -67,7 +67,7 @@ const Navigation = () => {
       <nav className={`navigation navigation--desktop navigation--${ renderColor() }` }>
         <div className="navigation__inner">
           <span className="navigation__size-limiter">
-            <img className="navigation__logo" src="/logos/logo-daniele-haerle.svg" onClick={() => router.push('/')} />
+            <img className="navigation__logo" src="/logos/logo-daniela-haerle.svg" onClick={() => router.push('/')} />
             <Link href="/schmerztherapie"><a className={`navigation__link ${ router.pathname === '/schmerztherapie' ? 'navigation__link--active' : ''} `}>Schmerztherapie</a></Link>
             <Link href="/aktivitaeten"><a className={`navigation__link ${ router.pathname === '/aktivitaeten' ? 'navigation__link--active' : ''} `}>Aktivitäten</a></Link>
             <Link href="/ueber-mich"><a className={`navigation__link ${ router.pathname === '/ueber-mich' ? 'navigation__link--active' : ''} `}>Über mich</a></Link>
