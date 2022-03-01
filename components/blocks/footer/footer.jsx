@@ -5,6 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__navigation navigation">
+        <Link href="/schmerztherapie"><a className="navigation__link">Schmerztherapie</a></Link>
         <Link href="/aktivitaeten"><a className="navigation__link">Aktivitäten</a></Link>
         <Link href="/ueber-mich"><a className="navigation__link">Über mich</a></Link>
         <Link href="/kontakt"><a className="navigation__link">Kontakt</a></Link>
