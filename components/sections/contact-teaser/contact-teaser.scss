@@ -23,10 +23,18 @@
 		margin-bottom: 24px;
 	}
 
+	&__contact-wrapper {
+		display: grid;		
+	}
+
 	&__item {
 		display: block;
 		position: relative;
 		margin-bottom: 32px;
+
+		&:nth-child(2) {
+			order: +1;
+		}
 
 		img {
 			position: absolute;
