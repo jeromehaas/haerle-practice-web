@@ -11,31 +11,32 @@ const Quote = ({ data }) => {
       <div className='quote__image-wrapper image'>
         <Image data={{
           className: 'image__image',
-          src: data.imageSrc,
+          src: data.image.src,
+					alt: data.image.alt,
           width: 800,
           height: 950
         }} />
         <Link data={{ 
-          href: data.linkHref,
+          href: data.link.href,
           icon: 'arrow',
           className: 'image__link'
-        }}>{ data.linkText }</Link>
+        }}>{ data.link.text }</Link>
       </div>
       <div className='quote__quote-wrapper quote'>
         <Heading data={{ 
           className: 'quote__text',
-          color: data.quoteColor,
+          color: data.quote.color,
 					level: 'h1'
-        }}>{data.quoteText}</Heading>
+        }}>{data.quote.text}</Heading>
         <Paragraph data={{ 
           className: 'quote__author',
 					color: 'lightblue'
-        }}>{ data.authorText }</Paragraph>
+        }}>{ data.quote.author }</Paragraph>
         <Link data={{ 
-          href: data.linkHref,
+          href: data.link.href,
           icon: 'arrow',
           className: 'quote__link'
-        }}>{ data.linkText }</Link>
+        }}>{ data.link.text }</Link>
       </div>
     </Section>
   )

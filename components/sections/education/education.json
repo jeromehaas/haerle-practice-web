@@ -40,7 +40,9 @@
 	"activities": [
 		"Das Foto zeigt mich mit Prof. Jeffrey P. Okeson, DMD, American Board of Orofacial Pain, University of Kentucky, USA / November 2017, Anlässlich des DGFDT Jahreskongresses, Deutschland"
 	],
-	"imageSrc": "/images/13-daniela-haerle-conference.jpg",
-	"imageAlt": "Conference"
+	"image": {
+		"src": "/images/13-daniela-haerle-conference.jpg",
+		"alt": "Dr. med. dent. Daniela Haerle am Jahreskongress DGFDT mit Prof. Jeffrey P. Okeson"
+	}
 }
 ]

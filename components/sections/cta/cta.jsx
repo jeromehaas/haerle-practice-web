@@ -18,8 +18,8 @@ const CTA = ({ data }) => {
       }}>{ data.text }</Paragraph>
       <Button data={{
         className: 'cta__button',
-        href: data.buttonHref
-      }}>{ data.buttonText }</Button>
+        href: data.button.href
+      }}>{ data.button.text }</Button>
     </Section>
   )
 };

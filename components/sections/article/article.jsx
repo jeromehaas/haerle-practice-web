@@ -15,8 +15,8 @@ const Article = ({ data }) => {
         <Image data={{
           width: 660,
           height: 494,
-          alt: '',
-          src: data.imageSrc,
+          alt: data.image.alt,
+          src: data.image.src,
           className: `article__image ${data.hideImageOnMobile ? 'article__image--hide-on-mobile' : ''}`
         }} />
         <div className="article__content">
@@ -29,13 +29,13 @@ const Article = ({ data }) => {
             className: 'article__text' 
           }}> { data.text } 
           </Paragraph>
-          { data.linkText && data.linkHref ? (
+          { data.link ? (
             <Link data={{ 
-              href: data.linkHref,
-              text: data.linkText,
-              icon: data.linkIcon,
+              href: data.link.href,
+              text: data.link.text,
+              icon: data.link.icon,
               className: 'article__link'
-            }}>{ data.linkText }</Link>
+            }}>{ data.link.text }</Link>
           ) : '' }
         </div>
       </div>

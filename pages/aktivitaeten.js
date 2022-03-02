@@ -11,20 +11,27 @@ const Aktivitaeten = () => {
       <Intro data={{
         title: 'Aktivitäten',
         text: 'Ich bleibe auf dem Laufenden und besuche regelmässig Fortbildungen und Anlässe rund um das Thema Kopf- und Kieferschmerzen.',
-        imageSrc: '/images/11-daniela-haerle-portrait-brille.jpg',
-        mavigationTitle: 'Themen dieser Seite',
-        navigationLinks: [
-          { text: 'Weiterbildung / Tagungen', href: 'weiterbildungen-tagungen' },
-          { text: 'Partner', href: 'partner' },
-        ]
+				image: {
+					src: '/images/11-daniela-haerle-portrait-brille.jpg',
+					alt: 'Dr. med. dent. Daniela Haerle am Vierwaldstättersee in Luzern'
+				},
+				navigation: {
+					title: 'Themen dieser Seite',
+					links: [
+						{ text: 'Weiterbildung / Tagungen', href: 'weiterbildungen-tagungen' },
+						{ text: 'Partner', href: 'partner' },
+					]
+				}
       }}/>
       <Education data={{ anchorId: 'weiterbildungen-tagungen'}} />
       <Partners data={{ anchorId: 'partner' }}></Partners>
       <CTA data={{
         title: 'Termin vereinbaren',
         text: 'Sie finden mich in der Zahnmedizin Luzern AG, bei Dr. Jürg Eppenberger, Zahnarztpraxis für Rekonstruktive Zahnmedizin.',
-        buttonText: 'Kontakt',
-        buttonHref: '/kontakt'
+				button: {
+					text: 'Kontakt',
+					href: '/kontakt'
+				}
       }} />
     </Page>
   )
