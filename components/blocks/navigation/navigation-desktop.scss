@@ -31,30 +31,8 @@
 			cursor: pointer;
 		}
 
-		&__link-wrapper {
-
-			&:hover {
-
-				.navigation__link {
-					color: $darkblue-50;
-				}
-
-				.navigation__link {
-					
-					&:hover {
-						color: $darkblue-100;
-					}
-
-				}
-
-			}
-
-		}
-
-		
-
 		&__link {
-			color: $darkblue-100;
+			color: $darkblue-50;
 			text-decoration: none;
 			margin-right: 60px;
 			transition: all 0.1s ease;
