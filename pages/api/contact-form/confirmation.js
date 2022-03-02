@@ -15,16 +15,17 @@ const transporter = Nodemailer.createTransport({
 
 const Confirmation = async ( req, res ) => {
 
-	const { firstname, lastname } = req.body;
+	const { firstname, lastname, email } = req.body;
 
 	const confirmationTemplate = createConfirmation({
 		firstname: firstname,
-		lastname: lastname
+		lastname: lastname,
+		email: email
 	});
 
   const confirmationData = {
 		from: process.env.NEXT_PUBLIC_SMTP_SENDER,
-		to: process.env.NEXT_PUBLIC_SMTP_USER,
+		to: email,
 		subject: 'Ihre Nachricht wurde übermittelt',
     html: confirmationTemplate, 
   };
