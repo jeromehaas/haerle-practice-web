@@ -8,8 +8,8 @@ const Intro = ({ data }) => {
 
   return (
     <>
-      <Section data={{ className: 'intro intro--upper'}}>
-        <div className="intro__text-wrapper">
+      <Section data={{ className: `intro intro--upper ${!data.imageSrc ? 'intro--no-image' : ''}`}}>
+        <div className={'intro__text-wrapper'}>
           <Heading data={{ level: 'h1', className: 'intro__title', color: 'lightblue' }}>{ data.title }</Heading>
           <Paragraph data={{ className: 'intro__text'}}>{ data.text }</Paragraph>
         </div>
@@ -18,8 +18,8 @@ const Intro = ({ data }) => {
         </div>
       </Section>
 
-      <Section data={{ className: `intro intro--lower ${!data.navigationLinks.length ? 'intro--no-links' : ''}`}}>
-        { data.navigationLinks.length ? (
+      <Section data={{ className: `intro intro--lower ${!data.navigationLinks ? 'intro--no-links' : ''}`}}>
+        { data.navigationLinks ? (
           <PageNavigation data={{ 
             className: 'intro__navigation',
             title: 'Themen dieser Seite',

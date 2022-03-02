@@ -40,6 +40,8 @@
 			width: 100%;
 			height: calc(100% + 200px);
 		}
+
+
 		
 	}
 	
@@ -73,6 +75,17 @@
 			margin-bottom: 48px;
 		}
 		
+	}
+
+	&--no-image {
+
+		.section__inner {
+			grid-template: 48px auto / 1fr;
+			grid-template-areas:
+			"text"
+			"text";
+		}
+
 	}
 
 
