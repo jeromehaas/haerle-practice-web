@@ -108,6 +108,7 @@ const ContactForm = ({ data }) => {
         data: {
           firstname: formState.firstname.value,
           lastname: formState.lastname.value,
+					email: formState.email.value,
         }
       });
       setStatusBarState({
