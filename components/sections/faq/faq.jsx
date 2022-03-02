@@ -48,7 +48,7 @@ const FaqItem = ({ data }) => {
 						<Icon data={{ className: 'tag__icon', icon: 'play' }} /> 
 						<Paragraph data={{ className: 'tag__text' }}>mit Video</Paragraph>
 					</span>
-						)}
+					)}
 			</span>
       <Icon data={{  icon: 'arrow', className: `item__icon ${itemStatus === 'closed' ? 'item__icon--inverted' : '' }`, onClick: toggleItemStatus }} />
       <Paragraph data={{ className: `item__answer ${itemStatus === 'closed' ? 'item__answer--hidden' : '' }`, onClick: toggleItemStatus }}>
