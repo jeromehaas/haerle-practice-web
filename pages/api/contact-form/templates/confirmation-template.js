@@ -84,7 +84,7 @@ const confirmationTemplate = `
                                                                         </tr>
                                                                      </tbody>
                                                                   </table>
-                                                                  <p style="Margin:0;Margin-bottom:10px;color:#003067;font-family:Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.55;margin:0;margin-bottom:10px;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left">Besten Dank für Ihre Nachricht.</p>
+                                                                  <p style="Margin:0;Margin-bottom:10px;color:#003067;font-family:Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.55;margin:0;margin-bottom:10px;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left">Vielen Dank für Ihre Nachricht.</p>
                                                                   <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%">
                                                                      <tbody>
                                                                         <tr style="padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top">
@@ -92,7 +92,7 @@ const confirmationTemplate = `
                                                                         </tr>
                                                                      </tbody>
                                                                   </table>
-                                                                  <p style="Margin:0;Margin-bottom:10px;color:#003067;font-family:Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.55;margin:0;margin-bottom:10px;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left">Sollten Sie  in der Zwischenzeit weitere Fragen haben oder Auskünfte wünschen, stehe ich Ihnen gerne telefonisch oder via E-Mail zur Verfügung.</p>
+                                                                  <p style="Margin:0;Margin-bottom:10px;color:#003067;font-family:Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.55;margin:0;margin-bottom:10px;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left">Wir werden Ihre Anfrage so bald wie möglich bearbeiten und uns bei Ihnen melden.</p>
                                                                   <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%">
                                                                      <tbody>
                                                                         <tr style="padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top">
