@@ -39,7 +39,7 @@ const FaqItem = ({ data }) => {
 
   return (
     <div className='faq__item item'>
-			<span class="item__question question">
+			<span className="item__question question">
    		   <Heading data={{  className: `question__text ${itemStatus === 'open' ? 'question__text--active' : '' }`, level: 'h3', color: 'darkblue', onClick: toggleItemStatus }}>
    		     { data.question }
    		   </Heading>
@@ -54,7 +54,6 @@ const FaqItem = ({ data }) => {
       <Paragraph data={{ className: `item__answer ${itemStatus === 'closed' ? 'item__answer--hidden' : '' }`, onClick: toggleItemStatus }}>
         { data.answer }
       </Paragraph>
-			{ console.log(data) }
       { data.video && (
         <Video data={{ className: `item__video ${itemStatus === 'closed' ? 'item__video--hidden' : ''}`, src: data.video.src, poster: data.video.poster, caption: data.video.poster }} /> 
       )}
