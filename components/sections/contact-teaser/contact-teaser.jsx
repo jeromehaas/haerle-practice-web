@@ -28,7 +28,7 @@ const ContactTeaser = () => {
           <img src="/icon/icon-time.svg" />
           <p>Öffnungszeiten</p>
           <p>Montag –  Freitag</p>
-          <p><span>09:00 – 12.00,</span><span>13:30 – 18:00 Uhr</span></p>
+          <p><span>09:00 – 12.00, </span><span> 13:30 – 18:00 Uhr</span></p>
         </div>
         <div className="contact-teaser__item">
           <img src="/icon/icon-phone.svg" />
