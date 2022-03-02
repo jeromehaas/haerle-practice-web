@@ -25,14 +25,14 @@ const ContactTeaser = () => {
           <p>6006 Luzern</p>
         </address>
         <div className="contact-teaser__item">
-          <img src="/icon/icon-phone.svg" />
-          <a href="tel:0414171707">041 417 17 07</a>
-        </div>
-        <div className="contact-teaser__item">
           <img src="/icon/icon-time.svg" />
           <p>Öffnungszeiten</p>
           <p>Montag –  Freitag</p>
           <p><span>09:00 – 12.00,</span><span>13:30 – 18:00 Uhr</span></p>
+        </div>
+        <div className="contact-teaser__item">
+          <img src="/icon/icon-phone.svg" />
+          <a href="tel:0414171707">041 417 17 07</a>
         </div>
       </div>
     </Section>
