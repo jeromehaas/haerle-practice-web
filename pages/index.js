@@ -32,22 +32,22 @@ const Start = () => {
       <Cards data={{
         title: 'Die Schmerztherapie ',
         cards: [
-          {
-            imageSrc: '/images/03-daniela-haerle-besprechung-ipad.png',
-            imageAlt: '#',
-            title: 'Die Behandlung',
-            text: 'Obwohl von einer Zahnärztin durchgeführt, hat die Behandlung eine medizinische Zielsetzung. In diesem Fall ist der Zahnarzt/die Zahnärztin einem Arzt/einer Ärztin gleichgestellt. Die Kosten für Untersuch, Therapie und Nachkontrollen werden von der Grundversicherung der Krankenkasse bezahlt. Entlastende Schienen, mit Ausnahme der Schlafapnoe-Schiene, werden nicht übernommen.',
-            linkText: 'mehr zur Diagnose',
-            linkHref: '/schmerztherapie#diagnose'
-          },
-          {
-            imageSrc: '/images/04-daniela-haerle-besprechung-patientin-closeup.jpg',
+					{
+						imageSrc: '/images/04-daniela-haerle-besprechung-patientin-closeup.jpg',
             imageAlt: '#',
             title: 'Kieferprobleme, Schnarchen, Atemaussetzer im Schlaf, Kopfschmerzen',
             text: 'Leiden Sie unter harmlosem Schnarchen oder ist es schon gesundheitsschädigende Schlafapnoe? Sind die Kopfschmerzen möglicherweise mit Muskelverspannungen assoziiert? Dieser Thematik möchte ich mit Ihnen «auf den Zahn fühlen» und den Grund eruieren.',
             linkText: 'mehr zur Therapie',
             linkHref: '/schmerztherapie#therapie'
           },
+					{
+						imageSrc: '/images/03-daniela-haerle-besprechung-ipad.png',
+						imageAlt: '#',
+						title: 'Die Behandlung',
+						text: 'Obwohl von einer Zahnärztin durchgeführt, hat die Behandlung eine medizinische Zielsetzung. In diesem Fall ist der Zahnarzt/die Zahnärztin einem Arzt/einer Ärztin gleichgestellt. Die Kosten für Untersuch, Therapie und Nachkontrollen werden von der Grundversicherung der Krankenkasse bezahlt. Entlastende Schienen, mit Ausnahme der Schlafapnoe-Schiene, werden nicht übernommen.',
+						linkText: 'mehr zur Diagnose',
+						linkHref: '/schmerztherapie#diagnose'
+					}
         ]
       }} />
  
