@@ -13,12 +13,13 @@ const CTA = ({ data }) => {
         color: 'lightblue'
       }}>{ data.title }</Heading>
       <Paragraph data={{ 
-        className: 'cta__text'
+        className: 'cta__text',
+				color: 'lightblue'
       }}>{ data.text }</Paragraph>
       <Button data={{
         className: 'cta__button',
-        href: data.buttonHref
-      }}>{ data.buttonText }</Button>
+        href: data.button.href
+      }}>{ data.button.text }</Button>
     </Section>
   )
 };

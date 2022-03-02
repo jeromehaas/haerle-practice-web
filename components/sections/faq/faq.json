@@ -10,9 +10,11 @@
 	{
 	"question": "Was ist chronischer Schmerz?",
 	"answer": "Im Unterschied zum akuten Schmerz (z. B. eine Verletzung oder Entzündung) welcher uns vor einer Schädigung der Gewebe warnt, hat der chronische Schmerz seine Warn- und Schutzfunktion verloren. Der Schmerz dauert schon länger als drei bis sechs Monate und ist zu einem eigenständigen Krankheitsbild geworden.",
-	"videoSrc": "/videos/schmerzen-verstehen.mp4",
-	"videoPoster": "/videos/schmerzen-verstehen-poster.png",
-	"videoCaption": "Zentrum für Schmerzmedizin, Nottwil, SPZ",
+	"video": {
+		"src": "/videos/schmerzen-verstehen.mp4",
+		"poster": "/videos/schmerzen-verstehen-poster.png",
+		"caption": "Zentrum für Schmerzmedizin, Nottwil, SPZ"
+	},
 	"links": [
 		{
 			"text": "Zum Bericht von SRF Einstein",
@@ -28,14 +30,7 @@
 },
 {
 	"question": "Was sind orofaziale Schmerzen?",
-	"answer": "Darunter verstehen wir diejenigen Schmerzen, die über das Gebiet des Kiefers hinausgehen (z.B. Kopfschmerzen, Gefühlsstörungen im Gesicht, Mundbrennen, atypischer Gesichts- oder Zahnschmerz). Hierbei wichtig ist, dass die Problematik nicht nur Muskeln, Gelenke und Zähne betrifft, sondern das Nervensystem bereits ebenfalls beeinträchtigt ist. Es treten biochemische Veränderungen in der Reizweiterleitung sowie der Schmerzverarbeitung im zentralen Nervensystem auf.",
-	"links": [
-		{
-			"text": "Zum Video über chronische Schmerzen",
-			"href": "#",
-			"icon": "external-link"
-		}
-	]
+	"answer": "Darunter verstehen wir diejenigen Schmerzen, die über das Gebiet des Kiefers hinausgehen (z.B. Kopfschmerzen, Gefühlsstörungen im Gesicht, Mundbrennen, atypischer Gesichts- oder Zahnschmerz). Hierbei wichtig ist, dass die Problematik nicht nur Muskeln, Gelenke und Zähne betrifft, sondern das Nervensystem bereits ebenfalls beeinträchtigt ist. Es treten biochemische Veränderungen in der Reizweiterleitung sowie der Schmerzverarbeitung im zentralen Nervensystem auf."
 },
 {
 	"question": "Was erwartet mich in der Sprechstunde?",

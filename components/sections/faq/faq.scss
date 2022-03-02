@@ -1,5 +1,9 @@
 .faq {
 
+	svg {
+		fill: none;
+	}
+
 	&__wrapper {
 		display: flex; 
 		flex-direction: row;
@@ -26,14 +30,44 @@
 		border-bottom: 1px solid $lightblue-100;
 		padding: 32px;
 
+
 		&:first-child {
 			padding-top: 0;
 		}
 	
-	&__question {
+	&__question, .question {
 		grid-area: question;
 		cursor: pointer;
 		margin-right: 48px;
+
+		
+		&__text {
+			display: inline-block;
+			margin-bottom: 16px;
+			
+			&--active {
+				color: $lightblue-100;
+			}
+			
+		}
+
+		&__tag, .tag {
+			display: inline-block;
+			display: flex;
+
+			&__icon {
+				display: inline-block;			
+				margin-right: 16px;
+				margin-top: 1px;
+			}
+			
+			&__tag {
+				display: inline-block;			
+
+			}
+
+		}
+
 	}
 
 	&__answer {
@@ -80,6 +114,7 @@
 		transform: rotate(90deg);
 		align-self: center;
 		cursor: pointer;
+		align-self: flex-start;
 
 		path {
 			fill: $darkblue-100;

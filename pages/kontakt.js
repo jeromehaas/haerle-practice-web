@@ -12,11 +12,15 @@ const Kontakt = () => {
       <Article data={{
         title: 'Sie finden mich in der Praxis von Dr. Jürg Eppenberger, Spezialist SSO für Rekonstruktive Zahnmedizin',
         text: '',
-        imageSrc: '/images/12-daniela-haerle-kontakt.jpg',
-        imageAlt: '',
-        linkText: 'Zur Website von zahnmedizin Luzern',
-        linkHref: 'https://www.zahnmedizinluzern.ch ',
-        linkIcon: 'external-link'
+				image: {
+					src: '/images/12-daniela-haerle-kontakt.jpg',
+					alt: 'Türe von Praxis von Dr. Jürg Eppenberger',
+				},
+				link: {
+					text: 'Zur Website von zahnmedizin Luzern',
+					href: 'https://www.zahnmedizinluzern.ch ',
+					icon: 'external-link'
+				}
       }} />
     </Page>
   )

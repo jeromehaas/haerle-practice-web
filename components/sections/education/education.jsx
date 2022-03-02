@@ -14,7 +14,7 @@ const Education = ({ data }) => {
           <EducationItem key={ index } data={{ 
             date: item.date, 
             activities: item.activities,
-            imageSrc: item.imageSrc
+						image: item.image
           }}/>
         ))}
       </div>
@@ -30,10 +30,11 @@ const EducationItem = ({ data }) => {
         {data.activities && data.activities.map((item, index) =>(
           <li className="item__list-item" key={ index }>{ item }</li>
         ))}
-        { data.imageSrc && (
+        { data.image && (
           <Image data={{ 
             className: 'item__image', 
-            src: data.imageSrc,
+            src: data.image.src,
+						alt: data.image.alt,
             width: 700, 
             height: 500
           }}/>

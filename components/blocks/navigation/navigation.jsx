@@ -68,10 +68,10 @@ const Navigation = () => {
         <div className="navigation__inner">
           <span className="navigation__size-limiter">
             <img className="navigation__logo" src="/logos/logo-daniela-haerle.svg" onClick={() => router.push('/')} />
-            <Link href="/schmerztherapie"><a className={`navigation__link ${ router.pathname === '/schmerztherapie' ? 'navigation__link--active' : ''} `}>Schmerztherapie</a></Link>
-            <Link href="/aktivitaeten"><a className={`navigation__link ${ router.pathname === '/aktivitaeten' ? 'navigation__link--active' : ''} `}>Aktivitäten</a></Link>
-            <Link href="/ueber-mich"><a className={`navigation__link ${ router.pathname === '/ueber-mich' ? 'navigation__link--active' : ''} `}>Über mich</a></Link>
-            <Link href="/kontakt"><a className={`navigation__link ${ router.pathname === '/kontakt' ? 'navigation__link--active' : ''} `}>Kontakt</a></Link>
+            <Link href="/schmerztherapie"><a className={`navigation__link ${ router.pathname === '/schmerztherapie' || router.pathname === '/' ? 'navigation__link--active' : ''} `}>Schmerztherapie</a></Link>
+            <Link href="/aktivitaeten"><a className={`navigation__link ${ router.pathname === '/aktivitaeten' || router.pathname === '/' ? 'navigation__link--active' : ''} `}>Aktivitäten</a></Link>
+            <Link href="/ueber-mich"><a className={`navigation__link ${ router.pathname === '/ueber-mich' || router.pathname === '/' ? 'navigation__link--active' : ''} `}>Über mich</a></Link>
+            <Link href="/kontakt"><a className={`navigation__link ${ router.pathname === '/kontakt' || router.pathname === '/' ? 'navigation__link--active' : ''} `}>Kontakt</a></Link>
           </span>
         </div>
         <div className="navigation__blocker"></div>

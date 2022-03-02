@@ -18,8 +18,7 @@ const Faq = ({ data }) => {
               question: item.question,
               answer: item.answer, 
               index: index + 1,
-              videoSrc: item.videoSrc,
-              videoPoster: item.videoPoster,
+							video: item.video,
               links: item.links
             }}>
             </FaqItem>
@@ -40,15 +39,23 @@ const FaqItem = ({ data }) => {
 
   return (
     <div className='faq__item item'>
-      <Heading data={{  className: 'item__question', level: 'h3', color: 'darkblue', onClick: toggleItemStatus }}>
-        { data.question }
-      </Heading>
+			<span className="item__question question">
+   		   <Heading data={{  className: `question__text ${itemStatus === 'open' ? 'question__text--active' : '' }`, level: 'h3', color: 'darkblue', onClick: toggleItemStatus }}>
+   		     { data.question }
+   		   </Heading>
+					{ data.video && (
+						<span className="question__tag tag">
+						<Icon data={{ className: 'tag__icon', icon: 'play' }} /> 
+						<Paragraph data={{ className: 'tag__text' }}>mit Video</Paragraph>
+					</span>
+					)}
+			</span>
       <Icon data={{  icon: 'arrow', className: `item__icon ${itemStatus === 'closed' ? 'item__icon--inverted' : '' }`, onClick: toggleItemStatus }} />
       <Paragraph data={{ className: `item__answer ${itemStatus === 'closed' ? 'item__answer--hidden' : '' }`, onClick: toggleItemStatus }}>
         { data.answer }
       </Paragraph>
-      { data.videoSrc && (
-        <Video data={{ className: `item__video ${itemStatus === 'closed' ? 'item__video--hidden' : ''}`, src: data.videoSrc, poster: data.videoPoster, caption: data.videoPoster }} /> 
+      { data.video && (
+        <Video data={{ className: `item__video ${itemStatus === 'closed' ? 'item__video--hidden' : ''}`, src: data.video.src, poster: data.video.poster, caption: data.video.poster }} /> 
       )}
       { data.links && (
         <div className={`item__links ${itemStatus === 'closed' ? 'item__links--hidden' : '' }`}>

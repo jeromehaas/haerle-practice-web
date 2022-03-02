@@ -15,7 +15,7 @@ const Partners = ({ data }) => {
       </div>
 
       <div className="partners__item item item--first">
-        <Image data={{ className: 'item__logo', src: '/logos/logo-zahnmedizin-luzern.png', height: '300'}} />
+        <Image data={{ className: 'item__logo', src: '/logos/logo-zahnmedizin-luzern.png', height: '300', alt: 'Zahnmedizin Luzern'}} />
         <Paragraph data={{}}>Dr. med. dent. Jürg Eppenberger</Paragraph>
         <Paragraph data={{}}>Haldenstrasse 11</Paragraph>
         <Paragraph data={{}}>6006 Luzern</Paragraph>
@@ -27,7 +27,7 @@ const Partners = ({ data }) => {
       </div>
 
       <div className="partners__item item item--second">
-        <Image data={{ className: 'item__logo ', src: '/logos/logo-zentrum-kopf-hals-chirurgie.png', height: '300'}} />
+        <Image data={{ className: 'item__logo ', src: '/logos/logo-zentrum-kopf-hals-chirurgie.png', height: '300', alt: 'Zentrum Kopf Hals Chirurgie Luzern'}} />
         <Paragraph data={{}}>Ärztehaus Klinik St. Anna</Paragraph>
         <Paragraph data={{}}>Lützelmattstrasse 3</Paragraph>
         <Paragraph data={{}}>6006 Luzern</Paragraph>

@@ -13,7 +13,10 @@ const Teaser = ({ data }) => {
         }}>{ data.title }</Heading>
         {data.items.map((item, index) => (
           <Item key={ index } data={{ 
-            iconSrc: item.iconSrc,
+						icon: {
+							src: item.icon.src,
+							alt: item.icon.alt
+						},
             title: item.title,
             text: item.text,
             index: index
@@ -27,7 +30,7 @@ const Teaser = ({ data }) => {
 const Item = ({ data }) => {
   return (
     <div className={`teaser__item teaser__item--${data.index}`}>
-      <img className="teaser__item-icon" src={ data.iconSrc }></img>
+      <img className="teaser__item-icon" src={ data.icon.src } alt={ data.icon.alt }></img>
       <Heading data={{
         className: 'teaser__item-title',
         level: 'h5'
