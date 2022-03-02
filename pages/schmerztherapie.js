@@ -50,7 +50,7 @@ const Schmerztherapie = () => {
         title: 'Haben Sie Fragen?',
         text: 'Sie finden mich in der Zahnmedizin Luzern AG, bei Dr. Jürg Eppenberger, Zahnarztpraxis für Rekonstruktive Zahnmedizin.',
         buttonText: 'Kontakt',
-        buttonHref: './kontakt'
+        buttonHref: '/kontakt'
       }} />
     </Page>
   )
