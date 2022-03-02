@@ -28,7 +28,8 @@ const Quote = ({ data }) => {
 					level: 'h1'
         }}>{data.quoteText}</Heading>
         <Paragraph data={{ 
-          className: 'quote__author'
+          className: 'quote__author',
+					color: 'lightblue'
         }}>{ data.authorText }</Paragraph>
         <Link data={{ 
           href: data.linkHref,

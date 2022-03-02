@@ -53,7 +53,7 @@ const Start = () => {
  
       <Quote data={{
         quoteText: 'Ich werde Ihren Privat-Zahnarzt nicht ersetzen – ich bin Ihre Ansprechperson für ein ganz spezielles Anliegen.',
-        quoteColor: 'lightblue',
+        quoteColor: 'darkblue',
         authorText: 'Dr. med. dent. Daniela Haerle',
         imageSrc: '/images/05-daniela-haerle-portrait-brille.jpg',
         imageAlt: 'Besprechung mit Daniela Haerle',
