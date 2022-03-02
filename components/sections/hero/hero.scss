@@ -119,8 +119,6 @@
 			right: 24px;
 		}
 
-
-
 		&__image {
 			width: 100%;
 			min-height: 400px;
@@ -135,11 +133,7 @@
 		}
 
 		&__scroll-icon {
-			z-index: 5;
-			cursor: pointer;
-			pointer-events: visibleStroke;
-			position: absolute;
-			bottom: 100px;
+			display: none;
 		}
 
 	}
