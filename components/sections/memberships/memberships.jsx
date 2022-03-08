@@ -13,7 +13,7 @@ const Memberships = ({ data }) => {
       </div>
       <div className="memberships__logo-wrapper">
         <a className="memberships__logo memberships__logo--1" href="https://swisspainsociety.ch/de/" target="_blank" ><Image data={{ src: '/logos/logo-swiss-pain-society.png', alt: 'Swiss Pain Society'}} /></a>
-        <a className="memberships__logo memberships__logo--2" href="https://www.sso-luzern.ch/" target="_blank" ><Image data={{ src: '/logos/logo-zbk-lzg.png', alt: 'ZBK LZG'}} /></a>
+        <a className="memberships__logo memberships__logo--2" href="https://www.sso-luzern.ch/" target="_blank" ><Image data={{ src: '/logos/logo-sso-luzern.png', alt: 'SSO Luzern'}} /></a>
         <a className="memberships__logo memberships__logo--3" href="https://www.sso.ch/" target="_blank" ><Image data={{ src: '/logos/logo-sso.png', alt: 'SSO'}} /></a>
         <a className="memberships__logo memberships__logo--4" href="https://www.dgfdt.de/" target="_blank" ><Image data={{ src: '/logos/logo-dgfdt.png', alt: 'DGFDT'}} /></a>
         <a className="memberships__logo memberships__logo--5" href="https://www.eaopd.org" target="_blank" ><Image data={{ src: '/logos/logo-eaopd.png', alt: 'EAOPD'}} /></a>
