@@ -1,0 +1,137 @@
+.quote {
+
+	&__inner {
+		max-width: 1200px;
+		position: relative;
+	}
+
+	&__quote-wrapper {
+		position: absolute;
+		top: 50%;
+		left: 0%;
+		transform: translate(120px, -50%);
+		max-width: 100%;
+		z-index: 5;
+	}
+	
+	.quote {
+		
+		&__text {
+			max-width: 55%;
+			margin-bottom: 24px;
+			&::before { content: '«'; }
+			&::after { content: '»'; }
+		}
+		
+		&__author {
+			margin-bottom: 24px;
+		}
+		
+		&__link {
+			display: none;
+		}
+
+	}
+
+
+	&__image-wrapper {
+		margin-left: 40%;
+		padding-right: 96px;
+		padding-left: 24px;
+		display: block;
+	}
+
+	.image {
+
+		&__image {
+			display: block;
+			margin-bottom: 24px;
+		}
+
+	}
+
+	@media (max-width: 850px) {
+		padding: 0px;
+		
+		&__image-wrapper {
+			padding-right: 0px;
+			padding-left: 0px;
+			display: block;
+			margin-left: 35%;
+		}
+
+		&__quote-wrapper {
+			position: absolute;
+			top: 50%;
+			left: 0%;
+			transform: translate(24px, -50%);
+			z-index: 5;
+		}
+
+		.quote {
+		
+			&__text {
+				max-width: 65%;
+				margin-top: -40px;
+			}
+	
+		}
+
+	}
+
+	@media (max-width: 600px) {
+
+		&__image-wrapper {
+			margin-left: 25%;
+			padding-right: 0px;
+			padding-left: 0px;
+			display: block;
+		}
+
+		&__quote-wrapper {
+			position: initial;
+			transform: translate(0px, -72px);
+		}	
+
+		.image {
+
+			&__link {
+				display: none;
+			}
+
+		}
+
+		.quote {
+
+			&__link {
+				display: inline-block;
+			}
+
+			&__text {
+				max-width: 65%;
+				margin-top: 40px;
+			}
+		
+		}
+
+	}
+
+	@media (max-width: 450px) {
+		
+		&__quote-wrapper {
+			max-width: 100%;
+			transform: translate(0px, -56px);
+		}
+
+		.quote {
+
+			&__text {
+				max-width: unset;
+				margin-top: 0px;
+			}
+		
+		}
+	
+	}
+
+}

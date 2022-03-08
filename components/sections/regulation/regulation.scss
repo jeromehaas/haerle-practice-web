@@ -1,0 +1,26 @@
+.regulation {
+
+	&__inner {
+		padding: 0 120px;
+	}
+	
+	.item {
+		margin-bottom: 80px;
+		position: relative;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&__title {
+			margin-bottom: 24px;
+		}
+
+		&__anchor {
+			position: absolute;
+			top: -150px;
+		}
+
+	}
+
+}

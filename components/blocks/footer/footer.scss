@@ -1,0 +1,156 @@
+.footer {
+	background-image: $blue-gradient;
+	background-repeat: no-repeat;
+	padding: 96px 160px;
+	position: relative;
+	max-width: 85vw;
+	border-radius: 0px 20px 0px 0px;
+	overflow: hidden;
+	margin-right: 140px;
+
+	.navigation {
+		margin-bottom: 177px;
+		display: flex;
+		flex-direction: column;
+
+		&__link {
+			display: block;
+			margin-bottom: 42px;
+			font-size: 28px;
+			line-height: 1;
+			color: $lightblue-20 !important;
+			-webkit-text-fill-color: unset;
+			font-weight: 600;
+			align-self: flex-start;
+			
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+		}
+		
+	}
+
+	.privacy {
+		
+		&__link {
+			color: $lightblue-50;
+		}
+		
+		&__separator {
+			display: inline-block;
+			color: $lightblue-20;
+			margin: 0 12px;
+		}
+	
+	}
+
+
+	&__logohead {
+		position: absolute;
+		right: -150px;
+		bottom: -250px;
+		width: 700px;
+	}
+
+	&__pulse {
+		width: 0px;
+		height: 0px;
+		position: absolute;
+		right: 150px;
+		bottom: 250px;
+		width: 0px;
+		height: 0px;
+		border-radius: 50%;
+		box-shadow: 0 0 24px 24px $red;
+		opacity: 0;
+		animation: pulse-loop 3s ease-in-out infinite;		
+	}
+
+	@keyframes pulse-loop {
+		0% { opacity: 0}
+		50% { opacity: 1 }
+		100% { opacity: 0 }
+	}
+	
+	@media (max-width: 1200px) {
+		padding: 56px 40px;
+		
+		&__navigation {
+			margin-bottom: 72px !important;
+		}
+
+		&__logohead {
+			right: -100px;
+			bottom: -175px;
+			width: 500px;
+		}
+
+		&__pulse {
+			right: 125px;
+			bottom: 200px;
+			box-shadow: 0 0 16px 16px $red;
+		}
+
+
+
+	}
+
+	@media (max-width: 850px) {
+		margin-right: 0px;
+		max-width: unset;
+		margin-right: 24px;
+		padding: 56px 24px;
+		
+		&__logohead {
+			bottom: unset;
+			top: 55%;
+			right: -200px;
+			transform: translateY(-50%);
+			width: 450px;
+		}
+
+		&__pulse {
+			right: 30px;
+			bottom: 275px;
+		}
+
+	}
+
+	@media (max-width: 525px) {
+		
+		&__logohead {
+			right: -300px;
+			transform: translateY(-50%);
+			width: 450px;
+		}
+
+		&__pulse {
+			display: none;	
+		}
+
+	}
+
+	
+	@media (max-width: 400px) {
+		
+		&__logohead {
+			display: none;
+		}
+
+		.privacy {
+
+			&__link {
+				display: block;
+				margin-bottom: 16px;
+			}
+
+			&__separator {
+				display: none;
+			}
+
+		}
+
+	}
+
+}

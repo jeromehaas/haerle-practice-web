@@ -1,0 +1,73 @@
+{
+	"one": {
+		"title": "Symptome im Kopf, Ohr und Rachen",
+		"items": [
+			{
+				"id": 6,
+				"title": "Schlafprobleme mit Schnarchen oder Atemaussetzer in der Nacht", 
+				"text": "Schnarchen kann von harmlos störend (für den Partner/die Partnerin) bis hin zu ernsthaften Erkrankungen reichen. Vor allem wenn Atempausen (sog. Apnoe) während der Nacht auftreten kann dies Folgen für die Gesundheit haben (Herz-Kreislauf-Erkrankungen, Tagesmüdigkeit, Konzentrationsstörungen, Depression)."
+			},
+			{
+				"id": 7,
+				"title": "Ohrgeräusche/Tinnitus", 
+				"text": "Wenn Ihr Hals-Nasen-Ohren-Arzt keine Pathologie in diesem Bereich finden kann, ist möglicherweise eine Cranio-Mandibuläre-Dysfunktion (CMD) ursächlich dafür verantwortlich. Vor allem dann, wenn sich der Tinnitus durch Kieferbewegungen modulieren lässt."
+			},
+			{
+				"id": 8,
+				"title": "Kopfschmerzen und Migräne", 
+				"text": "Kopfschmerzen und Migräne können einen Zusammenhang mit einer Cranio Mandibulären Dysfunktion (CMD) haben. Einerseits durch die anatomische Lage der Muskulatur, andererseits durch eine gemeinsame Verschaltung mit einem der 12 Hirnnerven (Nr. 5/V: Nervus Trigeminus)."
+			}
+			
+		]
+	},
+	"two": {
+		"title": "Symptome im Gesicht und Kiefer",
+		"items": [
+			{
+				"id": 6,
+				"title": "Schmerzen und Verspannungen im Kiefer- und Gesichtsbereich", 
+				"text": "Schmerzen und Verspannungen im Kiefer- und Gesichtsbereich können durch eine Cranio-Mandibuläre-Dysfunktion (CMD), durch ein Trauma, durch Schlafstörungen, Medikamente, Parafunktionen, den Biss oder Stress ausgelöst werden."
+			},
+			{
+				"id": 7,
+				"title": "Kiefergelenkgeräusche oder- Schmerzen", 
+				"text": "Gelenkgeräusche sind ein sehr häufiges Phänomen in unserer Gesellschaft und können durch den Gelenkknorpel (Discus) oder knöcherne Veränderungen am Kiefergelek-Köpfchen (Arthrose) verursacht werden."
+			},
+			{
+				"id": 8,
+				"title": "Mühe beim Öffnen oder Bewegen des Unterkiefers", 
+				"text": "Unterkieferbewegungs-Einschränkungen können entweder durch die Muskulatur oder das Kiefergelenk, respektive den KG-Discus-Komplex verursacht werden. Gelenke sollten so gut es geht entlastet werden."
+			}
+		]
+	},
+	"three": {
+		"title": "Symptome im Mund",
+		"items": [
+			{
+				"id": 1,
+				"title": "Gefühl, dass die Zähne nicht aufeinander passen", 
+				"text": "Dieses Gefühl kann durch sog. Vorkontakte (ein Abrutschen der Zähne beim Zubeissen), eine verspannte Muskulatur, den Kiefer-Gelenkspalt oder eine tatsächliche Fehlstellung der Zähne bedingt sein. Menschen sind unterschiedlich empfindlich. Die meisten adaptieren gut an neue okklusale Verhältnisse (z.B. neue Füllungen oder Bissveränderungen nach Zahnspange); Patienten mit einer Okklusalen Dysästhesie (eine Erkrankungsform) haben aber grosse Probleme damit."
+			},
+			{
+				"id": 2,
+				"title": "Mund- oder Zungenbrennen", 
+				"text": "Auch Burning-Mouth-Disease genannt, hat neben vielen organischen Ursachen (Vitamin-Defizite, Schilddrüsenproblematik, Medikamente) auch eine neuropathische Komponente im Sinne einer Sensitivierung des Nervensystems."
+			},
+			{
+				"id": 3,
+				"title": "Zähneknirschen oder Pressen", 
+				"text": "In der Fachsprache nennt man dies Bruxismus. Bruxismus zählt nebst anderen Gewohnheiten wie Wangenbeissen, Zungenpressen, Nägelkauen, Bleistiftkauen oder übermässiges Kaugummikauen zu den Parafunktionen, also unphysiologische und häufig unbewusste Kieferbewegungen, die das System überlasten.  Der Kiefer in seiner eigentlichen Funktion dient der Nahrungsaufnahme und der Kommunikation."
+			},
+			{
+				"id": 4,
+				"title": "Zahnschmerzen ohne klare Ursache", 
+				"text": "Sind bei einem Zahnschmerz nicht Karies, Parodontitis oder ein Abszess die lokale Schmerz-Ursache muss in weiter weg liegenden Strukturen die Ursache gesucht werden: zum Beispiel in der Muskulatur oder im Nervensystem."
+			},
+			{
+				"id": 5,
+				"title": "Abgeschliffene oder ausgewaschene Zähne", 
+				"text": "Sogenannte Attritionen (Schliffspuren) oder Erosionen (Auswaschungen) kommen entweder durch Bruxismus (Pressen/Knirschen) oder durch Säuren (Magensäure oder in Lebensmitteln) oder die Kombination von beiden zustande."
+			}
+		]
+	}
+}

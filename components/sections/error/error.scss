@@ -1,0 +1,13 @@
+	.error {
+		margin-top: 56px;
+		min-height: calc(100vh - (498px + 115px + 56px + 96px));
+
+		&__title {
+			margin-bottom: 32px;
+		}
+
+		&__text {
+			margin-bottom: 32px;
+		}
+
+	}

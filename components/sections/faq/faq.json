@@ -1,0 +1,43 @@
+[
+	{
+	"question": "Wer trägt die Kosten für diese Behandlung?",
+	"answer": "Der Zahnarzt übt in diesem speziellen Fall die Funktion eines Arztes aus und ist daher als ärztlicher Leistungserbringer im Rahmen der sozialen Krankenversicherung anerkannt. Die Behandlung (Untersuch, Therapie, Nachkontrollen) wird von der Grundversicherung (KVG) abzüglich Ihrer Franchise übernommen. Nicht übernommen werden Schienen (Michiganschiene, Gelschiene, weitere) und die Lasertherapie. Hier muss bei der Zusatzversicherung angefragt werden (VVG). Eine Ausnahme bildet die Schlafapnoe-Schiene, welche bezahlt wird, wenn Sie von einem Schlafmediziner, Pneumologen oder HNO-Arzt verordnet wird."
+},
+	{
+	"question": "Was bedeutet CMD?",
+	"answer": "CMD steht für Cranio-Mandibuläre-Dysfunktion, eine Fehlfunktion im Kopf-Kieferbereich, die einhergeht mit Muskelverspannungen, Gelenkgeräuschen/-schmerzen und einer eingeschränkten Unterkieferbeweglichkeit. Synonyme hierfür sind auch Myoarthropathie (MAP) oder Temporo-Mandibular-Disorders (TMD)."
+},
+	{
+	"question": "Was ist chronischer Schmerz?",
+	"answer": "Im Unterschied zum akuten Schmerz (z. B. eine Verletzung oder Entzündung) welcher uns vor einer Schädigung der Gewebe warnt, hat der chronische Schmerz seine Warn- und Schutzfunktion verloren. Der Schmerz dauert schon länger als drei bis sechs Monate und ist zu einem eigenständigen Krankheitsbild geworden.",
+	"video": {
+		"src": "/videos/schmerzen-verstehen.mp4",
+		"poster": "/videos/schmerzen-verstehen-poster.png",
+		"caption": "Zentrum für Schmerzmedizin, Nottwil, SPZ"
+	},
+	"links": [
+		{
+			"text": "Zum Video über chronische Schmerzen",
+			"href": "https://www.paraplegie.ch/de/blog/schmerzratgeber-mit-chronischen-schmerzen-umgehen-lernen/",
+			"icon": "external-link"
+		}
+	]
+},
+{
+	"question": "Was sind orofaziale Schmerzen?",
+	"answer": "Darunter verstehen wir diejenigen Schmerzen, die über das Gebiet des Kiefers hinausgehen (z.B. Kopfschmerzen, Gefühlsstörungen im Gesicht, Mundbrennen, atypischer Gesichts- oder Zahnschmerz). Hierbei wichtig ist, dass die Problematik nicht nur Muskeln, Gelenke und Zähne betrifft, sondern das Nervensystem bereits ebenfalls beeinträchtigt ist. Es treten biochemische Veränderungen in der Reizweiterleitung sowie der Schmerzverarbeitung im zentralen Nervensystem auf.",
+	"video": {
+		"src": "/videos/orofaziale-schmerzen.mp4",
+		"poster": "/videos/orofaziale-schmerzen-poster.png",
+		"caption": "Quelle: Schweizer Radio und Fernsehen"
+	}
+},
+{
+	"question": "Was erwartet mich in der Sprechstunde?",
+	"answer": "Vor der ersten Konsultation wird Ihnen ein Fragebogen zugeschickt, welchen Sie in Ruhe zu Hause ausfüllen und mir vor dem ersten Besuch wieder retournieren. In der Praxis folgt die Messung der Unterkieferbeweglichkeit, die Palpation der Gelenke und der Muskulatur. Ihre Okklusion (Biss, Vorkontakte, Schleifbewegungen und Druckverteilung der Zähne) wird untersucht. Weitere Symptome (z. B. Taubheitsgefühl, Schnarchen, Ohrensausen) werden in Zusammenhang gebracht. Die Therapie beinhaltet je nach Diagnose Schienen, Physio-Übungen, gezielte Anästhesien, Soft-Laser-Anwendung oder spezifische Medikamente. Manchmal sind weitere Abklärungen nötig (z. B. Schlafklinik, Neurologie, HNO). Da ich über ein gutes Netzwerk zu solchen Personen verfüge kann Ihnen ein interdisziplinäres Setting angeboten werden."
+},
+{
+	"question": "Wieso muss ich vorab ein Formular ausfüllen?",
+	"answer": "Kiefer- und Gesichtsschmerzen (und weitere Symptome) können vergesellschaftet sein mit anderen Problemkreisen (gestörter Schlaf, Stress, Schmerzen an anderen Körperstellen). Der Fragebogen hilft mir, schnell einen guten Überblick zu erhalten wann, wie, wo bei Ihnen das Problem auftrat und was Sie schon alles unternommen haben dagegen."
+}
+]

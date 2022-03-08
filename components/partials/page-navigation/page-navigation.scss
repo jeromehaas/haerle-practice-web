@@ -1,0 +1,48 @@
+.page-navigation {
+
+	&__title {
+		color: $lightblue-100;
+		margin-bottom: 24px;
+		line-height: 1;
+	}
+
+	&__link-wrapper {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		scroll-behavior: smooth;
+	}
+	
+	&__link {
+		font-size: 20px;
+		font-weight: 600;
+		margin-right: 24px;
+		margin-bottom: 24px;
+		text-decoration: none;
+		font-weight: 700;
+		cursor: pointer;
+
+		&:last-child {
+			margin-right: 0;
+			margin-bottom: 0;
+		}
+
+	}
+
+	@media (max-width: 1000px) {
+		
+		&__link-wrapper {
+			flex-direction: row;
+		}
+	
+	}
+
+	@media (max-width: 600px) {
+		
+		&__link-wrapper {
+			flex-direction: column;
+		}
+	
+	}
+
+}

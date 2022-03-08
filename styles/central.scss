@@ -1,0 +1,54 @@
+/* CONFIGS */
+@import 'styles/configs/reset.scss';
+@import 'styles/configs/fonts.scss';
+@import 'styles/configs/variables.scss';
+@import 'styles/configs/mixins.scss';
+@import 'styles/configs/typography.scss';
+@import 'styles/configs/hamburger.scss';
+@import 'styles/configs/global.scss';
+
+/* PARTIALS */
+@import 'components/partials/heading/heading.scss';
+@import 'components/partials/paragraph/paragraph.scss';
+@import 'components/partials/link/link.scss';
+@import 'components/partials/image/image.scss';
+@import 'components/partials/button/button.scss';
+@import 'components/partials/text-input/text-input.scss';
+@import 'components/partials/file-input/file-input.scss';
+@import 'components/partials/video/video.scss';
+@import 'components/partials/page-navigation/page-navigation.scss';
+@import 'components/partials/textarea/textarea.scss';
+@import 'components/partials/submit-button/submit-button.scss';
+
+/* BLOCKS */
+@import 'components/blocks/footer/footer';
+@import 'components/blocks/navigation/navigation';
+@import 'components/blocks/navigation/navigation-desktop';
+@import 'components/blocks/navigation/navigation-mobile';
+
+/* LAYOUTS */
+@import 'components/layouts/page/page';
+@import 'components/layouts/section/section';
+
+
+/* SECTIONS */
+@import 'components/sections/hero/hero';
+@import 'components/sections/quote/quote';
+@import 'components/sections/teaser/teaser';
+@import 'components/sections/cta/cta';
+@import 'components/sections/statement/statement';
+@import 'components/sections/contact-form/contact-form';
+@import 'components/sections/article/article';
+@import 'components/sections/faq/faq';
+@import 'components/sections/cards/cards';
+@import 'components/sections/intro/intro';
+@import 'components/sections/login-form/login-form';
+@import 'components/sections/resume/resume';
+@import 'components/sections/education/education';
+@import 'components/sections/contact-teaser/contact-teaser';
+@import 'components/sections/regulation/regulation';
+@import 'components/sections/responsible/responsible';
+@import 'components/sections/symptoms/symptoms';
+@import 'components/sections/memberships/memberships';
+@import 'components/sections/partners/partners';
+@import 'components/sections/error/error';

@@ -1,0 +1,68 @@
+.text-input {
+	display: grid;
+	grid-template: 
+		"label optinal"
+		"input input"
+		"error error";
+		
+	&__label {
+		grid-area: label;
+		display: block;	
+		color: $darkblue-100;	
+	}
+	
+	&__optional {
+		text-align: right;
+		font-size: 16px;
+	}
+	
+	&__input {
+		margin-top: 8px;
+		grid-area: input;
+		width: 100%;
+		padding: 24px;
+		border-radius: 4px;
+		outline: none;
+		border: 1px solid $lightblue-50;
+		color: $darkblue-100;
+		caret-color: $lightblue-50;
+		background-color: transparent;
+
+		&:focus {
+			border: 1px solid $lightblue-100;
+			box-shadow: 0 0 8px 0px $lightblue-50, inset 0 0 8px 0px $lightblue-50;
+		}
+
+		&::placeholder{
+			color: $lightblue-50;
+		}
+		
+		::-ms-input-placeholder {
+			color: $red;
+		}
+
+	}
+
+	&__error-text {
+		color: $red;
+		display: none;
+		grid-area: error;	
+	}
+
+	&--error {
+
+		.text-input__label {
+			color: $red;
+		}
+
+		.text-input__input {
+			border-color: $red !important;
+		}
+
+		.text-input__error-text {
+			display: block;
+		}
+
+	}
+
+}
