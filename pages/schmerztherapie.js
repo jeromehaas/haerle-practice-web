@@ -12,7 +12,7 @@ const Schmerztherapie = () => {
       <Auth />
       <Intro data={{
         title: 'Schmerztherapie',
-        text: 'Wenn die Kiefergelenke, die Kaumuskeln und der Biss nicht harmonisch funktionieren, kann das zu Beschwerden im Kieferbereich und in angrenzenden Regionen führen. Erfahren Sie, welche Symptome bei einer Cranio Mandibulären Dysfunktion (CMD) auftreten können, wie die Diagnose erstellt wird und wie die Behandlung auf Sie zugeschnitten wird. ',
+        text: 'Meine Arbeitsweise orientiert sich in allen Bereichen an den international anerkannten Richtlinien der EAOPD (European Academy of Orofacial Pain and Dysfunction) der IASP (International Academy for the Study of Pain) und den DC/TMD (Diagnostic Criteria for Temporo Mandibular Disorders). Es ist dies die Methodik wie sie an den zahnärztlichen Zentren der Universitäten Zürich, Basel und Bern gelehrt wird.',
 				image: {
 					src: '/images/06-daniela-haerle-besprechung-fachpersonal.jpg',
 					alt: 'Besprechung mit Fachpersonal'
@@ -45,7 +45,7 @@ const Schmerztherapie = () => {
       <Article data={{
         anchorId: 'therapie',
         title: 'Die auf Sie zugeschnittene Therapie',
-        text: 'Die Therapie beginnt als Erstes bei Ihnen im Kopf. Sie werden Zusammenhänge besser verstehen und ungünstige Gewohnheiten ablegen können. Es kommen reversible Therapiehilfsmittel wie orale Schienen (Entlastungsschiene, Schnarchschiene, Protrusionsschiene) zum Einsatz. Auch helfen gezielte lokale Anästhesien und das Erlernen von einfacher Physiotherapie für den Kiefer. Spezifische Medikamente können Linderung verschaffen. Sollte sich eine Fehlstellung des Bisses oder ein Zahn als Ursache der Schmerzen herausstellen, stehe ich gerne beratend Ihrem Privat-Zahnarzt zur Seite (second opinion). ',
+        text: 'Die Therapie beginnt als Erstes bei Ihnen im Kopf. Sie werden Zusammenhänge besser verstehen und ungünstige Gewohnheiten ablegen können. Es kommen reversible Therapiehilfsmittel wie orale Schienen (Entlastungsschiene, Wasser-Schiene, Schnarchschiene, Protrusionsschiene, u.a.) zum Einsatz. Auch helfen gezielte lokale Anästhesien in muskuläre Triggerpunkte. Das Erlernen von einfacher Physiotherapie und Achtsamkeitstraining ist essenziell für eine nachhaltige Wirkung der Therapie. Der Softlaser mit gewebeaktivierender Wirkung und Zellregeneration kommt zum Einsatz. Spezifische Medikamente können dem Nervensystem und dem Schlaf bei der Regulierung helfen. Sollte sich eine Fehlstellung des Bisses oder ein Zahn als Ursache der Schmerzen herausstellen, stehe ich gerne beratend Ihrem Privat-Zahnarzt zur Seite (second opinion).',
 				image: {
 					src: '/images/08-daniela-haerle-besprechung-patient-closeup.jpg',
 					alt: 'Besprechung mit Patient',
