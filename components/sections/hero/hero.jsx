@@ -14,7 +14,10 @@ const Hero = ({ data }) => {
       <Image data={{
         className: 'hero__image',
         src: data.image.src,
-				alt: data.image.alt
+				alt: data.image.alt,
+				width: 3000,
+				height: 1600,
+				quality: 100
       }} />
       <Link to={ 'intro-text' } className="page-navigation__link" duration={500} smooth>
         <img className="hero__scroll-icon" src='/icon/scroll.svg'></img>
