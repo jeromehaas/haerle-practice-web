@@ -22,7 +22,7 @@ const Video = ({ data }) => {
         <source type="video/mp4" src={ data.src } />
       </video>
       <img className={`video__play-button ${videoStatus === 'playing' ? 'video__play-button--hidden' : '' }`} src="/icon/icon-playbutton.svg" onClick={ handlePlayVideo } />
-      <Paragraph data={{ className: 'video__caption'}}>Quelle: Zentrum für Schmerzmedizin, Nottwil, SPZ</Paragraph>	
+      <Paragraph data={{ className: 'video__caption'}}>{ data.caption }</Paragraph>	
     </div>
   )
 };

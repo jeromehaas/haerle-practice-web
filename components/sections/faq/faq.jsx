@@ -55,7 +55,7 @@ const FaqItem = ({ data }) => {
         { data.answer }
       </Paragraph>
       { data.video && (
-        <Video data={{ className: `item__video ${itemStatus === 'closed' ? 'item__video--hidden' : ''}`, src: data.video.src, poster: data.video.poster, caption: data.video.poster }} /> 
+        <Video data={{ className: `item__video ${itemStatus === 'closed' ? 'item__video--hidden' : ''}`, src: data.video.src, poster: data.video.poster, caption: data.video.caption }} /> 
       )}
       { data.links && (
         <div className={`item__links ${itemStatus === 'closed' ? 'item__links--hidden' : '' }`}>
