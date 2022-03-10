@@ -12,6 +12,7 @@ const Image = ({ data }) => {
           className={ data.className }
           alt={ data.alt }
           src={ data.src } 
+					quality={ data.quality || 75 }
         />
       )}
     </div>
