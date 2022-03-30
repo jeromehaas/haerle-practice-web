@@ -60,7 +60,7 @@ const Navigation = () => {
             <img className="navigation__times-icon" src="/icon/icon-time.svg" />
             <p className="navigation__times-item">Öffnungszeiten</p>
             <p className="navigation__times-item">Montag –  Freitag</p>
-            <p className="navigation__times-item">09:00 – 12.00, 13:30 – 18:00 Uhr</p>
+            <p className="navigation__times-item">08:00 – 12.00, 13:00 – 17:00 Uhr</p>
           </div>
         </div>
       </nav>   
