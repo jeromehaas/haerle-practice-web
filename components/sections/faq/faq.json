@@ -25,7 +25,12 @@
 },
 {
 	"question": "Was sind orofaziale Schmerzen?",
-	"answer": "Darunter verstehen wir diejenigen Schmerzen, die über das Gebiet des Kiefers hinausgehen (z.B. Kopfschmerzen, Gefühlsstörungen im Gesicht, Mundbrennen, atypischer Gesichts- oder Zahnschmerz). Hierbei wichtig ist, dass die Problematik nicht nur Muskeln, Gelenke und Zähne betrifft, sondern das Nervensystem bereits ebenfalls beeinträchtigt ist. Es treten biochemische Veränderungen in der Reizweiterleitung sowie der Schmerzverarbeitung im zentralen Nervensystem auf."
+	"answer": "Darunter verstehen wir diejenigen Schmerzen, die über das Gebiet des Kiefers hinausgehen (z.B. Kopfschmerzen, Gefühlsstörungen im Gesicht, Mundbrennen, atypischer Gesichts- oder Zahnschmerz). Hierbei wichtig ist, dass die Problematik nicht nur Muskeln, Gelenke und Zähne betrifft, sondern das Nervensystem bereits ebenfalls beeinträchtigt ist. Es treten biochemische Veränderungen in der Reizweiterleitung sowie der Schmerzverarbeitung im zentralen Nervensystem auf.",
+	"video": {
+		"src": "/videos/orofaziale-schmerzen.mp4",
+		"poster": "/videos/orofaziale-schmerzen-poster.png",
+		"caption": "Quellenangabe: © 2016 Schweizer Radio und Fernsehen, Ausschnitte aus SRF Einstein sucht den Schmerz"
+	}
 },
 {
 	"question": "Was erwartet mich in der Sprechstunde?",
