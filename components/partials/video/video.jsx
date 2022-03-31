@@ -13,7 +13,6 @@ const Video = ({ data }) => {
 
   const handlePauseVideo = () => {
     setVideoStatus('paused');
-    console.log('paused')
   }
 
   return (
