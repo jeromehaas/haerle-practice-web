@@ -10,7 +10,7 @@ const Aktivitaeten = () => {
     <Page data={{ title: 'Aktivitäten' }}>
       <Intro data={{
         title: 'Aktivitäten',
-        text: 'Ich bleibe auf dem Laufenden und besuche regelmässig Fortbildungen und Anlässe rund um das Thema Kopf- und Kieferschmerzen.',
+        text: 'Ich bleibe auf dem Laufenden und besuche regelmässig Fortbildungen und Anlässe rund um das Thema Kopf- und Kieferschmerzen sowie Schlafapnoe.',
 				image: {
 					src: '/images/11-daniela-haerle-portrait-brille.jpg',
 					alt: 'Dr. med. dent. Daniela Haerle am Vierwaldstättersee in Luzern'

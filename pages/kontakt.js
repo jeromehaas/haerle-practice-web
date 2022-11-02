@@ -10,7 +10,7 @@ const Kontakt = () => {
       <ContactTeaser />
       <ContactForm data={{ anchorId: 'kontakt-formular'}} />
       <Article data={{
-        title: 'Sie finden mich in der Praxis von Dr. Jürg Eppenberger, Spezialist SSO für Rekonstruktive Zahnmedizin',
+        title: 'Sie finden mich in der Praxis von Dr. Jürg Eppenberger, Fachzahnarzt für Rekonstruktive Zahnmedizin.',
         text: '',
 				image: {
 					src: '/images/12-daniela-haerle-kontakt.jpg',
