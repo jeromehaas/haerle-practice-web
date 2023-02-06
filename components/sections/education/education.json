@@ -22,7 +22,8 @@
 	"activities": [
 		"Swiss Headache Society (SHS) and Swiss Pain Society (SPS), Annual Meeting, Bern",
 		"Online Lecture Series, TMD and Orofacial Pain, Prof. J. Okeson, Kentucky, USA ",
-		"LZG (Luzerner Zahnärzte Gesellschaft), Fortbildung, Luzern"
+		"LZG (Luzerner Zahnärzte Gesellschaft), Fortbildung, Luzern",
+		"Osteopathie und Zahnmedizin, Zürich"
 	]
 },
 	{
@@ -54,5 +55,11 @@
 		"src": "/images/13-daniela-haerle-conference.jpg",
 		"alt": "Dr. med. dent. Daniela Haerle am Jahreskongress DGFDT mit Prof. Jeffrey P. Okeson"
 	}
+},
+{
+	"date": "2016",
+	"activities": [
+		"DGFDT (Deutsche Gesellschaft für Funktionsdiagnostik und -Therapie) Jahreskongress, Deutschland Thema: Cranio Mandibuläre Dysfunktion CMD im Verlauf der Lebensspanne"
+	]
 }
 ]
