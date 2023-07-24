@@ -7,21 +7,16 @@ const ContactTeaser = () => {
   return (
     <Section data={{ className: 'contact-teaser'}}>
       <div className="contact-teaser__text-wrapper">
-        <Heading data={{
-          className: 'contact-teaser__title',
-          color: 'lightblue'
-        }}>Ich freue mich, von Ihnen zu hören.</Heading>
-        <Paragraph data={{
-          className: 'contact-teaser__text'
-        }}>Anfragen und Termine werden durch die Praxis zahnmedizin Luzern entgegengenommen und organisiert.</Paragraph>
+        <Heading data={{ className: 'contact-teaser__title', color: 'lightblue' }}>
+					Ich freue mich, von Ihnen zu hören.
+				</Heading>
       </div>
 			
       <div className="contact-teaser__contact-wrapper">
         <address className="contact-teaser__item">
           <img src="/icon/icon-location.svg" />
-          <p>zahnmedizin luzern</p>
-          <p>Dr. med. dent. Jürg Eppenberger</p>
-          <p>Haldenstrasse 11</p>
+          <p>Praxis am Dietschiberg</p>
+          <p>Lützelmattstrasse 3</p>
           <p>6006 Luzern</p>
         </address>
         <div className="contact-teaser__item">
@@ -32,7 +27,9 @@ const ContactTeaser = () => {
         </div>
         <div className="contact-teaser__item">
           <img src="/icon/icon-phone.svg" />
-          <a href="tel:0414171707">041 417 17 07</a>
+          <p>Kontakt</p>
+          <p>Tel: <a href="tel:0415521617">041 552 16 17</a></p>
+          <p>Email: <a href="mailto:praxis.dietschiberg@hin.ch">praxis.dietschiberg@hin.ch</a></p>
         </div>
       </div>
     </Section>

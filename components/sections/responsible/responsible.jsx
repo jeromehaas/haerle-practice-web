@@ -29,7 +29,7 @@ const ResponsibleItem = ({ data }) => {
     <div className="responsible__item item">
       { data.category && (<Heading data={{ className: 'item__category', level: 'h5' }}>{ data.category }</Heading>) }
       { data.name && (<Paragraph data={{ className: 'item__name '}}>{ data.name }</Paragraph>) }
-      { data.website && (<Link href={ `https://${ data.website }` }><a className="item__website paragraph" target="_blank">{ data.website }</a></Link>) }
+      { data.website && (<Link className="item__website paragraph" target="_blank" href={ `https://${ data.website }` }>{ data.website }</Link>) }
     </div>
   )
 }

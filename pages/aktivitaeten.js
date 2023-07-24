@@ -7,7 +7,9 @@ import { Partners } from 'components/sections/partners/partners';
 const Aktivitaeten = () => {
 
   return (
+
     <Page data={{ title: 'Aktivitäten' }}>
+
       <Intro data={{
         title: 'Aktivitäten',
         text: 'Ich bleibe auf dem Laufenden und besuche regelmässig Fortbildungen und Anlässe rund um das Thema Kopf- und Kieferschmerzen sowie Schlafapnoe.',
@@ -23,16 +25,20 @@ const Aktivitaeten = () => {
 					]
 				}
       }}/>
+
       <Education data={{ anchorId: 'weiterbildungen-tagungen'}} />
+
       <Partners data={{ anchorId: 'partner' }}></Partners>
+
       <CTA data={{
         title: 'Termin vereinbaren',
-        text: 'Sie finden mich in der Zahnmedizin Luzern AG, bei Dr. Jürg Eppenberger, Zahnarztpraxis für Rekonstruktive Zahnmedizin.',
+        text: 'Sie finden mich in der Praxis am Dietschiberg an der Lützelmattstrasse 3 in Luzern.',
 				button: {
 					text: 'Kontakt',
 					href: '/kontakt'
 				}
       }} />
+
     </Page>
   )
 }

@@ -9,6 +9,7 @@ const Partners = ({ data }) => {
 
   return (
     <Section data={{ className: 'partners', anchorId: data.anchorId }}>
+
       <div className="partners__text-wrapper">
         <Heading data={{ className: 'partners__title', level: 'h2' }}>Partner</Heading>
         <Paragraph data={{ className: 'partners__text'}}>Mein Netzwerk deckt vielseitige Spezialisierungen ab, auf die ich jederzeit zurückgreifen kann. Davon profitieren auch Sie!</Paragraph>
@@ -20,8 +21,8 @@ const Partners = ({ data }) => {
         <Paragraph data={{}}>Haldenstrasse 11</Paragraph>
         <Paragraph data={{}}>6006 Luzern</Paragraph>
         <br />
-        <NextLink href="tel:0414171707"><a className="paragraph item__link">T 041 417 17 07</a></NextLink>
-        <NextLink href="mailto:info@zahnmedizinluzern.ch"><a className="paragraph item__link">info@zahnmedizinluzern.ch</a></NextLink>
+        <NextLink className="paragraph item__link" href="tel:0414171707">Tel: 041 417 17 07</NextLink>
+        <NextLink className="paragraph item__link" href="mailto:info@zahnmedizinluzern.ch">Email: info@zahnmedizinluzern.ch</NextLink>
         <br />
         <Link data={{ icon: 'external-link', href: 'https://zahnmedizinluzern.ch', target: '_blank'}}>zahnmedizinluzern.ch</Link>
       </div>
@@ -32,9 +33,9 @@ const Partners = ({ data }) => {
         <Paragraph data={{}}>Lützelmattstrasse 3</Paragraph>
         <Paragraph data={{}}>6006 Luzern</Paragraph>
         <br />
-        <NextLink href="tel:0415440708"><a className="paragraph item__link">T 041 544 07 08</a></NextLink>
-        <NextLink href="tel:0415440716"><a className="paragraph item__link">F 041 544 07 16</a></NextLink>
-        <NextLink href="mailto:khc@hin.ch"><a className="paragraph item__link">khc@hin.ch</a></NextLink>
+        <NextLink className="paragraph item__link" href="tel:0415440708">Tel: 041 544 07 08</NextLink>
+        <NextLink className="paragraph item__link" href="tel:0415440716">Fax: 041 544 07 16</NextLink>
+        <NextLink className="paragraph item__link" href="mailto:khc@hin.ch">Email: khc@hin.ch</NextLink>
         <br />
         <Link data={{ icon: 'external-link', href: 'https://kopf-hals-chirurgie.ch', target: '_blank'}}>kopf-hals-chirurgie.ch</Link>
       </div>

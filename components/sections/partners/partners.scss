@@ -43,9 +43,11 @@
 		
 		&__logo {
 			margin-bottom: 24px;
-			max-width: 350px;
+			max-width: 320px;
 			width: 100%;
+			height: auto;
 			display: block;
+			margin-bottom: 32px;
 	
 			img {
 				object-fit: contain;

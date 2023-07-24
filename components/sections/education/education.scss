@@ -11,7 +11,7 @@
 	.item {
 
 		display: grid;
-		grid-template: auto / 1fr 1fr;
+		grid-template: auto / 240px 1fr;
 		padding: 48px 0;
 		border-bottom: 1px solid $lightblue-100;
 
@@ -26,6 +26,8 @@
 
 		&__image {
 			margin-top: 24px;
+			width: 100%;
+			height: auto;
 		}
 
 	}

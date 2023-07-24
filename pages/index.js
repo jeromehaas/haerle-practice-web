@@ -5,12 +5,13 @@ import { Teaser } from 'components/sections/teaser/teaser';
 import { CTA } from 'components/sections/cta/cta';
 import { Article } from 'components/sections/article/article';
 import { Cards } from 'components/sections/cards/cards';
-import { Auth } from 'components/sections/auth/auth';
 
 const Start = () => {
+
   return (
+
     <Page data={{ title: '' }}>
-      <Auth />
+
       <Hero data={{ 
         titleText: 'Diagnostik und Therapie von Kiefer-, Gesichts- und Kopfschmerzen, Myoarthropathien des Kausystems, Schlafapnoe',
         titleColor: 'lightblue',
@@ -19,6 +20,7 @@ const Start = () => {
 					alt: 'Besprechung mit Daniela Haerle'
 				}
       }} />
+
       <Article data={{
         anchorId: 'intro-text',
         title: 'Gelenkschmerzen, Ohrgeräusche, unklare Zahnschmerzen, Zähneknirschen',
@@ -35,6 +37,7 @@ const Start = () => {
         reverse: false,
         hideImageOnMobile: true
       }} /> 
+
       <Cards data={{
         title: 'Die Schmerztherapie ',
         cards: [
@@ -108,18 +111,20 @@ const Start = () => {
           title: 'Schmerztherapie',
           text: 'Analyse von weiteren Symptomen (wie gestörter Schlaf, Schnarchen, Reflux, Stressoren) und mögliche Therapieansätze werden besprochen.'
         }]
-      }}>
-      </Teaser>
+      }} />
+
       <CTA data={{
         title: 'Termin vereinbaren',
-        text: 'Sie finden mich in der Zahnmedizin Luzern AG, bei Dr. Jürg Eppenberger, Zahnarztpraxis für Rekonstruktive Zahnmedizin.',
+        text: 'Sie finden mich in der Praxis am Dietschiberg an der Lützelmattstrasse 3 in Luzern.',
 				button: {
 					text: 'Kontakt',
 					href: '/kontakt'
 				}
       }} />
+
     </Page>
-  )
-}
+  );
+
+};
 
 export default Start;

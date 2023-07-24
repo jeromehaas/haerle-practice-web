@@ -30,7 +30,7 @@ const Navigation = () => {
     <Fragment>
       <nav className={`navigation navigation--mobile navigation--${ renderColor() } ${menuState === 'open' ? 'navigation--open' : ''}`}>
         <div className='navigation__bar'>
-          <img className="navigation__logo" src="/logos/logo-daniela-haerle-small.svg" onClick={() => router.push('/')} />
+          <img className="navigation__logo" src="/logos/logo-praxis-dietschiberg.svg" onClick={() => router.push('/')} />
           <button className={`navigation__hamburger hamburger hamburger--squeeze ${menuState === 'open' ? 'hamburger--active' : null} `} type="button" onClick={ toggleMenu }>
             <span className="hamburger-box">
               <span className="hamburger-inner" />
@@ -40,21 +40,22 @@ const Navigation = () => {
         <div className="navigation__blocker"></div>
         <div className='navigation__inner'>
           <div className="navigation__link-wrapper">
-            <Link href="/schmerztherapie" ><a className="navigation__link" onClick={ router.pathname === '/schmerztherapie' && toggleMenu }>Schmerztherapie</a></Link>
-            <Link href="/aktivitaeten" ><a className="navigation__link" onClick={ router.pathname === '/aktivitaeten' && toggleMenu }>Aktivitäten</a></Link>
-            <Link href="/ueber-mich" ><a className="navigation__link" onClick={ router.pathname === '/ueber-mich' && toggleMenu }>Über mich</a></Link>
-            <Link href="/kontakt" ><a className="navigation__link" onClick={ router.pathname === '/kontakt' && toggleMenu }>Kontakt</a></Link>
+            <Link className="navigation__link" onClick={ router.pathname === '/schmerztherapie' && toggleMenu } href="/schmerztherapie" >Schmerztherapie</Link>
+            <Link className="navigation__link" onClick={ router.pathname === '/aktivitaeten' && toggleMenu } href="/aktivitaeten" >Aktivitäten</Link>
+            <Link className="navigation__link" onClick={ router.pathname === '/ueber-mich' && toggleMenu } href="/ueber-mich" >Über mich</Link>
+            <Link className="navigation__link" onClick={ router.pathname === '/kontakt' && toggleMenu } href="/kontakt" >Kontakt</Link>
           </div>
           <address className="navigation__address">
             <img className="navigation__address-icon" src="/icon/icon-location.svg" />
-            <p className="navigation__address-item">zahnmedizin luzern</p>
-            <p className="navigation__address-item">Dr. med. dent. Jürg Eppenberger</p>
-            <p className="navigation__address-item">Haldenstrasse 11</p>
+            <p className="navigation__address-item">Praxis am Dietschiberg</p>
+            <p className="navigation__address-item">Lützelmattstrasse 3</p>
             <p className="navigation__address-item">6006 Luzern</p>
           </address>
           <div className="navigation__contact">
-            <img className="navigation__contact-icon" src="/icon/icon-phone.svg" />
-            <a className="navigation__contact-item" href="tel:0414171707">041 417 17 07</a>
+						<img className="navigation__contact-icon" src="/icon/icon-phone.svg" />
+						<p className="navigation__contact-item">Kontakt</p>
+						<p className="navigation__contact-item">Tel: <a href="tel:0415521617">041 552 16 17</a></p>
+						<p className="navigation__contact-item">Email: <a href="mailto:praxis.dietschiberg@hin.ch">praxis.dietschiberg@hin.ch</a></p>
           </div>
           <div className="navigation__times">
             <img className="navigation__times-icon" src="/icon/icon-time.svg" />
@@ -67,11 +68,11 @@ const Navigation = () => {
       <nav className={`navigation navigation--desktop navigation--${ renderColor() }` }>
         <div className="navigation__inner">
           <span className="navigation__size-limiter">
-            <img className="navigation__logo" src="/logos/logo-daniela-haerle.svg" onClick={() => router.push('/')} />
-            <Link href="/schmerztherapie"><a className={`navigation__link ${ router.pathname === '/schmerztherapie' || router.pathname === '/' ? 'navigation__link--active' : ''} `}>Schmerztherapie</a></Link>
-            <Link href="/aktivitaeten"><a className={`navigation__link ${ router.pathname === '/aktivitaeten' || router.pathname === '/' ? 'navigation__link--active' : ''} `}>Aktivitäten</a></Link>
-            <Link href="/ueber-mich"><a className={`navigation__link ${ router.pathname === '/ueber-mich' || router.pathname === '/' ? 'navigation__link--active' : ''} `}>Über mich</a></Link>
-            <Link href="/kontakt"><a className={`navigation__link ${ router.pathname === '/kontakt' || router.pathname === '/' ? 'navigation__link--active' : ''} `}>Kontakt</a></Link>
+            <img className="navigation__logo" src="/logos/logo-praxis-dietschiberg.svg" onClick={() => router.push('/')} />
+            <Link className={`navigation__link ${ router.pathname === '/schmerztherapie' || router.pathname === '/' ? 'navigation__link--active' : ''} `} href="/schmerztherapie">Schmerztherapie</Link>
+            <Link className={`navigation__link ${ router.pathname === '/aktivitaeten' || router.pathname === '/' ? 'navigation__link--active' : ''} `} href="/aktivitaeten">Aktivitäten</Link>
+            <Link className={`navigation__link ${ router.pathname === '/ueber-mich' || router.pathname === '/' ? 'navigation__link--active' : ''} `} href="/ueber-mich">Über mich</Link>
+            <Link className={`navigation__link ${ router.pathname === '/kontakt' || router.pathname === '/' ? 'navigation__link--active' : ''} `} href="/kontakt">Kontakt</Link>
           </span>
         </div>
         <div className="navigation__blocker"></div>

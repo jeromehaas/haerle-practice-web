@@ -1,4 +1,3 @@
-import Reveal from 'react-reveal/Reveal';
 import { keyframes } from '@emotion/react';
 
 const Section = ({ data, children }) => {
@@ -9,14 +8,12 @@ const Section = ({ data, children }) => {
 `;
 
   return (
-    <Reveal keyframes={ moveDown } triggerOnce fraction={ 0.075 } duration={ 2000 }>
       <div className={`section ${ data.className ? data.className : '' } `} >
         <div className={`section__inner ${data.className ? `${data.className}__inner` : '' } `}>
           { children }
         </div>
         <div className="section__anchor" id={ data.anchorId }></div>
       </div>
-    </Reveal>
   )
 };
 

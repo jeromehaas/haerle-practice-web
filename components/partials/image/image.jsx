@@ -8,7 +8,6 @@ const Image = ({ data }) => {
           priority
           width={ data.width || 1600 }
           height={ data.height || 900 }
-          layout="responsive"
           className={ data.className }
           alt={ data.alt }
           src={ data.src } 
