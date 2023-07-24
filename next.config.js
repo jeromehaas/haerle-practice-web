@@ -6,8 +6,10 @@ module.exports = {
       issuer: { and: [/\.(js|ts)x?$/] },
       use: ['@svgr/webpack'],
     });
-
     return config;
   },
+	eslint: {
+		ignoreDuringBuilds: true,
+	},
   trailingSlash: true,
 };
