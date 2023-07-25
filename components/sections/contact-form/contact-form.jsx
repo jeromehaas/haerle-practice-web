@@ -87,8 +87,13 @@ const ContactForm = ({ data }) => {
     return errors;
   }
 
+	// SUBMIT 
   const submit = async () => {
+
+		// TRY-CATCH BLOCK
     try {
+
+			// SEND MESSAGE
       await axios({
         method: 'post',
         url: '/api/contact-form/message',
@@ -101,6 +106,8 @@ const ContactForm = ({ data }) => {
           message: formState.message.value,
         }
       });
+
+			// SEND CONFIRMATION
       await axios({
         method: 'post',
         url: '/api/contact-form/confirmation',
@@ -110,11 +117,15 @@ const ContactForm = ({ data }) => {
 					email: formState.email.value,
         }
       });
+
+			// SHOW SUCCESS BANNER
       setStatusBarState({
         visible: true,
         icon: 'success',
         message: 'Das Formular wurde erfolgreich übermittelt!'
       });
+
+		// SHOW ERROR BANNER
     } catch (error) {
       console.log('Error: inputs are not valid');
       setStatusBarState({
@@ -125,6 +136,7 @@ const ContactForm = ({ data }) => {
     }
   }
 
+	// HANDLE SUBMIT
   const handleSubmit = (event) => {
     event.preventDefault();
     const errors = getErrors();
@@ -137,6 +149,7 @@ const ContactForm = ({ data }) => {
     }
   }
 
+	// RENDER
   return (
     <Section data={{ className: 'contact-form',  anchorId: data.anchorId }}>
 

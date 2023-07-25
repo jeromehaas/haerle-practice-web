@@ -1,51 +1,63 @@
 const Nodemailer = require('nodemailer');
 import { createConfirmation } from './templates/confirmation';
 
-const transporter = Nodemailer.createTransport({
-  host: process.env.NEXT_PUBLIC_SMTP_HOST,
-  port: process.env.NEXT_PUBLIC_SMTP_PORT,
-  secure: false,
-  requireTLS: true,
-  auth: {
-    user: process.env.NEXT_PUBLIC_SMTP_USER,
-    pass: process.env.NEXT_PUBLIC_SMTP_PASSWORD,
-  },
-  logger: false
-});
-
+// CONFIRMATION
 const Confirmation = async ( req, res ) => {
 
-	const { firstname, lastname, email } = req.body;
+	// TRY-CATCH BLOCK
+	try {
 
-	const confirmationTemplate = createConfirmation({
-		firstname: firstname,
-		lastname: lastname,
-		email: email
-	});
+		// GET VALUES
+		const { firstname, lastname, email } = req.body;
 
-  const confirmationData = {
-		from: process.env.NEXT_PUBLIC_SMTP_SENDER,
-		to: email,
-		subject: 'Ihre Nachricht wurde übermittelt',
-    html: confirmationTemplate, 
-  };
+		// CREATE TEMPLATE
+		const confirmationTemplate = createConfirmation({
+			firstname: firstname,
+			lastname: lastname,
+			email: email
+		});
 
+		// CREATE TRANSPORTER
+		const transporter = Nodemailer.createTransport({
+			host: process.env.SMTP_HOST,
+			port: process.env.SMTP_PORT,
+			secure: false,
+			requireTLS: true,
+			auth: {
+				user: process.env.SMTP_USER,
+				pass: process.env.SMTP_PASSWORD,
+			},
+			logger: false
+		});
 
-  await new Promise((resolve, reject) => {
-    transporter.sendMail(confirmationData, (error) => {
-      if (error) {
-        console.error(error);
-        reject(error);
-        res.send(error.message);
-      } else {
-        resolve();
-      }
-    });
-  }).then(() => {
+		// CREATE DATA
+		const confirmationData = {
+			from: process.env.SMTP_SENDER,
+			to: email,
+			subject: 'Ihre Nachricht wurde übermittelt',
+			html: confirmationTemplate, 
+		};
+
+		// SEND MESSAGE
+		await transporter.sendMail(confirmationData);
+
+		// PRINT SUCCESS MESSSAGE
 		console.log('🟢 Success: Confirmation has been sent successfully!');
+
+		// SEND RESPONSE
 		res.send('🟢 Success: Confirmation has been sent successfully!');
-	});
- 
+
+	// HANDLE ERRORS
+	} catch (error) {
+
+		// PRINT SUCCESS MESSSAGE
+		console.log('🔴 Error: Message could not be sent!');
+
+		// SEND RESPONSE
+		res.status(500).send('🔴 Error: Message could not be sent!');
+
+	};
+
 }; 
 
 export default Confirmation;

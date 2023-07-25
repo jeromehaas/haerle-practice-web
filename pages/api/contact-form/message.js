@@ -1,53 +1,70 @@
+// IMPORTS
 const Nodemailer = require('nodemailer');
 import { createMessage } from './templates/message';
 
-const transporter = Nodemailer.createTransport({
-  host: process.env.NEXT_PUBLIC_SMTP_HOST,
-  port: process.env.NEXT_PUBLIC_SMTP_PORT,
-  secure: false,
-  requireTLS: true,
-  auth: {
-    user: process.env.NEXT_PUBLIC_SMTP_USER,
-    pass: process.env.NEXT_PUBLIC_SMTP_PASSWORD,
-  },
-  logger: false
-});
 
+
+// MESSAGE
 const Message = async ( req, res ) => {
 
-	const { firstname, lastname, subject, email, phone, message } = req.body;
+	// TRY-CATCH BLOCK
+	try {
+		
+		// GET VALUES
+		const { firstname, lastname, subject, email, phone, message } = req.body;
 
-	const messageTemplate = createMessage({
-		firstname: firstname,
-		lastname: lastname,
-		subject: subject,
-		email: email,
-		phone: phone,
-		message: message,
-	});
+		// CREATE TRANSPORTER
+		const transporter = Nodemailer.createTransport({
+			host: process.env.SMTP_HOST,
+			port: process.env.SMTP_PORT,
+			secure: false,
+			requireTLS: true,
+			auth: {
+				user: process.env.SMTP_USER,
+				pass: process.env.SMTP_PASSWORD,
+			},
+			logger: false
+		});
 
-  const messageData = {
-		from: process.env.NEXT_PUBLIC_SMTP_SENDER,
-		to: process.env.NEXT_PUBLIC_SMTP_USER,
-		subject: 'Eine neue Nachricht von der Website',
-    html: messageTemplate, 
-  };
+		// CREATE TEMPLATE
+		const messageTemplate = createMessage({
+			firstname: firstname,
+			lastname: lastname,
+			subject: subject,
+			email: email,
+			phone: phone,
+			message: message,
+		});
 
-  await new Promise((resolve, reject) => {
-    transporter.sendMail(messageData, (error) => {
-      if (error) {
-        console.error(error);
-        reject(error);
-        res.send(error.message);
-      } else {
-        resolve();
-      }
-    });
-  }).then(() => {
+		// CREATE DATA
+		const messageData = {
+			from: process.env.SMTP_SENDER,
+			to: 'hello@jeromehaas.ch',
+			subject: 'Eine neue Nachricht von der Website',
+			html: messageTemplate, 
+		};
+
+		// SEND MESSAGE
+		await transporter.sendMail(messageData);
+
+		// PRINT SUCCESS MESSSAGE
 		console.log('🟢 Success: Message has been sent successfully!');
-		res.send('🟢 Success: Message has been sent successfully!');
-	});
- 
+		
+		// SEND RESPONSE
+		res.status(200).send('🟢 Success: Message has been sent successfully!');
+
+	// HANDLE ERRORS
+	} catch (error) {
+
+		// PRINT SUCCESS MESSSAGE
+		console.log('🔴 Error: Message could not be sent!');
+
+		// SEND RESPONSE
+		res.status(500).send('🔴 Error: Message could not be sent!');
+
+	};
+
 }; 
 
+// EXPORTS
 export default Message;
