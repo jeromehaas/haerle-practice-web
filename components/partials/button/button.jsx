@@ -1,14 +1,19 @@
+// IMPORTS
 import Link from 'next/link';
 
+// COMPONENT
 const Button = ({ data, children }) => {
 
-  return (
-    <Link className={`button ${data.className}`} onClick={data.onClick} href={ data.href || '#' }>
-        {children}
-    </Link>
-  )
+	// RENDER
+	return (
+		<Link className={ `button ${data.className}` } onClick={ data.onClick } href={ data.href || '#' }>
+			{children}
+		</Link>
+	);
+
 };
 
+// EXPORTS
 export {
-  Button
+	Button,
 };

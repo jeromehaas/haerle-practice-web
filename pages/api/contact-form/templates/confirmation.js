@@ -1,16 +1,19 @@
-const { confirmationTemplate } = require('./confirmation-template.js');
+// IMPORTS
 const handlebars = require('handlebars');
+const { confirmationTemplate } = require('./confirmation-template.js');
 
-const createConfirmation = ( data ) => {
+// CREATE CONFIRMATION FORM
+const createConfirmation = (data) => {
 	let confirmation;
 	confirmation = handlebars.compile(confirmationTemplate);
-	confirmation = confirmation({ 
+	confirmation = confirmation({
 		firstname: data.firstname,
-		lastname: data.lastname
+		lastname: data.lastname,
 	});
 	return confirmation;
 };
 
+// EXPORTS
 module.exports = {
-	createConfirmation
+	createConfirmation,
 };

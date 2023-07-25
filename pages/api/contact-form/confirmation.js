@@ -1,8 +1,8 @@
 const Nodemailer = require('nodemailer');
-import { createConfirmation } from './templates/confirmation';
+const { createConfirmation } = require('./templates/confirmation');
 
 // CONFIRMATION
-const Confirmation = async ( req, res ) => {
+const Confirmation = async (req, res) => {
 
 	// TRY-CATCH BLOCK
 	try {
@@ -14,7 +14,7 @@ const Confirmation = async ( req, res ) => {
 		const confirmationTemplate = createConfirmation({
 			firstname: firstname,
 			lastname: lastname,
-			email: email
+			email: email,
 		});
 
 		// CREATE TRANSPORTER
@@ -27,7 +27,7 @@ const Confirmation = async ( req, res ) => {
 				user: process.env.SMTP_USER,
 				pass: process.env.SMTP_PASSWORD,
 			},
-			logger: false
+			logger: false,
 		});
 
 		// CREATE DATA
@@ -35,7 +35,7 @@ const Confirmation = async ( req, res ) => {
 			from: process.env.SMTP_SENDER,
 			to: email,
 			subject: 'Ihre Nachricht wurde übermittelt',
-			html: confirmationTemplate, 
+			html: confirmationTemplate,
 		};
 
 		// SEND MESSAGE
@@ -58,6 +58,6 @@ const Confirmation = async ( req, res ) => {
 
 	};
 
-}; 
+};
 
 export default Confirmation;

@@ -1,10 +1,12 @@
-const { messageTemplate } = require('./message-template');
+// IMPORTS
 const handlebars = require('handlebars');
+const { messageTemplate } = require('./message-template');
 
-const createMessage = ( data ) => {
+// CREATE MESSAGE
+const createMessage = (data) => {
 	let message;
 	message = handlebars.compile(messageTemplate);
-	message = message({ 
+	message = message({
 		firstname: data.firstname,
 		lastname: data.lastname,
 		subject: data.subject,
@@ -15,6 +17,7 @@ const createMessage = ( data ) => {
 	return message;
 };
 
+// EXPORTS
 module.exports = {
-	createMessage
+	createMessage,
 };

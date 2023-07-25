@@ -7,14 +7,13 @@
 		grid-template-areas:
 			"text logos";
 		background-color: $lightblue-10;
-		margin: 0 48px;
 		padding: 112px;
 		margin: 0 auto;
 		clip-path: inset(0 48px round 20px);
 		transition: all 0.3s ease;
 		
 		&:hover {
-			clip-path: inset(0px);
+			clip-path: inset(0);
 		}
 
 	}
@@ -51,11 +50,25 @@
 			height: 100%;
 		}
 
-		&--1 { grid-area: button-1; width: 75%; justify-self: end;  max-width: 200px; align-self: center; }
-		&--2 { grid-area: button-2; width: 75%; justify-self: end;  max-width: 300px;}
-		&--3 { grid-area: button-3; width: 75%; justify-self: center; max-width: 300px; grid-column: span 2; margin-right: -100px;  }
-		&--4 { grid-area: button-4; width: 75%; justify-self: end;  max-width: 350px; }
-		&--5 { grid-area: button-5; width: 75%; justify-self: end;  max-width: 250px;}
+		&--1 { 
+			grid-area: button-1; width: 75%; justify-self: end;  max-width: 200px; align-self: center; 
+		}
+		
+		&--2 { 
+			grid-area: button-2; width: 75%; justify-self: end;  max-width: 300px;
+		}
+		
+		&--3 { 
+			grid-area: button-3; width: 75%; justify-self: center; max-width: 300px; grid-column: span 2; margin-right: -100px;  
+		}
+		
+		&--4 { 
+			grid-area: button-4; width: 75%; justify-self: end;  max-width: 350px; 
+		}
+		
+		&--5 { 
+			grid-area: button-5; width: 75%; justify-self: end;  max-width: 250px;
+		}
 
 	}
 
@@ -78,11 +91,25 @@
 				object-fit: contain;
 			}
 	
-			&--1 { width: 75%; justify-self: end; }
-			&--2 { width: 100%; justify-self: end; }
-			&--3 { width: 100%; justify-self: center; }
-			&--4 { width: 75%; justify-self: end; }
-			&--5 { width: 75%; justify-self: end; }
+			&--1 { 
+				width: 75%; justify-self: end; 
+			}
+
+			&--2 { 
+				width: 100%; justify-self: end; 
+			}
+
+			&--3 { 
+				width: 100%; justify-self: center; 
+			}
+
+			&--4 { 
+				width: 75%; justify-self: end; 
+			}
+
+			&--5 { 
+				width: 75%; justify-self: end; 
+			}
 	
 		}
 
@@ -93,16 +120,16 @@
 		&__inner {
 			grid-template: auto / auto;
 			grid-template-areas:
-			"text"
-			"logos";
+				"text"
+				"logos";
 			grid-row-gap: 80px;
 			padding: 80px;
-			margin: 0px;
+			margin: 0;
 		}
 
 		&__logo-wrapper {
-				grid-row-gap: 24px;
-				grid-column-gap: 24px;
+			grid-row-gap: 24px;
+			grid-column-gap: 24px;
 		}
 
 		&__logo {
@@ -111,11 +138,22 @@
 				object-fit: contain;
 			}
 	
-			&--1 { width: 50%; justify-self: center; }
-			&--2 { width: 75%; justify-self: center; }
-			&--3 { width: 75%; justify-self: center; }
-			&--4 { width: 75%; justify-self: center; }
-	
+			&--1 {
+				width: 50%; justify-self: center; 
+			}
+
+			&--2 {
+				width: 75%; justify-self: center; 
+			}
+
+			&--3 {
+				width: 75%; justify-self: center; 
+			}
+
+			&--4 {
+				width: 75%; justify-self: center; 
+			}
+
 		}
 
 	}
@@ -125,8 +163,8 @@
 		&__inner {
 			grid-template: auto / auto;
 			grid-template-areas:
-			"text"
-			"logos";
+				"text"
+				"logos";
 			grid-row-gap: 80px;	
 			padding: 48px !important;
 			clip-path: inset(0 24px round 20px);
@@ -143,11 +181,25 @@
 				object-fit: contain;
 			}
 	
-			&--1 { width: 100%; justify-self: center; }
-			&--2 { width: 100% }
-			&--3 { width: 50% }
-			&--4 { width: 100%; justify-self: end; }
-			&--5 { width: 100%; justify-self: end; }
+			&--1 { 
+				width: 100%; justify-self: center; 
+			}
+
+			&--2 { 
+				width: 100% 
+			}
+
+			&--3 { 
+				width: 50% 
+			}
+
+			&--4 { 
+				width: 100%; justify-self: end; 
+			}
+
+			&--5 { 
+				width: 100%; justify-self: end; 
+			}
 
 		}
 
@@ -166,11 +218,25 @@
 		
 		&__logo {
 	
-			&--1 { width: 100%; justify-self: center; }
-			&--2 { width: 100% }
-			&--3 { width: 50%; margin-right: 0; }
-			&--4 { width: 100%; justify-self: end; }
-			&--5 { width: 100%; justify-self: end; }
+			&--1 {
+				width: 100%; justify-self: center; 
+			}
+
+			&--2 {
+				width: 100% 
+			}
+
+			&--3 {
+				width: 50%; margin-right: 0; 
+			}
+
+			&--4 {
+				width: 100%; justify-self: end; 
+			}
+
+			&--5 {
+				width: 100%; justify-self: end; 
+			}
 
 		}
 
@@ -179,7 +245,7 @@
 	@media (max-width: 350px) {
 
 		&__inner {
-			grid-row-gap: 0px;
+			grid-row-gap: 0;
 		}
 
 		&__logo-wrapper {

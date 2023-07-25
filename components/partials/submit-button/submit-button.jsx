@@ -1,15 +1,14 @@
+// COMPONENT
 const SubmitButton = ({ data }) => {
 
-  return (
-    <input 
-      type='submit' 
-      value={ data.text }
-      className={`button ${ data.className }`}	
-    />
-  )
+	// RENDER
+	return (
+		<input type="submit" value={ data.text } className={ `button ${ data.className }` } />
+	);
 
-}
+};
 
+// EXPORTS
 export {
-  SubmitButton
+	SubmitButton,
 };

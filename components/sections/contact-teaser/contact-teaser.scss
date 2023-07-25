@@ -2,15 +2,13 @@
 	background-color: $lightblue-10;
 	
 	&__inner {
-		padding-top: 48px;
-		padding-bottom: 48px;
 		padding: 48px 120px;
 		display: grid;
 		max-width: 1920px;
 		margin: 0 auto;
+		grid-template: auto / 1fr 1fr;
 		grid-template-areas:
 			"text contact";
-		grid-template: auto / 1fr 1fr;
 		grid-column-gap: 200px;
 		grid-row-gap: 48px;
 	}
@@ -45,7 +43,6 @@
 			height: 24px;
 			margin-right: 40px;
 		}
-
 		
 		a, p {
 			text-decoration: none;

@@ -1,9 +1,12 @@
+// IMPORTS
 import 'styles/central.scss';
 import PlausibleProvider from 'next-plausible';
 
+// COMPONENT
 const App = ({ Component, pageProps }) => {
 
-  return (
+	// RENDER
+	return (
 		<PlausibleProvider domain="praxisdietschiberg.ch">
 			<Component {...pageProps} />
 		</PlausibleProvider>
@@ -11,4 +14,5 @@ const App = ({ Component, pageProps }) => {
 
 };
 
-export default App
+// EXPORTS
+export default App;

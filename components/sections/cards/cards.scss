@@ -24,7 +24,7 @@
 	.item {
 		background-color: $lightblue-10;
 		margin-right: 24px;
-		border-radius: 0 0 20px 0;
+		border-radius: 0 0 20px;
 		display: grid;
 		grid-template-rows: 300px auto;
 		transition: all 0.3s ease;
@@ -107,7 +107,7 @@
 			padding-right: 0px !important;
 		}
 
-		 .item {
+		.item {
 			min-width: calc(100% - 25%);
 			
 			&:last-child {

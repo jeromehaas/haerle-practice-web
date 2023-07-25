@@ -1,7 +1,7 @@
 .symptoms {
 
 	&__inner {
-		padding: 0 120px 0 120px;
+		padding: 0 120px;
 	}
 
 	&__wrapper {
@@ -34,21 +34,21 @@
 			position: relative;
 			width: 400px;
 
-			&--one .illustration-head_svg__one {
-					fill: $lightblue-20;
-				}
+			&--one .one {
+				fill: $lightblue-20;
+			}
 
-			&--two .illustration-head_svg__two {
-					fill: $lightblue-20;
-				}
+			&--two .two {
+				fill: $lightblue-20;
+			}
 
-			&--three .illustration-head_svg__three {
-					fill: $lightblue-20;
-				}
+			&--three .three {
+				fill: $lightblue-20;
+			}
 	
 			&__button {
 				position: absolute;
-				padding: 0px;
+				padding: 0;
 				width: 16px;
 				height: 16px;
 				border-radius: 50%;
@@ -61,36 +61,41 @@
 				border: none;
 				transition: all 0.1s ease-in-out;
 
-				
-				&--one { top: 19%; left: 47%; }
-				&--two { top: 33%; left: 68%; }
-				&--three { top: 50%; left: 76%; }
+				&--one { 
+					top: 19%; left: 47%; 
+				}
 
+				&--two { 
+					top: 33%; left: 68%; 
+				}
 
+				&--three { 
+					top: 50%; left: 76%; 
+				}
 				
 				&--active {
 					background-color: $red;
 					box-shadow:
-					0 0 0 4px $lightblue-10,
-					0 0 0 5px $red,
-					0 0 0 16px $lightblue-10;
+						0 0 0 4px $lightblue-10,
+						0 0 0 5px $red,
+						0 0 0 16px $lightblue-10;
 
 					&:hover {
 						background-color: $red;
 						box-shadow:
-						0 0 0 4px $lightblue-10,
-						0 0 0 5px $red,
-						0 0 0 20px $lightblue-10;
+							0 0 0 4px $lightblue-10,
+							0 0 0 5px $red,
+							0 0 0 20px $lightblue-10;
 					}
 
 				}
 
 				&:not(&--active) {
-						animation: pulse-ring 4s ease-in-out infinite;		
-					}
+					animation: pulse-ring 4s ease-in-out infinite;		
+				}
 	
-				&:after {
-					content: '';
+				&::after {
+					content: "";
 					width: 60px;
 					height: 60px;
 					display: block;
@@ -123,8 +128,8 @@
 			display: grid;
 			grid-template: auto auto / auto 24px;
 			grid-template-areas: 
-			"title arrow"
-			"text .";
+				"title arrow"
+				"text .";
 			border-bottom: 1px solid $lightblue-100;
 			grid-column-gap: 24px;
 			padding-top: 16px;
@@ -134,6 +139,8 @@
 				
 				.item__title {
 					color: $lightblue-100;
+					margin-bottom: 16px;
+					cursor: pointer;
 				}
 
 				.item__text {
@@ -142,22 +149,14 @@
 				}
 				
 				.item__icon {
-					transform: rotate(90deg);
-					cursor: pointer;
-				}
-				
-				.item__title {
-					margin-bottom: 16px;
-					cursor: pointer;
-				}
-
-				.item__icon {
 					grid-area: arrow;
+					cursor: pointer;
 					transform: rotate(270deg);
 					
 					&--inverted {
 						transform: rotate(90deg);
 					}
+
 				}
 				
 			}
@@ -185,29 +184,34 @@
 				&--inverted {
 					transform: rotate(90deg);
 				}
+
 			}
 
 		}
 
 		@keyframes pulse-ring {
+
 			0% {
 				box-shadow:
-				0 0 0 4px $lightblue-10,
-				0 0 0 5px $lightblue-50,
-				0 0 0 16px $lightblue-10;
+					0 0 0 4px $lightblue-10,
+					0 0 0 5px $lightblue-50,
+					0 0 0 16px $lightblue-10;
 			}
+
 			5% {
 				box-shadow:
-				0 0 0 4px $lightblue-10,
-				0 0 0 5px $lightblue-50,
-				0 0 0 20px $lightblue-10;
+					0 0 0 4px $lightblue-10,
+					0 0 0 5px $lightblue-50,
+					0 0 0 20px $lightblue-10;
 			}
+
 			10%, 100% {
 				box-shadow:
-				0 0 0 4px $lightblue-10,
-				0 0 0 5px $lightblue-50,
-				0 0 0 16px $lightblue-10;
+					0 0 0 4px $lightblue-10,
+					0 0 0 5px $lightblue-50,
+					0 0 0 16px $lightblue-10;
 			}
+
 		}
 
 	}
@@ -217,8 +221,8 @@
 		&__wrapper {
 			grid-template: auto auto / auto !important;
 			grid-template-areas: 
-			"content"
-			"visual" !important;
+				"content"
+				"visual" !important;
 			grid-column-gap: 64px;
 			grid-row-gap: 64px;
 			align-items: center;
@@ -227,9 +231,7 @@
 		&__visual {
 			margin: 0 auto !important;
 			max-width: 500px;
-
 		}
-
 
 		&__text {
 			margin-bottom: 0;
@@ -256,51 +258,59 @@
 				border-radius: 50%;
 				background-color: $lightblue-100;
 				box-shadow:
-				0 0 0 3px $lightblue-10,
-				0 0 0 4px $lightblue-100,
-				0 0 0 8px $lightblue-10 !important;
+					0 0 0 3px $lightblue-10,
+					0 0 0 4px $lightblue-100,
+					0 0 0 8px $lightblue-10 !important;
 				cursor: pointer;
 				border: none;
 				transition: all 0.3s ease-in-out;
 
 			
-			&--one { top: 19%; left: 47%; }
-			&--two { top: 33%; left: 68%; }
-			&--three { top: 50%; left: 76%; }
-
-			&:hover {
-				background-color: $darkblue-80;
-				box-shadow:
-					0 0 0 3px $lightblue-10,
-					0 0 0 4px $darkblue-80,
-					0 0 0 8px $lightblue-10 !important;	
-			}
-				
-			&--active {
-					box-shadow:
-					0 0 0 3px $lightblue-10,
-					0 0 0 4px $red,
-					0 0 0 8px $lightblue-10 !important;
+				&--one { 
+					top: 19%; left: 47%; 
 				}
 
-			&:after {
-				content: '';
-				width: 20px;
-				height: 20px;
-				display: block;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				opacity: 0.4;
-				transform: translate(-50%, -50%);
-				border-radius: 50%;
-				cursor: pointer;
-			}
+				&--two { 
+					top: 33%; left: 68%; 
+				}
 
-		}	
+				&--three { 
+					top: 50%; left: 76%; 
+				}
+
+				&:hover {
+					background-color: $darkblue-80;
+					box-shadow:
+						0 0 0 3px $lightblue-10,
+						0 0 0 4px $darkblue-80,
+						0 0 0 8px $lightblue-10 !important;	
+				}
+				
+				&--active {
+					box-shadow:
+						0 0 0 3px $lightblue-10,
+						0 0 0 4px $red,
+						0 0 0 8px $lightblue-10 !important;
+				}
+
+				&::after {
+					content: "";
+					width: 20px;
+					height: 20px;
+					display: block;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					opacity: 0.4;
+					transform: translate(-50%, -50%);
+					border-radius: 50%;
+					cursor: pointer;
+				}
+
+			}	
+
+		}
 
 	}
-
-}
 
 }

@@ -9,19 +9,18 @@
 	}
 
 	.item {
-
 		display: grid;
 		grid-template: auto / 240px 1fr;
 		padding: 48px 0;
 		border-bottom: 1px solid $lightblue-100;
 
 		&:first-child {
-			padding-top: 0px
+			padding-top: 0;
 		}
 		
 		&:last-child {
 			border-bottom: none;
-			padding-bottom: 0px
+			padding-bottom: 0;
 		}
 
 		&__image {

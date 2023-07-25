@@ -15,9 +15,9 @@
 		transition: all 0.3s ease;
 		max-width: unset;
 		
-			&:hover {
-				clip-path: inset(0px);
-			}
+		&:hover {
+			clip-path: inset(0);
+		}
 			
 	}
 
@@ -42,7 +42,6 @@
 		}
 		
 		&__logo {
-			margin-bottom: 24px;
 			max-width: 320px;
 			width: 100%;
 			height: auto;
@@ -96,11 +95,9 @@
 
 		&__inner {
 			padding: 48px !important;
-			clip-path: inset(0 48px round 20px);
 			transition: all 0.3s ease;
 			max-width: unset;
 			clip-path: inset(0 24px round 20px);	
-			
 			
 		}
 

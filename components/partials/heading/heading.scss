@@ -1,6 +1,13 @@
 @import 'styles/configs/variables.scss';
 
 .heading {
-	&--darkblue { color: $darkblue-100 }
-	&--lightblue { color: $lightblue-80 }
+
+	&--darkblue { 
+		color: $darkblue-100; 
+	}
+
+	&--lightblue { 
+		color: $lightblue-80 
+	}
+
 }

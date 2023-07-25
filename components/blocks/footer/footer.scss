@@ -4,7 +4,7 @@
 	padding: 96px 160px;
 	position: relative;
 	max-width: 85vw;
-	border-radius: 0px 20px 0px 0px;
+	border-radius: 0 20px 0 0;
 	overflow: hidden;
 	margin-right: 140px;
 
@@ -54,13 +54,11 @@
 	}
 
 	&__pulse {
-		width: 0px;
-		height: 0px;
+		width: 0;
+		height: 0;
 		position: absolute;
 		right: 150px;
 		bottom: 250px;
-		width: 0px;
-		height: 0px;
 		border-radius: 50%;
 		box-shadow: 0 0 24px 24px $red;
 		opacity: 0;
@@ -68,9 +66,9 @@
 	}
 
 	@keyframes pulse-loop {
-		0% { opacity: 0}
-		50% { opacity: 1 }
-		100% { opacity: 0 }
+		0% { opacity: 0};
+		50% { opacity: 1 };
+		100% { opacity: 0 };
 	}
 	
 	@media (max-width: 1200px) {
@@ -92,12 +90,9 @@
 			box-shadow: 0 0 16px 16px $red;
 		}
 
-
-
 	}
 
 	@media (max-width: 850px) {
-		margin-right: 0px;
 		max-width: unset;
 		margin-right: 24px;
 		padding: 56px 24px;

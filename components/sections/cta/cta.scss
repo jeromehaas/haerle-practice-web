@@ -4,8 +4,8 @@
 		display: grid;
 		grid-template: auto auto / auto 240px;
 		grid-template-areas:
-		"title button"
-		"text  button";
+			"title button"
+			"text  button";
 		grid-column-gap: 48px;
 		padding: 0 120px;
 	}
@@ -31,9 +31,9 @@
 		&__inner {
 			grid-template: auto auto auto / auto;
 			grid-template-areas:
-			"title" 
-			"text"
-			"button";
+				"title" 
+				"text"
+				"button";
 			grid-column-gap: unset;
 		}
 

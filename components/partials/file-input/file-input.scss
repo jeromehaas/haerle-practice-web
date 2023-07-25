@@ -16,24 +16,24 @@
 		grid-area: button;
 		color: $darkblue-100;
 		display: inline-block;
-	 	cursor: pointer;
-	 	margin-top: 8px;
-	 	padding: 32px 23px;
-	 	border-radius: 4px 0 0 4px;
-	 	outline: none;
-		 border: 1px solid $lightblue-50;
-	 	background: $lightblue-10;
-	 	caret-color: $lightblue-50;
-	 	text-align: center;
- 	}
+		cursor: pointer;
+		margin-top: 8px;
+		padding: 32px 23px;
+		border-radius: 4px 0 0 4px;
+		outline: none;
+		border: 1px solid $lightblue-50;
+		background: $lightblue-10;
+		caret-color: $lightblue-50;
+		text-align: center;
+	}
 
- 	&__label {
+	&__label {
 		grid-area: label;
 		display: block;	
 		color: $darkblue-100;	
- 	}
+	}
 	
-  &__input {
+	&__input {
 		width: 0.1px;
 		height: 0.1px;
 		opacity: 0;
@@ -58,21 +58,14 @@
 
 		&:focus {
 			border: 1px solid $lightblue-100;
-			box-shadow: 0 0 8px 0px $lightblue-50, inset 0 0 8px 0px $lightblue-50;
-			box-shadow: 0 0 8px 0px $lightblue-50, inset 0 0 8px 0px $lightblue-50 !important;
+			box-shadow: 0 0 8px 0 $lightblue-50, inset 0 0 8px 0 $lightblue-50 !important;
 		}
 
 		&::placeholder{
 			color: $lightblue-50;
 		}
 		
-		::-ms-input-placeholder {
-			color: $red;
-		}
-
 	}
-
-
 
 	&__input + &__label * {
 		pointer-events: none;
@@ -101,17 +94,18 @@
 	@media (max-width: 600px) {
 		grid-template: auto auto auto / 48px auto auto;
 		grid-template-areas: 
-		"label label optional"
-		"button input input"
-		"error error error";
+			"label label optional"
+			"button input input"
+			"error error error";
 
 		&__button {
 			background: url('/icon/icon-upload.svg'), $lightblue-20;
 			background-position: center, center;
 			background-repeat: no-repeat, repeat;
 			background-size: 12px;
-			font-size: 0px;
-		 }
+			font-size: 0;
+		}
+
 	}
 
 }

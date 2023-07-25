@@ -19,7 +19,6 @@
 		padding: 24px;
 		text-align: center;
 		background-color: $white;
-		display: flex;
 		align-items: center;
 		justify-content: center;
 		display: none;
@@ -39,7 +38,7 @@
 	@media (max-width: 1000px) {
 
 		&__submit {
-			margin: 0 auto 32px auto;
+			margin: 0 auto 32px;
 			float: unset;
 		}
 

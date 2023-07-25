@@ -15,7 +15,7 @@
 		
 		&__inner {
 			z-index: 10;
-			padding: 80px 48px 48px 48px;
+			padding: 80px 48px 48px;
 			background-color: $lightblue-10;
 			width: 100%;
 			margin-top: 80px;
@@ -41,6 +41,9 @@
 		&__hamburger {
 			padding: 24px 48px;
 			height: 80px;
+			position: absolute;
+			top: 0;
+			right: 0;
 		}
 
 		&__link-wrapper {
@@ -88,17 +91,10 @@
 			font-weight: 300;
 		}
 
-		&__hamburger {
-			position: absolute;
-			top: 0;
-			right: 0;
-		}
-
-		
 		@media (max-width: 850px) {
 			
 			&__inner {
-				padding: 56px 24px 24px 24px;
+				padding: 56px 24px 24px;
 			}
 
 			&__hamburger {
@@ -119,7 +115,10 @@
 
 	.navigation {
 
-		&__bar { background-color: $lightblue-10 !important; }
+		&__bar { 
+			background-color: $lightblue-10 !important; 
+		}
+
 		&__inner { 
 			opacity: 1;
 			pointer-events: unset;	

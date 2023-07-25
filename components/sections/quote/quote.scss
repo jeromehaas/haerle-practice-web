@@ -19,8 +19,15 @@
 		&__text {
 			max-width: 55%;
 			margin-bottom: 24px;
-			&::before { content: '«'; }
-			&::after { content: '»'; }
+
+			&::before { 
+				content: "«"; 
+			}
+
+			&::after { 
+				content: "»"; 
+			}
+
 		}
 		
 		&__author {
@@ -32,7 +39,6 @@
 		}
 
 	}
-
 
 	&__image-wrapper {
 		margin-left: 40%;
@@ -53,11 +59,11 @@
 	}
 
 	@media (max-width: 850px) {
-		padding: 0px;
+		padding: 0;
 		
 		&__image-wrapper {
-			padding-right: 0px;
-			padding-left: 0px;
+			padding-right: 0;
+			padding-left: 0;
 			display: block;
 			margin-left: 35%;
 		}
@@ -85,14 +91,14 @@
 
 		&__image-wrapper {
 			margin-left: 25%;
-			padding-right: 0px;
-			padding-left: 0px;
+			padding-right: 0;
+			padding-left: 0;
 			display: block;
 		}
 
 		&__quote-wrapper {
 			position: initial;
-			transform: translate(0px, -72px);
+			transform: translate(0, -72px);
 		}	
 
 		.image {
@@ -122,14 +128,14 @@
 		
 		&__quote-wrapper {
 			max-width: 100%;
-			transform: translate(0px, -56px);
+			transform: translate(0, -56px);
 		}
 
 		.quote {
 
 			&__text {
 				max-width: unset;
-				margin-top: 0px;
+				margin-top: 0;
 			}
 		
 		}

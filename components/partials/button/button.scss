@@ -14,7 +14,6 @@
 	line-height: 80px;
 	text-align: center;
 	
-	
 	&:hover {
 		background: $blue-gradient;
 		color: $white;
@@ -28,7 +27,7 @@
 
 	&:focus {
 		background: $blue-gradient;
-		box-shadow: 0 0 8px 0px $lightblue-100;
+		box-shadow: 0 0 8px 0 $lightblue-100;
 		outline: none;
 		color: $lightblue-10;
 	}

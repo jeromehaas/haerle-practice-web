@@ -1,15 +1,13 @@
 // IMPORTS
 const Nodemailer = require('nodemailer');
-import { createMessage } from './templates/message';
-
-
+const { createMessage } = require('./templates/message');
 
 // MESSAGE
-const Message = async ( req, res ) => {
+const Message = async (req, res) => {
 
 	// TRY-CATCH BLOCK
 	try {
-		
+
 		// GET VALUES
 		const { firstname, lastname, subject, email, phone, message } = req.body;
 
@@ -23,7 +21,7 @@ const Message = async ( req, res ) => {
 				user: process.env.SMTP_USER,
 				pass: process.env.SMTP_PASSWORD,
 			},
-			logger: false
+			logger: false,
 		});
 
 		// CREATE TEMPLATE
@@ -39,9 +37,9 @@ const Message = async ( req, res ) => {
 		// CREATE DATA
 		const messageData = {
 			from: process.env.SMTP_SENDER,
-			to: 'hello@jeromehaas.ch',
+			to: process.env.SMTP_USER,
 			subject: 'Eine neue Nachricht von der Website',
-			html: messageTemplate, 
+			html: messageTemplate,
 		};
 
 		// SEND MESSAGE
@@ -49,7 +47,7 @@ const Message = async ( req, res ) => {
 
 		// PRINT SUCCESS MESSSAGE
 		console.log('🟢 Success: Message has been sent successfully!');
-		
+
 		// SEND RESPONSE
 		res.status(200).send('🟢 Success: Message has been sent successfully!');
 
@@ -64,7 +62,7 @@ const Message = async ( req, res ) => {
 
 	};
 
-}; 
+};
 
 // EXPORTS
 export default Message;

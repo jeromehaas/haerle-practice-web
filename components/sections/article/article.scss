@@ -1,7 +1,7 @@
 .article {
 	
 	.section__inner {
-		padding: 0 48px 0 48px;
+		padding: 0 48px;
 	}
 	
 	&__wrapper {
@@ -50,7 +50,7 @@
 	@media (max-width: 1100px) {
 		
 		.section__inner {
-			padding: 0 120px 0 120px;
+			padding: 0 120px;
 			margin-bottom: 0;
 		}
 
@@ -75,20 +75,20 @@
 
 		&--reverse-on-mobile {
 
-		.article__wrapper {
-			grid-template: auto auto / auto !important;
-			grid-template-areas: 
-				"content" 
-				"image" !important;
-		}
+			.article__wrapper {
+				grid-template: auto auto / auto !important;
+				grid-template-areas: 
+					"content" 
+					"image" !important;
+			}
 
-		.article__image {
-			margin-bottom: 0;
-		}
+			.article__image {
+				margin-bottom: 0;
+			}
 
-		.article__text {
-			margin-bottom: 32px;
-		}
+			.article__text {
+				margin-bottom: 32px;
+			}
 
 		}
 

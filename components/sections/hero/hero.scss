@@ -9,7 +9,7 @@
 		&:hover {
 
 			.hero__image {
-				clip-path: inset(0px);
+				clip-path: inset(0);
 			}
 
 		}
@@ -32,37 +32,37 @@
 		object-fit: cover;
 		object-position: 75% 25%;
 		min-height: 450px;	
-		// max-height: calc(100vh - 400px);
+		max-height: calc(100vh - 400px);
 		clip-path: inset(0 48px round 20px);
 	}
 
 	&__scroll-icon {
 		z-index: 5;
 		cursor: pointer;
-		pointer-events: visibleStroke;
+		pointer-events: visiblestroke;
 		position: absolute;
 		bottom: 32px;
 		left: 50%;
 		width: 64px;
-		width: 64px;
 		transform: translateX(-50%);
 		border-radius: 50%;
 		box-shadow:
-		0 0 0 4px $lightblue-10,
-		0 0 0 5px $lightblue-50,
-		0 0 0 16px $lightblue-10;
+			0 0 0 4px $lightblue-10,
+			0 0 0 5px $lightblue-50,
+			0 0 0 16px $lightblue-10;
 		animation: pulse-icon 2s ease-in-out infinite;
 	}
 
 	@keyframes pulse-icon {
+		
 		0% {
-			box-shadow:
-			0 0 0 0px rgba(231, 243, 246, 1);
+			box-shadow: 0 0 0 0 rgba(231, 243, 246, 1);
 		}
+
 		50%, 100% {
-			box-shadow:
-			0 0 0 32px rgba(231, 243, 246, 0.1);
+			box-shadow: 0 0 0 32px rgba(231, 243, 246, 0.1);
 		}
+
 	}
 	
 	@media (max-width: 1650px) {
@@ -75,7 +75,6 @@
 	}
 	
 	@media (max-width: 1200px) {
-		
 		margin-bottom: 56px;	
 		padding-top: 160px;
 
@@ -101,6 +100,7 @@
 		.heading {
 			max-width: 450px;
 		}
+		
 		&__image {
 			clip-path: inset(0 24px round 20px);
 			max-height: calc(100vh - 264px);
@@ -138,14 +138,11 @@
 	}
 
 	@media (max-width: 450px) {
-
 		padding-top: 160px;
 
 		&__heading {
 			top: -132px;
 		}
-
-
 
 		&__image {
 			min-height: 200px;
@@ -159,7 +156,7 @@
 		&__scroll-icon {
 			z-index: 5;
 			cursor: pointer;
-			pointer-events: visibleStroke;
+			pointer-events: visiblestroke;
 			position: absolute;
 			bottom: 100px;
 		}
