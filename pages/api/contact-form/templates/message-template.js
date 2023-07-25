@@ -111,7 +111,7 @@ const messageTemplate = `
                                                                      </tr>
                                                                      <tr style="height:25px;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top">
                                                                         <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#003067;font-family:Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;hyphens:auto;line-height:1.55;margin:0;padding-bottom:0;padding-left:0;padding-right:20px;padding-top:0;text-align:left;vertical-align:top;width:116px;word-wrap:break-word">Telefonnummer</td>
-                                                                        <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#003067;font-family:Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;hyphens:auto;line-height:1.55;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:break-word"><a href="tel:{{ phone }}" style="color:inherit;font-family:Helvetica,Arial,sans-serif;font-weight:400;line-height:1.55;padding:0;text-align:left;text-decoration:none">079 123 45 67</a></td>
+                                                                        <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#003067;font-family:Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;hyphens:auto;line-height:1.55;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:break-word"><a href="tel:{{ phone }}" style="color:inherit;font-family:Helvetica,Arial,sans-serif;font-weight:400;line-height:1.55;padding:0;text-align:left;text-decoration:none">{{ phone }}</a></td>
                                                                      </tr>
                                                                      <tr style="height:25px;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top">
                                                                         <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#003067;font-family:Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;hyphens:auto;line-height:1.55;margin:0;padding-bottom:0;padding-left:0;padding-right:20px;padding-top:0;text-align:left;vertical-align:top;width:116px;word-wrap:break-word">E-Mail</td>
@@ -222,6 +222,5 @@ const messageTemplate = `
 `;
 
 module.exports = {
-	messageTemplate
+	messageTemplate,
 };
-
