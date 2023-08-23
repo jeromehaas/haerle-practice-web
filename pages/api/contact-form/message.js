@@ -37,7 +37,7 @@ const Message = async (req, res) => {
 		// CREATE DATA
 		const messageData = {
 			from: process.env.SMTP_SENDER,
-			to: process.env.SMTP_USER,
+			to: process.env.SMTP_RECEIVER,
 			subject: 'Eine neue Nachricht von der Website',
 			html: messageTemplate,
 		};
