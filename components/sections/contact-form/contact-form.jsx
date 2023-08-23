@@ -142,17 +142,6 @@ const ContactForm = ({ data }) => {
 				},
 			});
 
-			// SEND CONFIRMATION
-			await axios({
-				method: 'post',
-				url: '/api/contact-form/confirmation',
-				data: {
-					firstname: formState.firstname.value,
-					lastname: formState.lastname.value,
-					email: formState.email.value,
-				},
-			});
-
 			// SHOW SUCCESS BANNER
 			setStatusBarState({
 				visible: true,
