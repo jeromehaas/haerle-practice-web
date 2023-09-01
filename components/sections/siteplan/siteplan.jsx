@@ -4,10 +4,9 @@ import { Section } from 'components/layouts/section/section';
 import { Heading } from 'components/partials/heading/heading';
 import { Paragraph } from 'components/partials/paragraph/paragraph';
 import { Link } from 'components/partials/link/link';
-import { ListItem } from 'components/partials/list-item/list-item';
 
 // COMPONENT
-const Siteplan = ({ data }) => {
+const Siteplan = () => {
 
 	// RENDER
 	return (
@@ -18,7 +17,7 @@ const Siteplan = ({ data }) => {
 					<Heading data={ { className: 'siteplan__title', level: 'h4' }} >Anfahrt</Heading>
 					<div className="siteplan__item item">
 						<Heading data={ { className: 'item__title', level: 'h3' }} >Öffentliche Verkehrsmittel</Heading>
-						<Paragraph data={ { className: 'item__text' } }>Meine Praxis erreichen Sie bequem mit den öffentlichen Verkehrsmitteln. Ab Bahnhof Luzern bringt Sie der Bus (Linie 14) viertelstündlich in Richtung Brüelstrasse zu uns. Sie steigen bei der Haltestelle «Lützelmattstrasse» aus, überqueren die Strasse und sehen auf der linken Seite zwei rote Ärztehäuser. Meine Praxis befindet sich im 2. Stock des Ärztehauses 3.</Paragraph>
+						<Paragraph data={ { className: 'item__text' } }>Meine Praxis erreichen Sie bequem mit den öffentlichen Verkehrsmitteln. Ab Bahnhof Luzern bringt Sie der Bus (Linie 14) viertelstündlich in Richtung Brüelstrasse zu mir. Sie steigen bei der Haltestelle «Lützelmattstrasse» aus, überqueren die Strasse und sehen auf der linken Seite zwei rote Ärztehäuser. Meine Praxis befindet sich im 2. Stock des Ärztehauses 3.</Paragraph>
 						<Link data={{ target: '_blank', href: 'https://www.sbb.ch/de/kaufen/pages/fahrplan/fahrplan.xhtml?nach=Luzern,L%C3%BCtzelmattstrasse', icon: 'external-link', className: 'item__link' }}>Fahrplan SBB</Link><br />
 						<Link data={{ target: '_blank', href: 'https://www.vbl.ch/fahrplaene/online-fahrplan/', icon: 'external-link', className: 'item__link' }}>Fahrplan VBL</Link>
 					</div>
