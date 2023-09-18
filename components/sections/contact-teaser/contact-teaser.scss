@@ -7,8 +7,6 @@
 		max-width: 1920px;
 		margin: 0 auto;
 		grid-template: auto / 1fr 1fr;
-		grid-template-areas:
-			"text contact";
 		grid-column-gap: 200px;
 		grid-row-gap: 48px;
 	}
@@ -63,9 +61,6 @@
 	@media (max-width: 1200px) {
 
 		&__inner {
-			grid-template-areas:
-				"text" 
-				"contact";
 			grid-template: auto auto / auto;
 		}
 
@@ -80,15 +75,7 @@
 	@media (max-width: 850px) {
 
 		&__contact-wrapper {
-			grid-template: auto auto auto / 1fr;
-		}
-
-		&__item {
-
-			&:nth-child(2) {
-				order: +1;
-			}
-
+			grid-template: auto auto / 1fr;
 		}
 
 	}

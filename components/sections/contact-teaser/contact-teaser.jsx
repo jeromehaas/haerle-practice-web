@@ -19,13 +19,8 @@ const ContactTeaser = () => {
 					<p>Praxis am Dietschiberg</p>
 					<p>Lützelmattstrasse 3</p>
 					<p>6006 Luzern</p>
+					<p>(Anfahrtsplan siehe unten)</p>
 				</address>
-				<div className="contact-teaser__item">
-					<img src="/icon/icon-time.svg" alt="Icon" />
-					<p>Öffnungszeiten</p>
-					<p>Montag –  Freitag</p>
-					<p><span>08:00 – 12.00, </span><span> 13:00 – 17:00 Uhr</span></p>
-				</div>
 				<div className="contact-teaser__item">
 					<img src="/icon/icon-phone.svg" alt="Icon" />
 					<p>Kontakt</p>
