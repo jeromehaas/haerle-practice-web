@@ -12,7 +12,6 @@ const Siteplan = () => {
 	return (
 		<Section data={{ className: 'siteplan' }}>
 			<div className="siteplan__wrapper">
-				<Image data={ { className: 'siteplan__image', width: 1200, height: 400, alt: 'Praxis am Dietschiberg', src: '/images/14-dietschiberg-praxis.jpg' }} />
 				<div className="siteplan__content">
 					<Heading data={ { className: 'siteplan__title', level: 'h4' }} >Anfahrt</Heading>
 					<div className="siteplan__item item">
@@ -40,7 +39,6 @@ const Siteplan = () => {
 						<Paragraph data={{ className: 'item__text' }}>Sollten Sie bei Ihrer Krankenkasse ein HMO-Modell gewählt haben, wenden Sie sich zuerst an Ihren Hausarzt, damit er Sie an mich überweisen kann. Ansonsten kontaktieren Sie mich am besten telefonisch zwecks Terminvereinbarung. Sollten Sie einen Termin einmal nicht wahrnehmen können, melden Sie sich bitte 24 Stunden vorher ab. Ansonsten muss ich Ihnen den Termin in Rechnung stellen.</Paragraph>
 					</div>
 				</div>
-
 			</div>
 		</Section>
 	);

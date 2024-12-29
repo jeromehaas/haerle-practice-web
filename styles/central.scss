@@ -7,6 +7,14 @@
 @import 'styles/configs/hamburger.scss';
 @import 'styles/configs/global.scss';
 
+/* PACKAGES */
+@import 'styles/packages/swiperjs.scss';
+
+/* EXTERNALS */
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+@import 'swiper/css/effect-fade';
+
 /* PARTIALS */
 @import 'components/partials/heading/heading.scss';
 @import 'components/partials/paragraph/paragraph.scss';
@@ -52,3 +60,4 @@
 @import 'components/sections/partners/partners';
 @import 'components/sections/error/error';
 @import 'components/sections/siteplan/siteplan';
+@import 'components/sections/impressions/impressions';

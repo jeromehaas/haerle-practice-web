@@ -64,6 +64,6 @@
 			"object-shorthand": "off",
 			"dot-notation": "off",
 			"prefer-destructuring": "off",
-			"no-console": "off",
+			"no-console": "off"
   }
 }

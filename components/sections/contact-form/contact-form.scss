@@ -1,15 +1,11 @@
 .contact-form {
-	
+
 	&__inner {
 		padding: 0 120px;
 		max-width: 1000px;
 	}
 
 	&__input {
-		margin-bottom: 32px;
-	}
-
-	&__submit {
 		margin-bottom: 32px;
 	}
 
@@ -22,6 +18,7 @@
 		align-items: center;
 		justify-content: center;
 		display: none;
+		margin-top: 32px;
 
 		&--visible {
 			display: flex;
@@ -30,15 +27,15 @@
 		&__icon {
 			width: 16px;
 			height: 16px;
-			margin-right: 16px;			
+			margin-right: 16px;
 		}
-		
+
 	}
-	
+
 	@media (max-width: 1000px) {
 
 		&__submit {
-			margin: 0 auto 32px;
+			margin: 0 auto;
 			float: unset;
 		}
 
@@ -46,12 +43,12 @@
 			flex-direction: column;
 
 			&__icon {
-				margin-right: 0;			
-				margin-bottom: 16px;			
+				margin-right: 0;
+				margin-bottom: 16px;
 			}
-			
+
 		}
 
 	}
-	
+
 }
