@@ -24,9 +24,6 @@ const Impressions = () => {
 					<Image data={ { className: 'impressions__image swiper-no-swiping', src: '/images/18-daniela-haerle-praxis-empfang.jpg' } }/>
 				</SwiperSlide>
 				<SwiperSlide className="impressions__slide">
-					<Image data={ { className: 'impressions__image swiper-no-swiping', src: '/images/18-daniela-haerle-praxis-empfang.jpg' } }/>
-				</SwiperSlide>
-				<SwiperSlide className="impressions__slide">
 					<Image data={ { className: 'impressions__image swiper-no-swiping', src: '/images/19-daniela-haerle-praxis-schrank.jpg' } }/>
 				</SwiperSlide>
 				<SwiperSlide className="impressions__slide">
