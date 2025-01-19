@@ -10,7 +10,7 @@ const Impressions = ({ data }) => {
 	// RETURN
 	return (
 		<Section data={ { className: 'impressions', anchorId: data.anchorId }}>
-			<Swiper className="impressions__slider" spaceBetween={ 50 } slidesPerView={ 1 } effect="fade" loop autoplay={{ delay: 5000 }} pagination={{ dynamicBullets: true, clickable: true }} modules={ [EffectFade, Autoplay, Pagination] }>
+			<Swiper className="impressions__slider" spaceBetween={ 50 } slidesPerView={ 1 } effect="fade" speed={ 1000 } loop autoplay={{ delay: 7000 }} pagination={{ dynamicBullets: true, clickable: true }} modules={ [EffectFade, Autoplay, Pagination] }>
 				<SwiperSlide className="impressions__slide">
 					<Image data={ { className: 'impressions__image swiper-no-swiping', src: '/images/18-daniela-haerle-praxis-empfang.jpg', width: 1920, height: 1280 } }/>
 				</SwiperSlide>
