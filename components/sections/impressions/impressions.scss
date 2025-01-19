@@ -1,11 +1,10 @@
 
 .impressions {
-	background-color: $white;
 	margin-bottom: 0;
 
 	.section__inner {
-		padding: 80px 120px 0 120px;
-		max-width: 1000px;
+		padding: 0 120px 80px 120px;
+		max-width: 1200px;
 		margin: 0 auto;
 	}
 
@@ -17,6 +16,7 @@
 		display: block;
 		width: 100%;
 		height: auto;
+		object-fit: cover;
 	}
 
 
